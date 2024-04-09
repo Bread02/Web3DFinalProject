@@ -4,7 +4,8 @@ class Model {
 	// edit for coursework
 	    public function __construct()
     {
-        $dsn = 'sqlite:./db/test1.db';
+		/*
+        $dsn = 'sqlite:../db/test1.db';
 
         try {
             $this->dbhandle = new PDO($dsn, 'user', 'password', array(
@@ -13,10 +14,11 @@ class Model {
             )
             );
         } catch (PDOEXception $e) {
-            echo "I'm sorry, Martin. I'm afraid I can't connect to the database!";
+            echo "No database to connect to";
             // Generate an error message if connection fails
             print new Exception($e->getMessage());
         }
+		*/
     }
 	
    // method to simulate the model data

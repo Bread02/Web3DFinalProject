@@ -11,14 +11,14 @@ class Controller {
         $this->load = new Load();
         $this->model = new Model();
         // What page we are on
-        $this->$pageURI();
+        $this->home();
     }
 
 
     function home()
 	{
-        $data = $this->model->model3D_info();
-        $this->load->view('home', $data);
+     //   $data = $this->model->model3D_info();
+        $this->load->view('home');
 	}
 }
 

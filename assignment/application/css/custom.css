@@ -1,17 +1,23 @@
 /* Method to declare your own fonts */
-@font-face {
-    font-family: cocaColaFont;
-    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
-}
 
 @font-face {
     font-family: OpenSans;
-    src: url(../assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+    src: url(../../assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
 }
 
 @font-face {
     font-family: Oswald;
-    src: url(../assets/fonts/Oswald/static/Oswald-Regular.ttf);
+    src: url(../../assets/fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url(../../assets/fonts/Kanit/Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto/Roboto-Regular.tff);
 }
 
 /* Extra small devices (portrait phones, less than 576px)
@@ -308,7 +314,7 @@ X3D, x3d {
 }
 
 .logo h1 {
-    font-family: cocaColaFont;
+    font-family: OpenSans;
     /* You don't need to repeat this for each media query as it is propagated */
     font-size: 31px;
     margin: 0;
@@ -321,7 +327,7 @@ X3D, x3d {
 }
 
 .logo h2 {
-    font-family: cocaColaFont;
+    font-family: OpenSans;
     font-size: 31px;
     margin-top: -6px;
     margin-bottom: -15px;
@@ -424,6 +430,7 @@ There is plenty more styling to do than indicated here, in mobile it still defau
 /* These next two CSS rules control the style of the icon bar */
 .navbar_coca_cola .navbar-toggler {
     border-color: white;
+
 }
 
 .navbar_coca_cola .navbar-toggler-icon {
