@@ -65,6 +65,17 @@
 
   <!-- Start of the SPA -->
   <div id="home">
+    <div class="col-sm-12">
+      <div id="main_3d_image">
+        <div id="main_text" class="col-xs-12">
+          <div id="title_home"></div>
+          <div id="subTitle_home"></div>
+          <div id="description_home"></div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="row">
       <div class="col-sm-12">
         Hello world!
@@ -79,7 +90,7 @@
         Costa Milkshake
       </div>
       <div class="col-sm-4">
-        Costa Shop
+        Costa Canned
       </div>
     </div>
   </div>
