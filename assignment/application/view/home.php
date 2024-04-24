@@ -75,21 +75,22 @@
       </div>
     </div>
 
-
     <div class="row">
       <div class="col-sm-12">
-        Hello world!
       </div>
     </div>
     <br>
     <div class="row">
       <div class="col-sm-4">
-        Costa coffee
+        <img src="assets/images/front_page_images/FrontImage2.png" alt="Image of Costa Coffee Cup">
+        <br>Costa coffee
       </div>
       <div class="col-sm-4">
+      <img src="assets/images/front_page_images/FrontImage1.png" alt="Image of Costa Coffee Milkshake">
         Costa Milkshake
       </div>
       <div class="col-sm-4">
+      <img src="assets/images/front_page_images/FrontImage4.png" alt="Image of Costa Coffee Canned">
         Costa Canned
       </div>
     </div>
