@@ -1,0 +1,8 @@
+To create table (Make sure there is no existing table of the same name)
+http://localhost/web3dfinalproject/assignment/index.php/apicreatetable
+
+To insert data into table
+http://localhost/web3dfinalproject/assignment/index.php/apiInsertData
+
+To get data
+http://localhost/web3dfinalproject/assignment/index.php/apigetdata

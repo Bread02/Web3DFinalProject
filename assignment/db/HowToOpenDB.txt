@@ -1,0 +1,2 @@
+1. Open SQLiteStudio
+2. Import the db to view it.

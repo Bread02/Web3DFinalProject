@@ -2,10 +2,13 @@
 class Model {
 	
 	// edit for coursework
+
+        public $dbhandle;
+
 	    public function __construct()
     {
 		
-        $dsn = 'sqlite:../db/homePage.db';
+        $dsn = 'sqlite:./db/test1.db';
 
         try {
             $this->dbhandle = new PDO($dsn, 'user', 'password', array(
@@ -14,7 +17,7 @@ class Model {
             )
             );
         } catch (PDOEXception $e) {
-            echo "No database to connect to";
+            echo "No database to connect to - This is an error.";
             // Generate an error message if connection fails
             print new Exception($e->getMessage());
         }
@@ -22,12 +25,12 @@ class Model {
     }
 	
     // create the database, insert our JSON data into here for the home page.
-    public function dbCreateTableHome()
+    public function dbCreateTable()
     {
         echo "Create table function";
         try {
-      //      $this->dbhandle->exec("CREATE TABLE Model_3D (Id INTEGER PRIMARY KEY, x3dModelTitle TEXT, x3dCreationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)");
-        //    return "Model_3D table is successfully created inside test1.db file";
+            $this->dbhandle->exec("CREATE TABLE Model_3D (Id INTEGER PRIMARY KEY, x3dModelTitle TEXT, x3dCreationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)");
+            return "Model_3D table is successfully created inside test1.db file";
         } catch (PD0EXception $e) {
             print new Exception($e->getMessage());
         }
@@ -35,7 +38,7 @@ class Model {
     }
 
     // insert the data into the DB
-    public function dbInsertDataHome()
+    public function dbInsertData()
     {
         try{
 			$this->dbhandle->exec(
@@ -53,7 +56,7 @@ class Model {
 		$this->dbhandle = NULL;
     }
 
-    public function dbGetDataHome()
+    public function dbGetData()
     {
         echo "Data retrieval function";
         try {

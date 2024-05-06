@@ -191,18 +191,22 @@
       <div class="col-sm-3">
         <div class="card text-left">
           <div class="card-header gallery-header">
-            Gallery
+          <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+                  <a class="nav-link active" href="#">Gallery</a>
+          </li>
+          </ul>
           </div>
           <div class="card-body">
-            <h4 class="card-title"> 3D Image Gallery</h4>
-            <!-- Image gallery using JS and PHP -->
-            <div id="gallery_coke" class="gallery"></div>
-            <p class="card-text">These 3D images have been rendered</p>
+              <div class="card-title title_gallery drinksText"></div>
+              <div class="gallery" id="gallery"></div>
+              <div class="card-text description_gallery drinksText"></div>
           </div>
         </div>
       </div>
     </div>
     <br>
+
 
     <div class="row"> <!-- This will hold the model interactions -->
     <!-- CAMERA VIEWS -->
@@ -318,6 +322,7 @@
 
     <script type="text/javascript" src="application/js/all.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="application/js/custom.js" crossorigin="anonymous"></script>
+    <script src="application/js/gallery_generator.js"></script>
     <script src="application/js/swap_restyle.js"></script>
     <script src='application/js/x3dom.js'></script>
     <script src="application/js/modelInteractions.js"></script>
