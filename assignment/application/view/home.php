@@ -137,7 +137,7 @@
           <div class="model3D">
             <x3d id="model">
               <scene>
-                <inline namespacename="model" mapDEFToID="true" onclick="animateModel()" url="assets/x3d/coke.x3d" ></inline>
+                <inline namespacename="model" mapDEFToID="true" onclick="animateModel()" url="assets/x3d/CostaCup.x3d" ></inline>
               </scene>
             </x3d>
           </div>
