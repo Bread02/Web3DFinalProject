@@ -25,13 +25,16 @@
 
   <!-- START OF NAVBAR -->
   <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+  <div class="container-fluid">
     <!-- START OF LOGO -->
     <div class="logo">
-      <div class="container-fluid">
-        <!-- Logo -->
-        <h1>Costa Coffee World</h1>
+        <a class="navbar-brand" href="index.php">
+          <h1>Costa Coffee World</h1>
+          <p>Love For The Bean</p>
+        </a>
       </div>
-    </div>
+      </div>
+
     <!-- END OF LOGO -->
 
     <!-- START OF NAVIGATION ELEMENT OF BAR -->
@@ -320,8 +323,6 @@
   </div>
   <!-- END OF REFERENCES -->
 
-
-
   <!-- START OF FOOTER -->
   <nav class="navbar navbar-expand-sm footer sticky">
     <div class="container-fluid">
@@ -344,11 +345,13 @@
   </nav>
   <!-- END OF FOOTER -->
 
+  <!-- TODO MODALS -->
+  <!-- END OF MODALS -->
+
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
-  <!-- <script src="application/js/popper.min.js" crossorigin="anonymous"></script> -->
-  <script src="application/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="application/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> <!-- popper is bundled in this -->
 
   <script type="text/javascript" src="application/js/all.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="application/js/custom.js" crossorigin="anonymous"></script>
