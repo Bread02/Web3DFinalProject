@@ -48,13 +48,13 @@
             <a class="nav-link active" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a id="navAbout" class="nav-link" href="#" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="bottom"
-              title="About Web 3D Applications"
+            <a id="navAbout" class="nav-link" href="#" data-bs-toggle="popover" data-bs-trigger="hover"
+              data-bs-placement="bottom" title="About Web 3D Applications"
               data-bs-content="3D Apps is a final year and postgraduate module ...">About</a>
           </li>
           <li class="nav-item">
-            <a id="navModels" class="nav-link" href="#" data-bs-toggle="popover"
-              data-bs-trigger="hover" data-placement="bottom" title="X3D Models"
+            <a id="navModels" class="nav-link" href="#" data-bs-toggle="popover" data-bs-trigger="hover"
+              data-placement="bottom" title="X3D Models"
               data-content="There are three X3D models: Coke, Sprite and Pepper">Models</a>
           </li>
           <!-- Button trigger modal -->
@@ -125,98 +125,106 @@
         </div>
         <!-- TODO Nav Menu to choose models -->
         <div class="card text-left">
-        <div class="card-body">
-          <h2 class="card-title">Models</h2>
-        <a id="navCup" button type="button" class="btn btn-primary">Cup</button> </a>
-          <a id="navBottle" button type="button" class="btn btn-secondary">Bottle</button> </a>
-          <a id="navCan" button type="button" class="btn btn-success">Can</button> </a>
-          <br>
-          </div>
-          </div>
-
-          <!-- END OF NAV MENU TO CHOOSE MODELS -->
-
-        <!-- MODEL 1 -->
-        <div id="cup">
-        <!-- The 3D Model Card -->
-        <div class="card-body">
-          <h3 class="card-title"> Cup X3D Model</h3>
-          <br>
-
-          <!-- CHOOSE SKINS -->
-          <h4 class="card-title"> Skins</h4>
-          <a id="navCoke" button type="button" class="btn btn-primary">Costa Cup</button> </a>
-          <!-- END OF CHOOSE SKINS -->
-          <div class="model3D">
-            <x3d id="model">
-              <scene>
-                <inline namespacename="model" mapDEFToID="true" onclick="animateModel()" url="assets/x3d/CostaCup.x3d" ></inline>
-              </scene>
-            </x3d>
+          <div class="card-body">
+            <h2 class="card-title">Models</h2>
+            <a id="navCup" button type="button" class="btn btn-primary">Cup</button> </a>
+            <a id="navBottle" button type="button" class="btn btn-secondary">Bottle</button> </a>
+            <a id="navCan" button type="button" class="btn btn-success">Can</button> </a>
+            <br>
           </div>
         </div>
-      </div>
-      <!-- END OF MODEL 1 -->
 
-      <!-- MODEL 2 -->
-      <div id="bottle" style="display:none;">
-        <!-- The 3D Model Card -->
+        <!-- END OF NAV MENU TO CHOOSE MODELS -->
+
         <div class="card-body">
-          <h3 class="card-title"> Bottle X3D Model</h3>
-          <br>
-                    <!-- CHOOSE SKINS -->
-                    <h4 class="card-title"> Skins</h4>
-          <a id="navCoke" button type="button" class="btn btn-primary">Frappe Caramel</button> </a>
-          <a id="navCoke" button type="button" class="btn btn-primary">Frappe Brownie</button> </a>
-          <!-- END OF CHOOSE SKINS -->
-          <div class="model3D">
-            <x3d id="model">
-              <scene>
-                <inline namespacename="model" mapDEFToID="true" onclick="animateModel()" url="assets/x3d/sprite.x3d" ></inline>
-              </scene>
-            </x3d>
+          <!-- MODEL 1 -->
+          <div id="cup">
+            <!-- The 3D Model Card -->
+            <div class="card-body">
+              <h3 class="card-title"> Cup X3D Model</h3>
+              <br>
+              <!-- CHOOSE SKINS -->
+              <h4 class="card-title"> Skins</h4>
+              <a id="navCoke" button type="button" class="btn btn-primary">Costa Cup</button> </a>
+              <!-- END OF CHOOSE SKINS -->
+              <div class="model3D">
+                <x3d id="modelOne">
+                  <scene>
+                    <inline namespacename="modelOne" mapDEFToID="true" onclick="animateModel()"
+                      url="assets/x3d/CostaCup.x3d"></inline>
+                  </scene>
+                </x3d>
+              </div>
+            </div>
+            <div id="x3dCreationMethod_coke" class="card-text drinksText"></div>
           </div>
+          <!-- END OF MODEL 1 -->
+
+          <!-- MODEL 2 -->
+          <div id="bottle" style="display:none;">
+            <!-- The 3D Model Card -->
+            <div class="card-body">
+              <h3 class="card-title"> Bottle X3D Model</h3>
+              <br>
+              <!-- CHOOSE SKINS -->
+              <h4 class="card-title"> Skins</h4>
+              <a id="navCoke" button type="button" class="btn btn-primary">Frappe Caramel</button> </a>
+              <a id="navCoke" button type="button" class="btn btn-primary">Frappe Brownie</button> </a>
+              <!-- END OF CHOOSE SKINS -->
+              <div class="model3D">
+                <x3d id="modelTwo">
+                  <scene>
+                    <inline namespacename="modelTwo" mapDEFToID="true" onclick="animateModel()"
+                      url="assets/x3d/CostaCupV2.x3d"></inline>
+                  </scene>
+                </x3d>
+              </div>
+            </div>
+            <div id="x3dCreationMethod_sprite" class="card-text drinksText"></div>
+          </div>
+          <!-- END OF MODEL 2-->
+
+          <!-- MODEL 3 -->
+          <div id="can" style="display:none;">
+            <!-- The 3D Model Card -->
+            <div class="card-body">
+              <h3 class="card-title"> Can X3D Model</h3>
+              <br>
+              <!-- CHOOSE SKINS -->
+              <h4 class="card-title"> Skins</h4>
+              <a id="navCoke" button type="button" class="btn btn-primary">Vanilla Latte</button> </a>
+              <a id="navCoke" button type="button" class="btn btn-primary">Latte</button> </a>
+              <a id="navCoke" button type="button" class="btn btn-primary">Espresso</button> </a>
+              <!-- END OF CHOOSE SKINS -->
+              <div class="model3D">
+                <x3d id="modelThree">
+                  <scene>
+                    <inline namespacename="modelThree" mapDEFToID="true" onclick="animateModel()"
+                      url="assets/x3d/pepper.x3d"></inline>
+                  </scene>
+                </x3d>
+              </div>
+            </div>
+            <div id="x3dCreationMethod_pepper" class="card-text drinksText"></div>
+          </div>
+          <!-- END OF MODEL 3 -->
         </div>
       </div>
-      <!-- END OF MODEL 2-->
 
-      <!-- MODEL 3 -->
-      <div id="can" style="display:none;">
-        <!-- The 3D Model Card -->
-        <div class="card-body">
-          <h3 class="card-title"> Can X3D Model</h3>
-          <br>
-                    <!-- CHOOSE SKINS -->
-                    <h4 class="card-title"> Skins</h4>
-          <a id="navCoke" button type="button" class="btn btn-primary">Vanilla Latte</button> </a>
-          <a id="navCoke" button type="button" class="btn btn-primary">Latte</button> </a>
-          <a id="navCoke" button type="button" class="btn btn-primary">Espresso</button> </a>
-          <!-- END OF CHOOSE SKINS -->
-          <div class="model3D">
-            <x3d id="model">
-              <scene>
-                <inline namespacename="model" mapDEFToID="true" onclick="animateModel()" url="assets/x3d/pepper.x3d" ></inline>
-              </scene>
-            </x3d>
-          </div>
-        </div>
-      </div>
-      <!-- END OF MODEL 3 -->
-      </div>
       <!-- Where the gallery is held -->
       <div class="col-sm-3">
         <div class="card text-left">
           <div class="card-header gallery-header">
-          <ul class="nav nav-tabs card-header-tabs">
-          <li class="nav-item">
-                  <a class="nav-link active" href="#">Gallery</a>
-          </li>
-          </ul>
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Gallery</a>
+              </li>
+            </ul>
           </div>
           <div class="card-body">
-              <div class="card-title title_gallery drinksText"></div>
-              <div class="gallery" id="gallery"></div>
-              <div class="card-text description_gallery drinksText"></div>
+            <div class="card-title title_gallery drinksText"></div>
+            <div class="gallery" id="gallery"></div>
+            <div class="card-text description_gallery drinksText"></div>
           </div>
         </div>
       </div>
@@ -224,19 +232,19 @@
     <br>
 
 
-    <div class="row"> <!-- This will hold the model interactions -->
-    <!-- CAMERA VIEWS -->
+    <div id="interaction" class="row"> <!-- This will hold the model interactions -->
+      <!-- CAMERA VIEWS -->
       <div class="col-sm-3">
         <div class="card-body">
           <h4 class="card-title">Camera Views</h4>
           <!-- TODO: MAKE THE BELOW BUTTONS FUNCTIONAL -->
           <!-- The X3D model file will contain the camera locations -->
           <button type="button" class="btn btn-primary" onclick="cameraFront();">Front</button>
-          <button type="button" class="btn btn-secondary" onclick="cameraBack();">Back</button>
-          <button type="button" class="btn btn-success" onclick="cameraLeft();">Left</button>
-          <button type="button" class="btn btn-success" onclick="cameraRight();">Right</button>
-          <button type="button" class="btn btn-success" onclick="cameraTop();">Top</button>
-          <button type="button" class="btn btn-success" onclick="cameraBottom();">Bottom</button>
+          <button type="button" class="btn btn-primary" onclick="cameraBack();">Back</button>
+          <button type="button" class="btn btn-primary" onclick="cameraLeft();">Left</button>
+          <button type="button" class="btn btn-primary" onclick="cameraRight();">Right</button>
+          <button type="button" class="btn btn-primary" onclick="cameraTop();">Top</button>
+          <button type="button" class="btn btn-primary" onclick="cameraBottom();">Bottom</button>
           <br>
           Use the buttons to manipulate the camera.
         </div>
@@ -244,109 +252,113 @@
       <!-- END OF CAMERA VIEWS -->
       <!-- ANIMATION CONTROLS -->
       <div class="col-sm-3">
-      <div class="card-body">
-      <h4 class="card-title">Animation</h4>
-      <button type="button" class="btn btn-primary" onclick="spin();">RotX</button>
-      <button type="button" class="btn btn-primary" onclick="spin();">RotY</button>
-      <button type="button" class="btn btn-primary" onclick="spin();">RotZ</button>
-          <button type="button" class="btn btn-secondary btn-responsive" onclick="stopRotation();">Stop Rotation</button>
-          <button type="button" class="btn btn-success">Can</button>
+        <div class="card-body">
+          <h4 class="card-title">Animation</h4>
+          <button type="button" class="btn btn-primary" onclick="spin();">RotX</button>
+          <button type="button" class="btn btn-primary" onclick="spin();">RotY</button>
+          <button type="button" class="btn btn-primary" onclick="spin();">RotZ</button>
+          <button type="button" class="btn btn-primary" onclick="stopRotation();">Stop Rotation</button>
           <br>
           Use the buttons to animate the camera.
-      </div>
+        </div>
       </div>
       <!-- END OF ANIMATION CONTROLS -->
       <!-- RENDERER CONTROLS -->
       <div class="col-sm-3">
-      <div class="card-body">
-      <h4 class="card-title">Render</h4>
-      <button type="button" class="btn btn-primary" onclick="wireframe();">Wireframe</button>
-          <button type="button" class="btn btn-secondary">Toggle Headlight</button>
-          <button type="button" class="btn btn-success">Toggle Scene Lights</button>
+        <div class="card-body">
+          <h4 class="card-title">Render</h4>
+          <button type="button" class="btn btn-primary" onclick="wireframe();">Wireframe</button>
+          <button type="button" class="btn btn-primary" onclick="headlight();">Toggle Headlight </button>
+          <button type="button" class="btn btn-primary">Toggle Scene Lights</button>
           <br>
           Use the buttons to change the rendering options.
         </div>
       </div>
       <!-- END OF RENDERER CONTROLS -->
-      </div>
-      <!-- END OF ROW -->
+    </div>
+    <!-- END OF ROW -->
 
-      <!-- START OF FINAL ROW -->
-      <br>
-      <div class="row"> <!-- This will hold the model description -->
-        <div class="col-sm-6">
-          <div class="card-body">
-            <h4 class="card-title">Costa In Stores</h4>
-            <p class="card-text">Costa offers a wide range of drinks including Espressos and Americanos</p>
-            <button type="button" class="btn btn-success">Visit the costa store</button>
-          </div>
+    <!-- START OF FINAL ROW -->
+    <br>
+    <div class="row"> <!-- This will hold the model description -->
+      <div class="col-sm-6">
+        <div class="card-body">
+          <h4 class="card-title">Costa In Stores</h4>
+          <p class="card-text">Costa offers a wide range of drinks including Espressos and Americanos</p>
+          <a href='https://www.costa.co.uk/' type="button" class="btn btn-success">Visit the costa store</a>
         </div>
       </div>
-      <br>
     </div>
-<!-- END OF FINAL ROW -->
+    <br>
+  </div>
+  <!-- END OF FINAL ROW -->
 
-    <!-- END OF MODELS -->
+  <!-- END OF MODELS -->
 
-    <!-- START OF STATEMENT OF ORIGINALITY -->
-    <div id="originality">
-      "These web pages are submitted as part requirement for the degree of Computer Science (BSc) at the University of
-      Sussex.
-      They are the product of my own labour except where indicated in the web page content.
-      These web pages or contents may be freely copied and distributed provided the source is acknowledged".
-    </div>
-    <!-- END OF STATEMENT OF ORIGINALITY -->
+  <!-- START OF STATEMENT OF ORIGINALITY -->
+  <div id="originality">
+    "These web pages are submitted as part requirement for the degree of Computer Science (BSc) at the University of
+    Sussex.
+    They are the product of my own labour except where indicated in the web page content.
+    These web pages or contents may be freely copied and distributed provided the source is acknowledged".
+  </div>
+  <!-- END OF STATEMENT OF ORIGINALITY -->
 
 
-    <!-- ACKNOWLEDGEMENTS -->
-    <div id="acknowledgements">
-      Acknowledgements to X and Y.
-</div>
-    <!-- END OF ACKNOWLEDGEMENTS -->
+  <!-- ACKNOWLEDGEMENTS -->
+  <div id="acknowledgements">
+    Acknowledgements to X and Y.
+  </div>
+  <!-- END OF ACKNOWLEDGEMENTS -->
 
-    <!-- START OF REFERENCES -->
-    <div id="references">
-      Reference Sources:
-      - Example 1
-      - Example 2
-      - Example 3
-    </div>
-    <!-- END OF REFERENCES -->
+  <!-- START OF REFERENCES -->
+  <div id="references">
+    Reference Sources:
+    - Example 1
+    - Example 2
+    - Example 3
+  </div>
+  <!-- END OF REFERENCES -->
 
-    <!-- START OF FOOTER -->
-    <!-- TODO: FOOTER BUTTONS NOT WORKING, UNKNOWN CAUSE -->
-    <nav class="navbar navbar-expand-sm footer">
-      <div class="container-fluid">
+
+
+  <!-- START OF FOOTER -->
+  <nav class="navbar navbar-expand-sm footer sticky">
+    <div class="container-fluid">
       <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
         <li class="nav-item">
           <!-- TODO Put the below styling into CSS rather than here -->
-          <a id="originality" href="#" data-content="There are three X3D models: Coke, Sprite and Pepper" data-placement="bottom" title="X3D Models" style="color:#ffffff;">Statement of Originality |</a>
-          </li>
-          <li class="nav-item">
-          <a id="acknowledgements" href="#" style="color:#ffffff;">Acknowledgements | </a>
-          </li>
-          <li class="nav-item">
-          <a id="references" href="#" style="color:#ffffff;">References | </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- END OF FOOTER -->
+          <a id="navOriginality" href="#" style="color:#ffffff;">Statement of Originality | </a>
+        </li>
+        <a id="navAcknowledgements" href="#" style="color:#ffffff;">| Acknowledgements | </a>
+        </ll>
+        <li class="nav-item">
+          <a id="navReferences" href="#" style="color:#ffffff;">| References |</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/Bread02/Web3DFinalProject" style="color:#ffffff;">| Github Link </a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- END OF FOOTER -->
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-     <!-- <script src="application/js/popper.min.js" crossorigin="anonymous"></script> -->
-    <script src="application/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <!-- <script src="application/js/popper.min.js" crossorigin="anonymous"></script> -->
+  <script src="application/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="application/js/all.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="application/js/custom.js" crossorigin="anonymous"></script>
-    <script src="application/js/gallery_generator.js"></script>
-    <script src="application/js/swap_restyle.js"></script>
-    <script src='application/js/x3dom.js'></script>
-    <script src="application/js/modelInteractions.js"></script>
-    <script src="application/js/getJsonData.js"></script>
+  <script type="text/javascript" src="application/js/all.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="application/js/custom.js" crossorigin="anonymous"></script>
+  <script src="application/js/gallery_generator.js"></script>
+  <script src="application/js/swap_restyle.js"></script>
+  <script src='application/js/x3dom.js'></script>
+  <script src="application/js/modelInteractions.js"></script>
+  <script src="application/js/getJsonData.js"></script>
 
-    <!-- Try to put this in controller if we can? -->
+  <!-- Try to put this in controller if we can? -->
 
 </body>
 

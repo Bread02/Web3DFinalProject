@@ -65,7 +65,7 @@ $(document).ready(function() {
 			$('#references').hide();
 		});
 		
-		$('#originality').click(function(){
+		$('#navOriginality').click(function(){
 			$('#home').hide();
 			$('#about').hide();
 			$('#models').hide();
@@ -78,10 +78,10 @@ $(document).ready(function() {
 			$('#references').hide();
 		});
 		
-		$('#acknowledgements').click(function(){
+		$('#navAcknowledgements').click(function(){
 			$('#home').hide();
 			$('#about').hide();
-			$('#models').show();
+			$('#models').hide();
 			$('#interaction').hide(); 
 			$('#cokeDescription').hide();
 			$('#spriteDescription').hide(); 
@@ -91,7 +91,7 @@ $(document).ready(function() {
 			$('#references').hide();
 		});
 		
-		$('#references').click(function(){
+		$('#navReferences').click(function(){
 			$('#home').hide();
 			$('#about').hide();
 			$('#models').hide();
