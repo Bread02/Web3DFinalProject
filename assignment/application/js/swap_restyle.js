@@ -17,7 +17,10 @@ $(document).ready(function() {
 		$('#acknowledgements').hide();
 		$('#references').hide();
 
-		$('#cokeDescription').hide();
+		$('#cup').show();
+		$('#can').hide();
+		$('#bottle').hide();
+
 		$('#spriteDescription').hide(); 
 		$('#pepperDescription').hide(); 
 
@@ -52,6 +55,7 @@ $(document).ready(function() {
 			$('#home').hide();
 			$('#about').hide();
 			$('#models').show();
+			$('#cup').show();
 			$('#interaction').show(); 
 			$('#cokeDescription').show();
 			$('#spriteDescription').hide(); 
@@ -99,34 +103,35 @@ $(document).ready(function() {
 			$('#acknowledgements').hide();
 			$('#references').show();
 		});
+		
 	}
 
 	function selectModel() {
 
-		$('#navCoke').click(function(){
-			$('#coke').show();
-			$('#sprite').hide();
-			$('#pepper').hide();
+		$('#navCup').click(function(){
+			$('#cup').show();
+			$('#bottle').hide();
+			$('#can').hide();
 			$('#interaction').show(); 
 			$('#cokeDescription').show();
 			$('#spriteDescription').hide(); 
 			$('#pepperDescription').hide(); 
 		});
 
-		$('#navSprite').click(function(){
-			$('#coke').hide();
-			$('#sprite').show();
-			$('#pepper').hide();
+		$('#navBottle').click(function(){
+			$('#can').hide();
+			$('#bottle').show();
+			$('#cup').hide();
 			$('#interaction').show(); 
 			$('#cokeDescription').hide();
 			$('#spriteDescription').show();
 			$('#pepperDescription').hide();  	  	  
 		});
 
-		$('#navPepper').click(function(){
-			$('#coke').hide();
-			$('#sprite').hide();
-			$('#pepper').show();
+		$('#navCan').click(function(){
+			$('#cup').hide();
+			$('#bottle').hide();
+			$('#can').show();
 			$('#interaction').show(); 
 			$('#cokeDescription').hide();
 			$('#spriteDescription').hide(); 

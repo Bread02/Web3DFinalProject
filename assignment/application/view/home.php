@@ -123,17 +123,30 @@
       <div class="col-sm-9">
         <div class="card text-left">
         </div>
+        <!-- TODO Nav Menu to choose models -->
+        <div class="card text-left">
+        <div class="card-body">
+          <h2 class="card-title">Models</h2>
+        <a id="navCup" button type="button" class="btn btn-primary">Cup</button> </a>
+          <a id="navBottle" button type="button" class="btn btn-secondary">Bottle</button> </a>
+          <a id="navCan" button type="button" class="btn btn-success">Can</button> </a>
+          <br>
+          </div>
+          </div>
+
+          <!-- END OF NAV MENU TO CHOOSE MODELS -->
 
         <!-- MODEL 1 -->
-        <div id="coke">
+        <div id="cup">
         <!-- The 3D Model Card -->
         <div class="card-body">
-          <h4 class="card-title"> Coca Cola X3D Model</h4>
-          <!-- TODO Nav Menu to choose models -->
-          <a id="navCoke" button type="button" class="btn btn-primary">Cup</button> </a>
-          <a id="navSprite" button type="button" class="btn btn-secondary">Bottle</button> </a>
-          <a id="navPepper" button type="button" class="btn btn-success">Can</button> </a>
-          <!-- END OF NAV MENU TO CHOOSE MODELS -->
+          <h3 class="card-title"> Cup X3D Model</h3>
+          <br>
+
+          <!-- CHOOSE SKINS -->
+          <h4 class="card-title"> Skins</h4>
+          <a id="navCoke" button type="button" class="btn btn-primary">Costa Cup</button> </a>
+          <!-- END OF CHOOSE SKINS -->
           <div class="model3D">
             <x3d id="model">
               <scene>
@@ -146,15 +159,16 @@
       <!-- END OF MODEL 1 -->
 
       <!-- MODEL 2 -->
-      <div id="sprite" style="display:none;">
+      <div id="bottle" style="display:none;">
         <!-- The 3D Model Card -->
         <div class="card-body">
-          <h4 class="card-title"> Sprite X3D Model</h4>
-          <!-- TODO Nav Menu to choose models -->
-          <button type="button" class="btn btn-primary">Cup</button>
-          <button type="button" class="btn btn-secondary">Bottle</button>
-          <button type="button" class="btn btn-success">Can</button>
-          <!-- END OF NAV MENU TO CHOOSE MODELS -->
+          <h3 class="card-title"> Bottle X3D Model</h3>
+          <br>
+                    <!-- CHOOSE SKINS -->
+                    <h4 class="card-title"> Skins</h4>
+          <a id="navCoke" button type="button" class="btn btn-primary">Frappe Caramel</button> </a>
+          <a id="navCoke" button type="button" class="btn btn-primary">Frappe Brownie</button> </a>
+          <!-- END OF CHOOSE SKINS -->
           <div class="model3D">
             <x3d id="model">
               <scene>
@@ -167,15 +181,17 @@
       <!-- END OF MODEL 2-->
 
       <!-- MODEL 3 -->
-      <div id="pepper" style="display:none;">
+      <div id="can" style="display:none;">
         <!-- The 3D Model Card -->
         <div class="card-body">
-          <h4 class="card-title"> Pepper X3D Model</h4>
-          <!-- TODO Nav Menu to choose models -->
-          <button type="button" class="btn btn-primary">Cup</button>
-          <button type="button" class="btn btn-secondary">Bottle</button>
-          <button type="button" class="btn btn-success">Can</button>
-          <!-- END OF NAV MENU TO CHOOSE MODELS -->
+          <h3 class="card-title"> Can X3D Model</h3>
+          <br>
+                    <!-- CHOOSE SKINS -->
+                    <h4 class="card-title"> Skins</h4>
+          <a id="navCoke" button type="button" class="btn btn-primary">Vanilla Latte</button> </a>
+          <a id="navCoke" button type="button" class="btn btn-primary">Latte</button> </a>
+          <a id="navCoke" button type="button" class="btn btn-primary">Espresso</button> </a>
+          <!-- END OF CHOOSE SKINS -->
           <div class="model3D">
             <x3d id="model">
               <scene>
@@ -231,7 +247,9 @@
       <div class="card-body">
       <h4 class="card-title">Animation</h4>
       <button type="button" class="btn btn-primary" onclick="spin();">RotX</button>
-          <button type="button" class="btn btn-secondary btn-responsive">Bottle</button>
+      <button type="button" class="btn btn-primary" onclick="spin();">RotY</button>
+      <button type="button" class="btn btn-primary" onclick="spin();">RotZ</button>
+          <button type="button" class="btn btn-secondary btn-responsive" onclick="stopRotation();">Stop Rotation</button>
           <button type="button" class="btn btn-success">Can</button>
           <br>
           Use the buttons to animate the camera.
@@ -243,8 +261,8 @@
       <div class="card-body">
       <h4 class="card-title">Render</h4>
       <button type="button" class="btn btn-primary" onclick="wireframe();">Wireframe</button>
-          <button type="button" class="btn btn-secondary">Bottle</button>
-          <button type="button" class="btn btn-success">Can</button>
+          <button type="button" class="btn btn-secondary">Toggle Headlight</button>
+          <button type="button" class="btn btn-success">Toggle Scene Lights</button>
           <br>
           Use the buttons to change the rendering options.
         </div>
