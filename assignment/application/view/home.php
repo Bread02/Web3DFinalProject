@@ -178,7 +178,7 @@
                 <x3d id="modelTwo">
                   <scene>
                     <inline namespacename="modelTwo" mapDEFToID="true" onclick="animateModel()"
-                      url="assets/x3d/CostaCupV2.x3d"></inline>
+                      url="assets/x3d/sprite.x3d"></inline>
                   </scene>
                 </x3d>
               </div>
@@ -203,7 +203,7 @@
                 <x3d id="modelThree">
                   <scene>
                     <inline namespacename="modelThree" mapDEFToID="true" onclick="animateModel()"
-                      url="assets/x3d/pepper.x3d"></inline>
+                      url="assets/x3d/Costa_Can.x3d"></inline>
                   </scene>
                 </x3d>
               </div>
