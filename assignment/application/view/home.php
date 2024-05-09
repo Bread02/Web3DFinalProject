@@ -98,20 +98,25 @@
       <div class="col-sm-4">
         <div class="card-body">
           <img src="assets/images/front_page_images/FrontImage2.png" alt="Image of Costa Coffee Cup">
-          <h4 class="card-title"> Coffee In Store</h4>
-          <p class="card-text">In store you can buy coffee.</p>
+          <div id="title_left"></div>
+          <div id="subTitle_left"></div>
+          <div id="description_left"></div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card-body">
           <img src="assets/images/front_page_images/FrontImage3.png" alt="Image of Costa Coffee Milkshake">
-          <h4 class="card-title">Costa Frappe Bottle</h4>
+          <div id="title_center"></div>
+          <div id="subTitle_center"></div>
+          <div id="description_center"></div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card-body">
           <img src="assets/images/front_page_images/FrontImage4.png" alt="Image of Costa Coffee Canned">
-          <h4 class="card-title">Costa in a Can</h4>
+          <div id="title_right"></div>
+          <div id="subTitle_right"></div>
+          <div id="description_right"></div>
         </div>
       </div>
     </div>
@@ -178,7 +183,7 @@
                 <x3d id="modelTwo">
                   <scene>
                     <inline namespacename="modelTwo" mapDEFToID="true" onclick="animateModel()"
-                      url="assets/x3d/sprite.x3d"></inline>
+                      url="assets/x3d/Costa_Bottle.x3d"></inline>
                   </scene>
                 </x3d>
               </div>
