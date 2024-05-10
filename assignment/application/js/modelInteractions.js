@@ -116,30 +116,6 @@ function cameraTop()
 	document.getElementById('modelThree__CameraTop').setAttribute('bind', 'true');
 }
 
-// CHANGING TEXTURE REGION
-
-function changeTextureCaramel()
-{
-	document.getElementById('modelTwo__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.png');
-}
-
-function changeTextureBrownie()
-{
-	document.getElementById('modelTwo__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_BrownieMap.png');
-}
-
-function changeTextureVanillaLatte()
-{
-	document.getElementById('modelThree__ImgTexture').setAttribute("url", 'maps/CostaCan_VanillaLatteMap.png');
-}
-
-function changeTextureLatte()
-{
-	document.getElementById('modelThree__ImgTexture').setAttribute("url", 'maps/CostaCan_LatteMap.png');
-}
-
-// END OF CHANGING TEXTURE REGION
-
 function cameraBottom()
 {
 	document.getElementById('modelOne__CameraBottom').setAttribute('bind', 'true');
@@ -148,3 +124,82 @@ function cameraBottom()
 	
 	document.getElementById('modelThree__CameraBottom').setAttribute('bind', 'true');
 }
+
+// CHANGING TEXTURE REGION
+
+function changeTextureCaramel()
+{
+	document.getElementById('modelTwo__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.png');
+	
+	// button element
+    changeBottleNavClassesToNotActive()
+	var element = document.querySelector("#caramelButton");
+	
+	// replace primary with success
+	element.classList.remove("btn-primary");
+    element.classList.add("btn-success");
+}
+
+function changeTextureBrownie()
+{
+	document.getElementById('modelTwo__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_BrownieMap.png');
+	
+	// button element
+    changeBottleNavClassesToNotActive()
+	var element = document.querySelector("#brownieButton");
+	
+	// replace primary with success
+	element.classList.remove("btn-primary");
+    element.classList.add("btn-success");
+}
+
+function changeTextureVanillaLatte()
+{
+	document.getElementById('modelThree__ImgTexture').setAttribute("url", 'maps/CostaCan_VanillaLatteMap.png');
+	
+		// button element
+    changeCanNavClassesToNotActive()
+	var element = document.querySelector("#vanillaLatteButton");
+	
+	// replace primary with success
+	element.classList.remove("btn-primary");
+    element.classList.add("btn-success");
+}
+
+function changeTextureLatte()
+{
+	document.getElementById('modelThree__ImgTexture').setAttribute("url", 'maps/CostaCan_LatteMap.png');
+	
+			// button element
+    changeCanNavClassesToNotActive()
+	var element = document.querySelector("#latteButton");
+	
+	// replace primary with success
+	element.classList.remove("btn-primary");
+    element.classList.add("btn-success");
+}
+
+// END OF CHANGING TEXTURE REGION
+
+function changeBottleNavClassesToNotActive()
+{
+  var element = document.querySelector("#caramelButton");
+  element.classList.remove("btn-success");
+  element.classList.add("btn-primary");
+  
+  var element = document.querySelector("#brownieButton");
+  element.classList.remove("btn-success");
+  element.classList.add("btn-primary");
+  }
+  
+  function changeCanNavClassesToNotActive()
+{
+  var element = document.querySelector("#latteButton");
+  element.classList.remove("btn-success");
+  element.classList.add("btn-primary");
+  
+  var element = document.querySelector("#vanillaLatteButton");
+  element.classList.remove("btn-success");
+  element.classList.add("btn-primary");
+  }
+  

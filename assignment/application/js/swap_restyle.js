@@ -35,7 +35,7 @@ $(document).ready(function() {
 			$('#pepperDescription').hide(); 
 			$('#originality').hide();
 			$('#acknowledgements').hide();
-			$('#references').hide();			
+			$('#references').hide();		
 		});
 
 		$('#navAbout').click(function(){
@@ -63,6 +63,7 @@ $(document).ready(function() {
 			$('#originality').hide();
 			$('#acknowledgements').hide();
 			$('#references').hide();
+			
 		});
 		
 		$('#navOriginality').click(function(){
@@ -174,3 +175,39 @@ function changeBack() {
 	document.getElementById('footerColor').style.backgroundColor = 'rgba(175,0,0,1)';
 }
 
+function changeNavClassesToNotActive()
+{
+  var element = document.querySelector("#navHome");
+  element.classList.remove("active");
+  
+    var element = document.querySelector("#navAbout");
+  element.classList.remove("active");
+  
+    var element = document.querySelector("#navModels");
+  element.classList.remove("active");
+}
+
+function changeHomeClassToActive()
+{
+  changeNavClassesToNotActive();
+  
+  var element = document.querySelector("#navHome");
+  element.classList.add("active");
+}
+
+function changeAboutClassToActive()
+{
+  changeNavClassesToNotActive();
+  
+  var element = document.querySelector("#navAbout");
+  element.classList.add("active");
+}
+
+
+function changeModelsClassToActive()
+{
+  changeNavClassesToNotActive();
+  
+  var element = document.querySelector("#navModels");
+  element.classList.add("active");
+}

@@ -48,15 +48,15 @@
         <!-- Links for navbar -->
         <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
           <li class="nav-item">
-            <a class="nav-link active" href="index.php">Home</a>
+            <a id="navHome" class="nav-link active" href="#" onclick="changeHomeClassToActive()">Home</a>
           </li>
           <li class="nav-item">
-            <a id="navAbout" class="nav-link" href="#" data-bs-toggle="popover" data-bs-trigger="hover"
+            <a id="navAbout" class="nav-link" onclick="changeAboutClassToActive()" href="#" data-bs-toggle="popover" data-bs-trigger="hover"
               data-bs-placement="bottom" title="About Web 3D Applications"
               data-bs-content="3D Apps is a final year and postgraduate module ...">About</a>
           </li>
           <li class="nav-item">
-            <a id="navModels" class="nav-link" href="#" data-bs-toggle="popover" data-bs-trigger="hover"
+            <a id="navModels" class="nav-link" onclick="changeModelsClassToActive()" href="#" data-bs-toggle="popover" data-bs-trigger="hover"
               data-placement="bottom" title="X3D Models"
               data-content="There are three X3D models: Coke, Sprite and Pepper">Models</a>
           </li>
@@ -176,9 +176,8 @@
               <br>
               <!-- CHOOSE SKINS -->
               <h4 class="card-title"> Skins</h4>
-              <button type="button" class="btn btn-primary" onclick="changeTextureCaramel()">Frappe Caramel</button>
-              <button type="button" class="btn btn-primary" onclick="changeTextureBrownie()">Frappe Brownie</button>
-              <button type="button" class="btn btn-primary" onclick="changeTextureBrownie()">Smooth Coffee</button>
+              <a id="caramelButton" class="btn btn-success" onclick="changeTextureCaramel()">Frappe Caramel</button></a>
+              <a id="brownieButton" class="btn btn-primary" onclick="changeTextureBrownie()">Frappe Brownie</button></a>
               <!-- END OF CHOOSE SKINS -->
               <div class="model3D">
                 <x3d id="modelTwo">
@@ -201,9 +200,8 @@
               <br>
               <!-- CHOOSE SKINS -->
               <h4 class="card-title"> Skins</h4>
-              <button type="button" class="btn btn-primary" onclick="changeTextureLatte()">Latte</button>
-              <button type="button" class="btn btn-primary" onclick="changeTextureVanillaLatte()">Vanilla Latte</button>
-              <button type="button" class="btn btn-primary">Espresso</button>
+              <a id="vanillaLatteButton" class="btn btn-primary" onclick="changeTextureVanillaLatte()">Vanilla Latte</a>
+              <a id="latteButton" class="btn btn-primary" onclick="changeTextureLatte()">Latte</a>
               <!-- END OF CHOOSE SKINS -->
               <div class="model3D">
                 <x3d id="modelThree">
