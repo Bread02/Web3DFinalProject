@@ -176,8 +176,9 @@
               <br>
               <!-- CHOOSE SKINS -->
               <h4 class="card-title"> Skins</h4>
-              <a id="navCoke" button type="button" class="btn btn-primary">Frappe Caramel</button> </a>
-              <a id="navCoke" button type="button" class="btn btn-primary">Frappe Brownie</button> </a>
+              <button type="button" class="btn btn-primary" onclick="changeTextureCaramel()">Frappe Caramel</button>
+              <button type="button" class="btn btn-primary" onclick="changeTextureBrownie()">Frappe Brownie</button>
+              <button type="button" class="btn btn-primary" onclick="changeTextureBrownie()">Smooth Coffee</button>
               <!-- END OF CHOOSE SKINS -->
               <div class="model3D">
                 <x3d id="modelTwo">
@@ -200,9 +201,9 @@
               <br>
               <!-- CHOOSE SKINS -->
               <h4 class="card-title"> Skins</h4>
-              <a id="navCoke" button type="button" class="btn btn-primary">Vanilla Latte</button> </a>
-              <a id="navCoke" button type="button" class="btn btn-primary">Latte</button> </a>
-              <a id="navCoke" button type="button" class="btn btn-primary">Espresso</button> </a>
+              <button type="button" class="btn btn-primary" onclick="changeTextureLatte()">Latte</button>
+              <button type="button" class="btn btn-primary" onclick="changeTextureVanillaLatte()">Vanilla Latte</button>
+              <button type="button" class="btn btn-primary">Espresso</button>
               <!-- END OF CHOOSE SKINS -->
               <div class="model3D">
                 <x3d id="modelThree">

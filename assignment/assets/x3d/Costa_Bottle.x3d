@@ -92,7 +92,7 @@
 					ambientIntensity="0"
 					specularColor="0.200000002980232 0.200000002980232 0.200000002980232"
 					shininess="0.491200000047684" />
-				<ImageTexture
+				<ImageTexture DEF='ImgTexture'
 					url="maps/Costa_Bottle_CaramelMap.png" />
 			</Appearance>
 			<IndexedFaceSet DEF="Bottle-FACES"

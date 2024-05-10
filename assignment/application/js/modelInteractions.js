@@ -116,6 +116,30 @@ function cameraTop()
 	document.getElementById('modelThree__CameraTop').setAttribute('bind', 'true');
 }
 
+// CHANGING TEXTURE REGION
+
+function changeTextureCaramel()
+{
+	document.getElementById('modelTwo__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.png');
+}
+
+function changeTextureBrownie()
+{
+	document.getElementById('modelTwo__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_BrownieMap.png');
+}
+
+function changeTextureVanillaLatte()
+{
+	document.getElementById('modelThree__ImgTexture').setAttribute("url", 'maps/CostaCan_VanillaLatteMap.png');
+}
+
+function changeTextureLatte()
+{
+	document.getElementById('modelThree__ImgTexture').setAttribute("url", 'maps/CostaCan_LatteMap.png');
+}
+
+// END OF CHANGING TEXTURE REGION
+
 function cameraBottom()
 {
 	document.getElementById('modelOne__CameraBottom').setAttribute('bind', 'true');
