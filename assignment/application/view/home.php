@@ -353,8 +353,9 @@
   <!-- END OF MODALS -->
 
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
+ <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script> -->
+  <script src="application/js/jquery-3.4.1.js"></script>
   <script src="application/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> <!-- popper is bundled in this -->
 
   <script type="text/javascript" src="application/js/all.js" crossorigin="anonymous"></script>
@@ -364,6 +365,7 @@
   <script src='application/js/x3dom.js'></script>
   <script src="application/js/modelInteractions.js"></script>
   <script src="application/js/getJsonData.js"></script>
+  <!-- <script src="application/js/jquery.fancybox.min.js"></script> -->
 
   <!-- Try to put this in controller if we can? -->
 
