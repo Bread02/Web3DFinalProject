@@ -3,32 +3,55 @@
 
 var spinning = false;
 
-function spin()
+function spinX()
 {
 	spinning = !spinning;
-	document.getElementById('modelOne__RotationTimer').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelOne__RotationTimerX').setAttribute('enabled', spinning.toString());
 	
-	document.getElementById('modelTwo__RotationTimer').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelTwo__RotationTimerX').setAttribute('enabled', spinning.toString());
 
+	document.getElementById('modelThree__RotationTimerX').setAttribute('enabled', spinning.toString());
 }
 
 function stopRotation()
 {
 	spinning = false;
-	document.getElementById('modelOne__RotationTimer').setAttribute('enabled', spinning.toString());
-	
-	document.getElementById('modelTwo__RotationTimer').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelOne__RotationTimerX').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelOne__RotationTimerY').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelOne__RotationTimerZ').setAttribute('enabled', spinning.toString());
 
-	document.getElementById('modelThree__RotationTimer').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelTwo__RotationTimerX').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelTwo__RotationTimerY').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelTwo__RotationTimerZ').setAttribute('enabled', spinning.toString());
 
+	document.getElementById('modelThree__RotationTimerX').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelThree__RotationTimerY').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelThree__RotationTimerZ').setAttribute('enabled', spinning.toString());
+
+}
+
+function spinY()
+{
+	spinning = !spinning;
+	document.getElementById('modelOne__RotationTimerY').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelTwo__RotationTimerY').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelThree__RotationTimerY').setAttribute('enabled', spinning.toString());
+}
+
+function spinZ()
+{
+	spinning = !spinning;
+	document.getElementById('modelOne__RotationTimerZ').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelTwo__RotationTimerZ').setAttribute('enabled', spinning.toString());
+	document.getElementById('modelThree__RotationTimerZ').setAttribute('enabled', spinning.toString());
 }
 
 function animateModel()
 {
-    if(document.getElementById('modelOne__RotationTimer').getAttribute('enabled')!= 'true')
-        document.getElementById('modelOne__RotationTimer').setAttribute('enabled', 'true');
+    if(document.getElementById('modelOne__RotationTimerX').getAttribute('enabled')!= 'true')
+        document.getElementById('modelOne__RotationTimerX').setAttribute('enabled', 'true');
     else
-        document.getElementById('modelOne__RotationTimer').setAttribute('enabled', 'false');
+        document.getElementById('modelOne__RotationTimerX').setAttribute('enabled', 'false');
 	
 	
 	    if(document.getElementById('modelTwo__RotationTimer').getAttribute('enabled')!= 'true')
@@ -180,6 +203,23 @@ function changeTextureLatte()
 }
 
 // END OF CHANGING TEXTURE REGION
+
+
+function changeModelsClassesToNotActive()
+{
+  var element = document.querySelector("#navCup");
+  element.classList.remove("btn-success");
+  element.classList.add("btn-primary");
+  
+  var element = document.querySelector("#navBottle");
+  element.classList.remove("btn-success");
+  element.classList.add("btn-primary");
+  
+    var element = document.querySelector("#navCan");
+  element.classList.remove("btn-success");
+  element.classList.add("btn-primary");
+  }
+  
 
 function changeBottleNavClassesToNotActive()
 {

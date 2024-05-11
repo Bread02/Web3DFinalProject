@@ -135,9 +135,9 @@
         <div class="card text-left">
           <div class="card-body">
             <h2 class="card-title">Models</h2>
-            <a id="navCup" button type="button" class="btn btn-primary">Cup</button> </a>
-            <a id="navBottle" button type="button" class="btn btn-secondary">Bottle</button> </a>
-            <a id="navCan" button type="button" class="btn btn-success">Can</button> </a>
+            <a id="navCup" button type="button" class="btn btn-success">Cup</button> </a>
+            <a id="navBottle" button type="button" class="btn btn-primary">Bottle</button> </a>
+            <a id="navCan" button type="button" class="btn btn-primary">Can</button> </a>
             <br>
           </div>
         </div>
@@ -153,7 +153,7 @@
               <br>
               <!-- CHOOSE SKINS -->
               <h4 class="card-title"> Skins</h4>
-              <a id="navCoke" button type="button" class="btn btn-primary">Costa Cup</button> </a>
+              <a id="navCoke" button type="button" class="btn btn-success">Costa Cup</button> </a>
               <!-- END OF CHOOSE SKINS -->
               <div class="model3D">
                 <x3d id="modelOne">
@@ -200,7 +200,7 @@
               <br>
               <!-- CHOOSE SKINS -->
               <h4 class="card-title"> Skins</h4>
-              <a id="vanillaLatteButton" class="btn btn-primary" onclick="changeTextureVanillaLatte()">Vanilla Latte</a>
+              <a id="vanillaLatteButton" class="btn btn-success" onclick="changeTextureVanillaLatte()">Vanilla Latte</a>
               <a id="latteButton" class="btn btn-primary" onclick="changeTextureLatte()">Latte</a>
               <!-- END OF CHOOSE SKINS -->
               <div class="model3D">
@@ -261,9 +261,9 @@
       <div class="col-sm-3">
         <div class="card-body">
           <h4 class="card-title">Animation</h4>
-          <button type="button" class="btn btn-primary" onclick="spin();">RotX</button>
-          <button type="button" class="btn btn-primary" onclick="spin();">RotY</button>
-          <button type="button" class="btn btn-primary" onclick="spin();">RotZ</button>
+          <button type="button" class="btn btn-primary" onclick="spinX();">RotX</button>
+          <button type="button" class="btn btn-primary" onclick="spinY();">RotY</button>
+          <button type="button" class="btn btn-primary" onclick="spinZ();">RotZ</button>
           <button type="button" class="btn btn-primary" onclick="stopRotation();">Stop Rotation</button>
           <br>
           Use the buttons to animate the camera.

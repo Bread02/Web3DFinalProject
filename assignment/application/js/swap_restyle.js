@@ -117,6 +117,11 @@ $(document).ready(function() {
 			$('#cokeDescription').show();
 			$('#spriteDescription').hide(); 
 			$('#pepperDescription').hide(); 
+			
+			changeModelsClassesToNotActive();
+			var element = document.querySelector("#navCup");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");
 		});
 
 		$('#navBottle').click(function(){
@@ -126,7 +131,12 @@ $(document).ready(function() {
 			$('#interaction').show(); 
 			$('#cokeDescription').hide();
 			$('#spriteDescription').show();
-			$('#pepperDescription').hide();  	  	  
+			$('#pepperDescription').hide();  
+
+			changeModelsClassesToNotActive();
+			var element = document.querySelector("#navBottle");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");			
 		});
 
 		$('#navCan').click(function(){
@@ -136,7 +146,12 @@ $(document).ready(function() {
 			$('#interaction').show(); 
 			$('#cokeDescription').hide();
 			$('#spriteDescription').hide(); 
-			$('#pepperDescription').show(); 	   
+			$('#pepperDescription').show(); 
+
+			changeModelsClassesToNotActive();
+			var element = document.querySelector("#navCan");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");				
 		});
 	}
 
