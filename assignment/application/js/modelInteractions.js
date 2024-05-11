@@ -96,6 +96,22 @@ function toggleLights()
 	document.getElementById('modelOne__Light_005').setAttribute('intensity', '1');
 	document.getElementById('modelOne__Light_006').setAttribute('intensity', '1');
 	
+	document.getElementById('modelTwo__Light').setAttribute('intensity', '1');
+	document.getElementById('modelTwo__Light_001').setAttribute('intensity', '1');
+	document.getElementById('modelTwo__Light_002').setAttribute('intensity', '1');
+	document.getElementById('modelTwo__Light_003').setAttribute('intensity', '1');
+	document.getElementById('modelTwo__Light_004').setAttribute('intensity', '1');
+	document.getElementById('modelTwo__Light_005').setAttribute('intensity', '1');
+	document.getElementById('modelTwo__Light_006').setAttribute('intensity', '1');
+	
+	document.getElementById('modelThree__Light').setAttribute('intensity', '1');
+	document.getElementById('modelThree__Light_001').setAttribute('intensity', '1');
+	document.getElementById('modelThree__Light_002').setAttribute('intensity', '1');
+	document.getElementById('modelThree__Light_003').setAttribute('intensity', '1');
+	document.getElementById('modelThree__Light_004').setAttribute('intensity', '1');
+	document.getElementById('modelThree__Light_005').setAttribute('intensity', '1');
+	document.getElementById('modelThree__Light_006').setAttribute('intensity', '1');
+	
 		// now we make button green
 	  var element = document.querySelector("#toggleLightsBtn");
 	  element.classList.remove("btn-danger");
@@ -110,6 +126,22 @@ function toggleLights()
 	document.getElementById('modelOne__Light_004').setAttribute('intensity', '0');
 	document.getElementById('modelOne__Light_005').setAttribute('intensity', '0');
 	document.getElementById('modelOne__Light_006').setAttribute('intensity', '0');
+	
+	document.getElementById('modelTwo__Light').setAttribute('intensity', '0');
+	document.getElementById('modelTwo__Light_001').setAttribute('intensity', '0');
+	document.getElementById('modelTwo__Light_002').setAttribute('intensity', '0');
+	document.getElementById('modelTwo__Light_003').setAttribute('intensity', '0');
+	document.getElementById('modelTwo__Light_004').setAttribute('intensity', '0');
+	document.getElementById('modelTwo__Light_005').setAttribute('intensity', '0');
+	document.getElementById('modelTwo__Light_006').setAttribute('intensity', '0');
+	
+	document.getElementById('modelThree__Light').setAttribute('intensity', '0');
+	document.getElementById('modelThree__Light_001').setAttribute('intensity', '0');
+	document.getElementById('modelThree__Light_002').setAttribute('intensity', '0');
+	document.getElementById('modelThree__Light_003').setAttribute('intensity', '0');
+	document.getElementById('modelThree__Light_004').setAttribute('intensity', '0');
+	document.getElementById('modelThree__Light_005').setAttribute('intensity', '0');
+	document.getElementById('modelThree__Light_006').setAttribute('intensity', '0');
 	
 	// now we make button red
 	  var element = document.querySelector("#toggleLightsBtn");

@@ -24,7 +24,7 @@
 <body>
 
   <!-- START OF NAVBAR -->
-  <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+  <nav class="navbar sticky-top navbar-expand-sm navbar_costa">
   <div class="container-fluid">
     <!-- START OF LOGO -->
     <div class="logo">

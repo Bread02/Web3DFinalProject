@@ -12,12 +12,45 @@
     <NavigationInfo  DEF="headlight" headlight="true" type='"EXAMINE"'/>
     
     <!-- CONTROLS LIGHTS-->
-    <PointLight DEF='Omni001-6' intensity='0.4' location='-1860 1456 -1416' radius='10750'/>
-    <PointLight DEF='Omni002-7' intensity='0.4' location='1940 1456 -1404' radius='10750'/>
-    <PointLight DEF='Omni003-8' intensity='0.4' location='-9.502 1456 1745' radius='10750'/>
-    <PointLight DEF='Omni004-11' intensity='0.4' location='11.65 -1231 -1432' radius='10750'/>
-    <PointLight DEF='Omni005-12' intensity='0.4' location='1945 -1189 1764' radius='10750'/>
-    <PointLight DEF='Omni006-13' intensity='0.4' location='-1931 -1189 1790' radius='10750'/>
+	<PointLight DEF="Light"
+		global="true"
+		color="0.800000011920929 0.800000011920929 0.800000011920929"
+		location="23.6900005340576 26.0900001525879 -17.9599990844727"
+		radius="91.9599990844727" />
+	<PointLight DEF="Light_001"
+		global="true"
+		color="0.800000011920929 0.800000011920929 0.800000011920929"
+		location="23.6900005340576 26.0900001525879 14.7200002670288"
+		radius="91.9599990844727" />
+	<PointLight DEF="Light_002"
+		global="true"
+		color="0.800000011920929 0.800000011920929 0.800000011920929"
+		location="-21.2700004577637 26.0900001525879 14.7200002670288"
+		radius="91.9599990844727" />
+	<PointLight DEF="Light_003"
+		global="true"
+		color="0.800000011920929 0.800000011920929 0.800000011920929"
+		location="-21.2700004577637 26.0900001525879 -17.9599990844727"
+		radius="91.9599990844727" />
+	<PointLight DEF="Light_004"
+		global="true"
+		color="0.800000011920929 0.800000011920929 0.800000011920929"
+		location="0.0560600012540817 -24.6900005340576 -0.192699998617172"
+		radius="91.9599990844727" />
+			<PointLight DEF="Light_005"
+		global="true"
+		color="0.800000011920929 0.800000011920929 0.800000011920929"
+		location="13.1800003051758 2.71399998664856 -1.67999994754791"
+		radius="71.2600021362305" 
+		intensity="1"
+		/>
+	<PointLight DEF="Light_006"
+		global="true"
+		color="0.800000011920929 0.800000011920929 0.800000011920929"
+		location="13.1800003051758 11.2799997329712 10.7200002670288"
+		radius="71.2600021362305" 
+		intensity="1"
+		/>
     
     <!-- CONTROLS CAMERAS -->
     <Viewpoint DEF='CameraFront' description='CameraFront' orientation='0 0 -0.1 -0.007317' position='0 0 20' fieldOfView='0.5274'/>
@@ -63,31 +96,6 @@
 	<ROUTE fromNode="Camera_001-POS-INTERP" fromField="value_changed" toNode="Camera_001" toField="set_position" />
 	<ROUTE fromNode="Camera_001-TIMER" fromField="fraction_changed" toNode="Camera_001-ROT-INTERP" toField="set_fraction" />
 	<ROUTE fromNode="Camera_001-ROT-INTERP" fromField="value_changed" toNode="Camera_001" toField="set_orientation" />
-	<PointLight DEF="Light"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="23.6900005340576 26.0900001525879 -17.9599990844727"
-		radius="91.9599990844727" />
-	<PointLight DEF="Light_001"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="23.6900005340576 26.0900001525879 14.7200002670288"
-		radius="91.9599990844727" />
-	<PointLight DEF="Light_002"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="-21.2700004577637 26.0900001525879 14.7200002670288"
-		radius="91.9599990844727" />
-	<PointLight DEF="Light_003"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="-21.2700004577637 26.0900001525879 -17.9599990844727"
-		radius="91.9599990844727" />
-	<PointLight DEF="Light_004"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="0.0560600012540817 -24.6900005340576 -0.192699998617172"
-		radius="91.9599990844727" />
 	<NavigationInfo
 		avatarSize="0.25 1.60000002384186 0.75"
 		type='"EXAMINE" "ANY"'
