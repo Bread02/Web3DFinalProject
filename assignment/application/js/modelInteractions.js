@@ -81,6 +81,42 @@ function wireframe()
 	e.runtime.togglePoints(true);
 }
 
+function toggleLights()
+{
+	var intense = (document.getElementById('modelOne__Light').getAttribute('intensity'));
+	
+	// if lights off do this
+	if (intense < 1)
+	{
+	document.getElementById('modelOne__Light').setAttribute('intensity', '1');
+	document.getElementById('modelOne__Light_001').setAttribute('intensity', '1');
+	document.getElementById('modelOne__Light_002').setAttribute('intensity', '1');
+	document.getElementById('modelOne__Light_003').setAttribute('intensity', '1');
+	document.getElementById('modelOne__Light_004').setAttribute('intensity', '1');
+	document.getElementById('modelOne__Light_005').setAttribute('intensity', '1');
+	document.getElementById('modelOne__Light_006').setAttribute('intensity', '1');
+	
+		// now we make button green
+	  var element = document.querySelector("#toggleLightsBtn");
+	  element.classList.remove("btn-danger");
+	  element.classList.add("btn-success");
+	}
+	else // if lights on do this
+	{
+	document.getElementById('modelOne__Light').setAttribute('intensity', '0');
+	document.getElementById('modelOne__Light_001').setAttribute('intensity', '0');
+	document.getElementById('modelOne__Light_002').setAttribute('intensity', '0');
+	document.getElementById('modelOne__Light_003').setAttribute('intensity', '0');
+	document.getElementById('modelOne__Light_004').setAttribute('intensity', '0');
+	document.getElementById('modelOne__Light_005').setAttribute('intensity', '0');
+	document.getElementById('modelOne__Light_006').setAttribute('intensity', '0');
+	
+	// now we make button red
+	  var element = document.querySelector("#toggleLightsBtn");
+	  element.classList.remove("btn-success");
+	  element.classList.add("btn-danger");
+	}
+}
 
 var lightOn = true;
 
@@ -92,6 +128,21 @@ function headlight()
 	document.getElementById('modelTwo__headlight').setAttribute('headlight', lightOn.toString());
 	
 	document.getElementById('modelThree__headlight').setAttribute('headlight', lightOn.toString());
+	
+	// now we make button green
+	var element = document.querySelector("#toggleHeadlightsBtn");
+	
+	// if success headlight then change to danger.
+	if(element.classList.contains("btn-success"))
+	{
+		element.classList.remove("btn-success");
+		element.classList.add("btn-danger");
+	}
+	else
+	{
+		element.classList.remove("btn-danger");
+		element.classList.add("btn-success");
+	}
 }
 
 function cameraFront()

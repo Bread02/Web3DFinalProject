@@ -275,8 +275,8 @@
         <div class="card-body">
           <h4 class="card-title">Render</h4>
           <button type="button" class="btn btn-primary" onclick="wireframe();">Wireframe</button>
-          <button type="button" class="btn btn-primary" onclick="headlight();">Toggle Headlight </button>
-          <button type="button" class="btn btn-primary">Toggle Scene Lights</button>
+          <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success" onclick="headlight();">Toggle Headlight</a>
+          <a id="toggleLightsBtn" button type="button" class="btn btn-success" onclick="toggleLights();">Toggle Scene Lights</a>
           <br>
           Use the buttons to change the rendering options.
         </div>
@@ -292,7 +292,7 @@
         <div class="card-body">
           <h4 class="card-title">Costa In Stores</h4>
           <p class="card-text">Costa offers a wide range of drinks including Espressos and Americanos</p>
-          <a href='https://www.costa.co.uk/' type="button" class="btn btn-success">Visit the costa store</a>
+          <a href='https://www.costa.co.uk/' type="button" class="btn btn-primary">Visit the costa store</a>
         </div>
       </div>
     </div>
