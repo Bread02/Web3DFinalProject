@@ -55,7 +55,6 @@ $(document).ready(function() {
 			$('#home').hide();
 			$('#about').hide();
 			$('#models').show();
-			$('#cup').show();
 			$('#interaction').show(); 
 			$('#cokeDescription').show();
 			$('#spriteDescription').hide(); 
@@ -63,7 +62,6 @@ $(document).ready(function() {
 			$('#originality').hide();
 			$('#acknowledgements').hide();
 			$('#references').hide();
-				
 		});
 		
 		$('#navOriginality').click(function(){
@@ -110,15 +108,12 @@ $(document).ready(function() {
 	function selectModel() {
 
 		$('#navCup').click(function(){
+			$('#interaction').show(); 
+			
 			$('#cup').show();
 			$('#bottle').hide();
 			$('#can').hide();
-			
-			$('#interaction').show(); 
-			$('#cokeDescription').show();
-			$('#spriteDescription').hide(); 
-			$('#pepperDescription').hide(); 
-			
+						
 			changeModelsClassesToNotActive();
 			var element = document.querySelector("#navCup");
 			element.classList.remove("btn-primary");
@@ -127,9 +122,6 @@ $(document).ready(function() {
 
 		$('#navBottle').click(function(){	
 			$('#interaction').show(); 
-			$('#cokeDescription').hide();
-			$('#spriteDescription').show();
-			$('#pepperDescription').hide(); 
 			
 			$('#cup').hide();
 			$('#bottle').show();
@@ -143,9 +135,6 @@ $(document).ready(function() {
 
 		$('#navCan').click(function(){
 			$('#interaction').show(); 
-			$('#cokeDescription').hide();
-			$('#spriteDescription').hide(); 
-			$('#pepperDescription').show(); 
 			
 			$('#cup').hide();
 			$('#bottle').hide();

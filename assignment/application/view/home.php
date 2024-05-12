@@ -133,18 +133,18 @@
         </div>
         <!-- TODO Nav Menu to choose models -->
         <div class="card text-left">
-          <div class="card-body">
-            <h2 class="card-title">Models</h2>
-            <a id="navCup" button type="button" class="btn btn-success">Cup</button> </a>
-            <a id="navBottle" button type="button" class="btn btn-primary">Bottle</button> </a>
-            <a id="navCan" button type="button" class="btn btn-primary">Can</button> </a>
+          <div class="card-body text-center">
+            <h2 class="card-title text-center">Models</h2>
+            <a id="navCup" button type="button" class="btn btn-success">Costa Cup</button> </a>
+            <a id="navBottle" button type="button" class="btn btn-primary">Costa Bottle</button> </a>
+            <a id="navCan" button type="button" class="btn btn-primary">Costa Can</button> </a>
             <br>
           </div>
         </div>
 
         <!-- END OF NAV MENU TO CHOOSE MODELS -->
 
-        <div class="card-body">
+        <div class="card-body" class="container-fluid main_contents">
           <!-- MODEL 1 -->
           <div id="cup">
             <!-- The 3D Model Card -->
@@ -156,7 +156,7 @@
 
               <br>
               <!-- CHOOSE SKINS -->
-              <h4 class="card-title"> Skins</h4>
+              <h4 class="card-title">Flavours</h4>
               <a id="navCoke" button type="button" class="btn btn-success">Costa Cup</button> </a>
               <!-- END OF CHOOSE SKINS -->
               <div class="model3D">
@@ -168,6 +168,7 @@
                 </x3d>
               </div>
             </div>
+            
             <!-- START OF FINAL ROW -->
             <div class="row">
               <div class="col-sm-6">
@@ -187,6 +188,8 @@
           </div>
           </div>
 
+
+          
         <!-- MODEL 2 -->
         <div id="bottle" tyle="display:none;"s>
           <!-- The 3D Model Card -->
@@ -194,7 +197,7 @@
             <h3 class="card-title"> <?php echo $data[1]["x3dModelTitle"]; ?></h3>
             <br>
             <!-- CHOOSE SKINS -->
-            <h4 class="card-title"> Skins</h4>
+            <h4 class="card-title">Flavours</h4>
             <a id="caramelButton" class="btn btn-success" onclick="changeTextureCaramel()">Frappe Caramel</button></a>
             <a id="brownieButton" class="btn btn-primary" onclick="changeTextureBrownie()">Frappe Brownie</button></a>
             <!-- END OF CHOOSE SKINS -->
@@ -233,7 +236,7 @@
             <h3 class="card-title"> <?php echo $data[2]["x3dModelTitle"]; ?></h3>
             <br>
             <!-- CHOOSE SKINS -->
-            <h4 class="card-title"> Skins</h4>
+            <h4 class="card-title">Flavours</h4>
             <a id="vanillaLatteButton" class="btn btn-success" onclick="changeTextureVanillaLatte()">Vanilla Latte</a>
             <a id="latteButton" class="btn btn-primary" onclick="changeTextureLatte()">Latte</a>
             <!-- END OF CHOOSE SKINS -->
@@ -264,34 +267,13 @@
           </div>
         </div>
         <!-- END OF MODEL 3 -->
-      </div>
-    </div>
-
-    <!-- Where the gallery is held -->
-    <div class="col-sm-3">
-      <div class="card text-left">
-        <div class="card-header gallery-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Gallery</a>
-            </li>
-          </ul>
         </div>
-        <div class="card-body">
-          <div id="title_gallery"></div>
-          <div class="gallery" id="gallery"></div>
-          <div id="description_gallery"></div>
         </div>
-      </div>
-    </div>
-  </div>
-  <br>
 
-  <div id="interaction" class="row"> <!-- This will hold the model interactions -->
+    <div id="interaction" class="col-sm-3"> <!-- This will hold the model interactions -->
     <!-- CAMERA VIEWS -->
-    <div class="col-sm-2">
       <div class="card-body">
-        <h4 class="card-title"><div id="interactionPanelCameraTitle"></div></h4>
+        <h4 class="card-title text-center"><div id="interactionPanelCameraTitle"></div></h4>
         <!-- The X3D model file will contain the camera locations -->
         <button type="button" class="btn btn-primary" onclick="cameraFront();">Front</button>
         <button type="button" class="btn btn-primary" onclick="cameraBack();">Back</button>
@@ -302,12 +284,10 @@
         <br>
         <div id="interactionPanelCamera"></div>
       </div>
-    </div>
     <!-- END OF CAMERA VIEWS -->
     <!-- ANIMATION CONTROLS -->
-    <div class="col-sm-3">
       <div class="card-body">
-      <h4 class="card-title"><div id="interactionPanelAnimationTitle"></div></h4>
+      <h4 class="card-title text-center"><div id="interactionPanelAnimationTitle"></div></h4>
         <button type="button" class="btn btn-primary" onclick="spinX();">RotX</button>
         <button type="button" class="btn btn-primary" onclick="spinY();">RotY</button>
         <button type="button" class="btn btn-primary" onclick="spinZ();">RotZ</button>
@@ -315,12 +295,10 @@
         <br>
         <div id="interactionPanelAnimate"></div>
       </div>
-    </div>
     <!-- END OF ANIMATION CONTROLS -->
     <!-- RENDERER CONTROLS -->
-    <div class="col-sm-3">
       <div class="card-body">
-      <h4 class="card-title"><div id="interactionPanelRenderTitle"></div></h4>
+      <h4 class="card-title text-center"><div id="interactionPanelRenderTitle"></div></h4>
         <button type="button" class="btn btn-primary" onclick="wireframe();">Wireframe</button>
         <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success" onclick="headlight();">Toggle
           Headlight</a>
@@ -329,10 +307,28 @@
         <br>
         <div id="interactionPanelRender"></div>
       </div>
-    </div>
     <!-- END OF RENDERER CONTROLS -->
-  </div>
   <!-- END OF ROW -->
+
+    <!-- Where the gallery is held -->
+    <div class="card-body">
+      <div class="card text-left">
+        <div class="card-header gallery-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Gallery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body text-center">
+          <div id="title_gallery"></div>
+          <div class="gallery" id="gallery"></div>
+          <div id="description_gallery"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
 
   <!-- END OF MODELS -->
   </div>
