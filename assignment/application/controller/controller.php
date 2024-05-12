@@ -7,7 +7,6 @@ class Controller {
 
     function __construct($pageURI = null)
     {
-
         $this->load = new Load();
         $this->model = new Model();
         // What page we are on
@@ -17,8 +16,12 @@ class Controller {
 
     function home()
 	{
-        $data = $this->model->model3D_info();
-        $this->load->view('home');
+        // this works
+      //  $data = $this->model->model3D_info();
+     //   $this->load->view('home', $data);
+
+        $data = $this->model->dbGetData();
+        $this->load->view('home', $data);
 	}
 
     function apiCreateTable()

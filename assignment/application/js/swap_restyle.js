@@ -63,7 +63,7 @@ $(document).ready(function() {
 			$('#originality').hide();
 			$('#acknowledgements').hide();
 			$('#references').hide();
-			
+				
 		});
 		
 		$('#navOriginality').click(function(){
@@ -113,6 +113,7 @@ $(document).ready(function() {
 			$('#cup').show();
 			$('#bottle').hide();
 			$('#can').hide();
+			
 			$('#interaction').show(); 
 			$('#cokeDescription').show();
 			$('#spriteDescription').hide(); 
@@ -124,14 +125,15 @@ $(document).ready(function() {
 			element.classList.add("btn-success");
 		});
 
-		$('#navBottle').click(function(){
-			$('#can').hide();
-			$('#bottle').show();
-			$('#cup').hide();
+		$('#navBottle').click(function(){	
 			$('#interaction').show(); 
 			$('#cokeDescription').hide();
 			$('#spriteDescription').show();
-			$('#pepperDescription').hide();  
+			$('#pepperDescription').hide(); 
+			
+			$('#cup').hide();
+			$('#bottle').show();
+			$('#can').hide();
 
 			changeModelsClassesToNotActive();
 			var element = document.querySelector("#navBottle");
@@ -140,13 +142,14 @@ $(document).ready(function() {
 		});
 
 		$('#navCan').click(function(){
-			$('#cup').hide();
-			$('#bottle').hide();
-			$('#can').show();
 			$('#interaction').show(); 
 			$('#cokeDescription').hide();
 			$('#spriteDescription').hide(); 
 			$('#pepperDescription').show(); 
+			
+			$('#cup').hide();
+			$('#bottle').hide();
+			$('#can').show();
 
 			changeModelsClassesToNotActive();
 			var element = document.querySelector("#navCan");

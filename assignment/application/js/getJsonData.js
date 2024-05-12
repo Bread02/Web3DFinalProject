@@ -24,34 +24,21 @@ $(document).ready(function() {
             $('#subTitle_right').html('<h3>' + jsonObj.pageTextData[3].subTitle + '</h3>')
             $('#description_right').html('<p>' + jsonObj.pageTextData[3].description + '</p>')
 			
-			// coke text data
-            $('#title_coke').html('<h2>' + jsonObj.pageTextData[4].title + '</h2>')
-            $('#subTitle_coke').html('<h3>' + jsonObj.pageTextData[4].subTitle + '</h3>')
-            $('#description_coke').html('<p>' + jsonObj.pageTextData[4].description + '</p>')
-			$('#x3dModelTitle_coke').html('<h2>' + jsonObj.pageTextData[4].x3dModelTitle + '<h2>');
-			$('#x3dCreationMethod_coke').html('<p>' + jsonObj.pageTextData[4].x3dCreationMethod + '<p>');
-			
-			// sprite text data
-            $('#title_sprite').html('<h2>' + jsonObj.pageTextData[5].title + '</h2>')
-            $('#subTitle_sprite').html('<h3>' + jsonObj.pageTextData[5].subTitle + '</h3>')
-            $('#description_sprite').html('<p>' + jsonObj.pageTextData[5].description + '</p>')
-			$('#x3dModelTitle_sprite').html('<h2>' + jsonObj.pageTextData[5].x3dModelTitle + '<h2>');
-			$('#x3dCreationMethod_sprite').html('<p>' + jsonObj.pageTextData[5].x3dCreationMethod + '<p>');
-			
-			// dr pepper text data
-            $('#title_pepper').html('<h2>' + jsonObj.pageTextData[6].title + '</h2>')
-            $('#subTitle_pepper').html('<h3>' + jsonObj.pageTextData[6].subTitle + '</h3>')
-            $('#description_pepper').html('<p>' + jsonObj.pageTextData[6].description + '</p>')
-			$('#x3dModelTitle_pepper').html('<h2>' + jsonObj.pageTextData[6].x3dModelTitle + '<h2>');
-			$('#x3dCreationMethod_pepper').html('<p>' + jsonObj.pageTextData[6].x3dCreationMethod + '<p>');
-			
-		//Get the gallery contents data
-		$('.title_gallery').html('<h2>' + jsonObj.pageTextData[7].galleryTitle + '<h2>');
-		$('.description_gallery').html('<p>' + jsonObj.pageTextData[7].galleryDescription + '</p>');
+		    //Get the gallery contents data
+		    $('#title_gallery').html('<h2>' + jsonObj.pageTextData[4].galleryTitle + '<h2>');
+		    $('#description_gallery').html('<p>' + jsonObj.pageTextData[4].galleryDescription + '</p>');
 
-		//Get camera contents data
-		$('.x3dCameraTitle').html('<h2>' + jsonObj.pageTextData[8].CameraTitle + '<h2>');
-		$('.x3dCameraSubtitle').html('<p>' + jsonObj.pageTextData[8].CameraSubtitle + '<p');
+            //get the interaction panel camera
+            $('#interactionPanelCameraTitle').html('<p>' + jsonObj.pageTextData[5].interactionPanelCameraTitle + '</p>');
+            $('#interactionPanelCamera').html('<p>' + jsonObj.pageTextData[5].interactionPanelCamera + '</p>');
+            $('#interactionPanelAnimationTitle').html('<p>' + jsonObj.pageTextData[5].interactionPanelAnimationTitle + '</p>');
+		    $('#interactionPanelAnimate').html('<p>' + jsonObj.pageTextData[5].interactionPanelAnimate + '</p>');
+            $('#interactionPanelRenderTitle').html('<p>' + jsonObj.pageTextData[5].interactionPanelRenderTitle + '</p>');
+            $('#interactionPanelRender').html('<p>' + jsonObj.pageTextData[5].interactionPanelRender + '</p>');
+
+            // Originality and references
+            $('#originalityStatement').html('<p>' + jsonObj.pageTextData[6].originalityStatement + '</p>');
+            $('#referencesStatement').html('<p>' + jsonObj.pageTextData[6].referencesStatement + '</p>');
 
         });
 });

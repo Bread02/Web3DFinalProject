@@ -319,10 +319,33 @@ function changeBottleNavClassesToNotActive()
 {
   var element = document.querySelector("#latteButton");
   element.classList.remove("btn-success");
-  element.classList.add("btn-primary");
-  
-  var element = document.querySelector("#vanillaLatteButton");
-  element.classList.remove("btn-success");
-  element.classList.add("btn-primary");
-  }
-  
+	element.classList.add("btn-primary");
+
+	var element = document.querySelector("#vanillaLatteButton");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");
+}
+
+// this function allows us to change the what models are being rendered to enhance performance.
+function hideAllNodes() {
+	// 0 will display the node, -1 will hide the node.
+	document.getElementById("modelOne__switcher").setAttribute("render", false);
+	document.getElementById("modelTwo__switcher").setAttribute("render", false);
+	document.getElementById("modelThree__switcher").setAttribute("render", false);
+}
+
+function showModelNode(modelToDisplay) {
+	hideAllNodes();
+	switch (modelToDisplay) {
+		case 1:
+			document.getElementById("modelOne__switcher").setAttribute("render", true);
+			break;
+		case 2:
+			document.getElementById("modelTwo__switcher").setAttribute("render", true);
+			break;
+		case 3:
+			document.getElementById("modelThree__switcher").setAttribute("render", true);
+			break;
+	}
+}
+

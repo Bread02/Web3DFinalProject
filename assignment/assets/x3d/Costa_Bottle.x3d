@@ -8,6 +8,7 @@
 	<meta name="source" content="Costa_Bottle.wrl" />
 </head>
 <Scene>
+	 <!-- <Switch id="switcher"> TODO FIX THIS -->
  <!-- CONTROLS NAVIGATION MODE AND HEAD LIGHT-->
     <NavigationInfo  DEF="headlight" headlight="true" type='"EXAMINE"'/>
     
@@ -124,5 +125,6 @@
 		</Shape>
 	</Transform>
 	</Transform>
+	<!--	</Switch> -->
 </Scene>
 </X3D>
