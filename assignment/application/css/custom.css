@@ -32,7 +32,7 @@ body {
 }
 
 #main_3d_image {
-    background-image: url(../assets/images/renderImages/CoffeeCupRender.jpg);
+    background-image: url(../assets/images/renderImages/CoffeeCupRender.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -126,7 +126,7 @@ X3D, x3d {
     }
 
     #main_3d_image {
-        background-image: url(../../assets/images/renderImages/CoffeeCupRender.jpg); /*these should be different sized images for each device */
+        background-image: url(../../assets/images/renderImages/CoffeeCupRender.png); /*these should be different sized images for each device */
         background-repeat: no-repeat;
         background-size: cover;
         /* The div block for the main_3d_image has no vertical size, 
@@ -174,7 +174,7 @@ X3D, x3d {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     #main_3d_image {
-        background-image: url(../../assets/images/renderImages/CoffeeCupRender.jpg);
+        background-image: url(../../assets/images/renderImages/CoffeeCupRender.png);
         background-repeat: no-repeat;
         background-size: cover;
         /* The div block for the main_3d_image has no vertical size, 
@@ -193,7 +193,7 @@ X3D, x3d {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     #main_3d_image {
-        background-image: url(../../assets/images/renderImages/CoffeeCupRender.jpg);
+        background-image: url(../../assets/images/renderImages/CoffeeCupRender.png);
         background-repeat: no-repeat;
         background-size: cover;
         /* The div block for the main_3d_image has no vertical size, 
@@ -212,7 +212,7 @@ X3D, x3d {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #main_3d_image {
-        background-image: url(../../assets/images/renderImages/CoffeeCupRender.jpg);
+        background-image: url(../../assets/images/renderImages/CoffeeCupRender.png);
         background-repeat: no-repeat;
         background-size: cover;
         /* The div block for the main_3d_image has no vertical size, 
@@ -287,8 +287,13 @@ X3D, x3d {
 
 .card-body {
     background-color: #760003;
-	color: white; /* Font color */
-    
+	color: white; /* Font color */ 
+}
+
+.btn-spaced {
+	padding: 5px;
+	margin: 5px;
+	
 }
 
 .card-body h3 {
@@ -435,12 +440,6 @@ X3D, x3d {
     height: 50px;
 }
 
-.footer {
-    color: #730723; /* red */
-    background-color: #730723; /* red */
-    height: 50px;
-}
-
 .footer>.active>ul>li>a:hover,
 .footer>.active>ul>li>a:focus {
 	color: white;
@@ -469,33 +468,4 @@ body {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: gray; /* Change back to white later */
-}
-
-.social {
-    padding-top: 0px;
-    width: 30%;
-}
-
-.fa-twitter-square:before {
-    content: "\f081";
-    color: green;
-    font-size: 1em;
-}
-
-.fa-github-square:before {
-    content: "\f092";
-    color: yellow;
-    font-size: 1em;
-}
-
-.fa-google-plus-square:before {
-    content: "\f0d4";
-    color: blue;
-    font-size: 1em;
-}
-
-.fa-facebook-square:before {
-    content: "\f082";
-    color: red;
-    font-size: 1em;
 }

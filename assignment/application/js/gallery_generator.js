@@ -25,6 +25,8 @@ $(document).ready(function() {
 				htmlCode += '<a href="assets/images/gallery_images'+ response[i] +' " ' + ' data-fancybox data-caption="My X3D model render" > ';
 				htmlCode += '<img class="card-img-top img-thumbnail" src="assets/images/gallery_images' + response[i] + '"/>';
 				htmlCode += '</a>';		
+				
+
 			}
 			// Return the HTML string to each of the 3 3D App element blocks, coke, sprite and pepper galleries
 			document.getElementById('gallery').innerHTML = htmlCode;

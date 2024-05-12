@@ -97,7 +97,9 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="card-body">
-          <img src="assets/images/front_page_images/FrontImage2.png" alt="Image of Costa Coffee Cup">
+          <a href="assets/images/front_page_images/FrontImage2.png" data-fancybox data-caption="Costa Cup Render">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage2.png" alt="Costa Cup">
+          </a>
           <div id="title_left"></div>
           <div id="subTitle_left"></div>
           <div id="description_left"></div>
@@ -105,7 +107,9 @@
       </div>
       <div class="col-sm-4">
         <div class="card-body">
-          <img src="assets/images/front_page_images/FrontImage3.png" alt="Image of Costa Coffee Milkshake">
+          <a href="assets/images/front_page_images/FrontImage3.png" data-fancybox data-caption="Costa Caramel Frappe Render">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage3.png" alt="Costa Caramel Frappe">
+          </a>
           <div id="title_center"></div>
           <div id="subTitle_center"></div>
           <div id="description_center"></div>
@@ -113,7 +117,9 @@
       </div>
       <div class="col-sm-4">
         <div class="card-body">
-          <img src="assets/images/front_page_images/FrontImage4.png" alt="Image of Costa Coffee Canned">
+          <a href="assets/images/front_page_images/FrontImage4.png" data-fancybox data-caption="Costa Canned Coffee Vanilla Latte Render">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage4.png" alt="Costa Canned Coffee Vanilla Latte">
+          </a>
           <div id="title_right"></div>
           <div id="subTitle_right"></div>
           <div id="description_right"></div>
@@ -286,43 +292,44 @@
       <div id="interaction" class="col-sm-3"> <!-- This will hold the model interactions -->
         <br>
         <!-- CAMERA VIEWS -->
-        <div class="card-body">
+        <div class="card-body text-center">
           <h4 class="card-title text-center">
             <div id="interactionPanelCameraTitle"></div>
           </h4>
           <!-- The X3D model file will contain the camera locations -->
-          <button type="button" class="btn btn-primary" onclick="cameraFront();">Front</button>
-          <button type="button" class="btn btn-primary" onclick="cameraBack();">Back</button>
-          <button type="button" class="btn btn-primary" onclick="cameraLeft();">Left</button>
-          <button type="button" class="btn btn-primary" onclick="cameraRight();">Right</button>
-          <button type="button" class="btn btn-primary" onclick="cameraTop();">Top</button>
-          <button type="button" class="btn btn-primary" onclick="cameraBottom();">Bottom</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="cameraFront();">Front</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="cameraBack();">Back</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="cameraLeft();">Left</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="cameraRight();">Right</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="cameraTop();">Top</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="cameraBottom();">Bottom</button>
           <br>
           <div id="interactionPanelCamera"></div>
         </div>
         <!-- END OF CAMERA VIEWS -->
         <!-- ANIMATION CONTROLS -->
-        <div class="card-body">
+        <div class="card-body text-center">
           <h4 class="card-title text-center">
             <div id="interactionPanelAnimationTitle"></div>
           </h4>
-          <button type="button" class="btn btn-primary" onclick="spinX();">RotX</button>
-          <button type="button" class="btn btn-primary" onclick="spinY();">RotY</button>
-          <button type="button" class="btn btn-primary" onclick="spinZ();">RotZ</button>
-          <button type="button" class="btn btn-primary" onclick="stopRotation();">Stop Rotation</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="spinX();">RotX</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="spinY();">RotY</button>
+          <button type="button" class="btn btn-primary mt-2" onclick="spinZ();">RotZ</button>
+          <button type="button" class="btn btn-primary mt-2 " onclick="stopRotation();">Stop Rotation</button>
           <br>
           <div id="interactionPanelAnimate"></div>
         </div>
         <!-- END OF ANIMATION CONTROLS -->
         <!-- RENDERER CONTROLS -->
-        <div class="card-body">
+        <div class="card-body text-center">
           <h4 class="card-title text-center">
             <div id="interactionPanelRenderTitle"></div>
           </h4>
-          <button type="button" class="btn btn-primary" onclick="wireframe();">Wireframe</button>
-          <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success" onclick="headlight();">Toggle
+          <button type="button" class="btn btn-primary mt-2" onclick="wireframe();">Wireframe</button>
+          <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success mt-2" onclick="headlight();">Toggle
             Headlight</a>
-          <a id="toggleLightsBtn" button type="button" class="btn btn-success" onclick="toggleLights();">Toggle Scene
+          <a id="toggleLightsBtn" button type="button" class="btn btn-success mt-2" onclick="toggleLights();">Toggle
+            Scene
             Lights</a>
           <br>
           <div id="interactionPanelRender"></div>
@@ -352,66 +359,66 @@
 
       <!-- END OF MODELS -->
     </div>
+  </div>
+
+  <!-- START OF STATEMENT OF ORIGINALITY -->
+  <div id="originality">
+    <div id="originalityStatement"></div>
+  </div>
+  <!-- END OF STATEMENT OF ORIGINALITY -->
+
+  <!-- Acknowledgements can be added here optionally -->
+
+  <!-- START OF REFERENCES -->
+  <div id="references">
+    <div id="referencesStatement"></div>
+    Please also be sure to produce appropriate citations within your web pages to all sources of content, including
+    X3D/VRML functions, extensions, HTML, JavaScrip, ... code, etc. that you have not developed yourself. For each
+    piece of content that is not developed by yourself you should 'cite and refer' via a hyperlink to the source (via
+    this page) that lists your references just as if you had written an essay or report.
+  </div>
+  <!-- END OF REFERENCES -->
+
+  <!-- START OF FOOTER -->
+  <nav class="navbar navbar-expand-sm footer sticky">
+    <div class="container-fluid">
+      <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
+        <li class="nav-item">
+          <!-- TODO Put the below styling into CSS rather than here -->
+          <a id="navOriginality" href="#" style="color:#ffffff;">Statement of Originality | </a>
+        </li>
+        <li class="nav-item">
+          <a id="navReferences" href="#" style="color:#ffffff;">| References |</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://github.com/Bread02/Web3DFinalProject" style="color:#ffffff;">| Github Link </a>
+        </li>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <!-- END OF FOOTER -->
 
-    <!-- START OF STATEMENT OF ORIGINALITY -->
-    <div id="originality">
-      <div id="originalityStatement"></div>
-    </div>
-    <!-- END OF STATEMENT OF ORIGINALITY -->
+  <!-- TODO MODALS -->
+  <!-- END OF MODALS -->
 
-    <!-- Acknowledgements can be added here optionally -->
-
-    <!-- START OF REFERENCES -->
-    <div id="references">
-      <div id="referencesStatement"></div>
-      Please also be sure to produce appropriate citations within your web pages to all sources of content, including
-      X3D/VRML functions, extensions, HTML, JavaScrip, ... code, etc. that you have not developed yourself. For each
-      piece of content that is not developed by yourself you should 'cite and refer' via a hyperlink to the source (via
-      this page) that lists your references just as if you had written an essay or report.
-    </div>
-    <!-- END OF REFERENCES -->
-
-    <!-- START OF FOOTER -->
-    <nav class="navbar navbar-expand-sm footer sticky">
-      <div class="container-fluid">
-        <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
-          <li class="nav-item">
-            <!-- TODO Put the below styling into CSS rather than here -->
-            <a id="navOriginality" href="#" style="color:#ffffff;">Statement of Originality | </a>
-          </li>
-          <li class="nav-item">
-            <a id="navReferences" href="#" style="color:#ffffff;">| References |</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://github.com/Bread02/Web3DFinalProject" style="color:#ffffff;">| Github Link </a>
-          </li>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- END OF FOOTER -->
-
-    <!-- TODO MODALS -->
-    <!-- END OF MODALS -->
-
-    <!-- JavaScript -->
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  <!-- JavaScript -->
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script> -->
-    <script src="application/js/jquery-3.4.1.js"></script>
-    <script src="application/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <!-- popper is bundled in this -->
+  <script src="application/js/jquery-3.4.1.js"></script>
+  <script src="application/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <!-- popper is bundled in this -->
 
-    <script type="text/javascript" src="application/js/all.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="application/js/custom.js" crossorigin="anonymous"></script>
-    <script src="application/js/gallery_generator.js"></script>
-    <script src="application/js/swap_restyle.js"></script>
-    <script src='application/js/x3dom.js'></script>
-    <script src="application/js/modelInteractions.js"></script>
-    <script src="application/js/getJsonData.js"></script>
-    <!-- <script src="application/js/jquery.fancybox.min.js"></script> -->
+  <script type="text/javascript" src="application/js/all.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="application/js/custom.js" crossorigin="anonymous"></script>
+  <script src="application/js/gallery_generator.js"></script>
+  <script src="application/js/swap_restyle.js"></script>
+  <script src='application/js/x3dom.js'></script>
+  <script src="application/js/modelInteractions.js"></script>
+  <script src="application/js/getJsonData.js"></script>
+  <script src="application/js/jquery.fancybox.min.js"></script>
 
-    <!-- Try to put this in controller if we can? -->
+  <!-- Try to put this in controller if we can? -->
 
 </body>
 
