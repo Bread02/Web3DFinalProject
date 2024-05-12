@@ -352,6 +352,7 @@
 
       <!-- END OF MODELS -->
     </div>
+    </div>
 
     <!-- START OF STATEMENT OF ORIGINALITY -->
     <div id="originality">
