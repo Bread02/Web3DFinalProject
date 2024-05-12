@@ -151,7 +151,7 @@
             <!-- The 3D Model Card -->
             <div class="card-body">
               <!-- <h3 class="card-title"> Cup X3D Model</h3> --->
-              <h3 class="card-title">
+              <h3 class="card-title text-center">
                 <?php echo $data[0]["x3dModelTitle"]; ?>
               </h3>
 
@@ -191,7 +191,7 @@
           <div id="bottle" tyle="display:none;" s>
             <!-- The 3D Model Card -->
             <div class="card-body">
-              <h3 class="card-title"> <?php echo $data[1]["x3dModelTitle"]; ?></h3>
+              <h3 class="card-title text-center"> <?php echo $data[1]["x3dModelTitle"]; ?></h3>
             </div>
             <br>
 
@@ -226,7 +226,7 @@
           <div id="can" style="display:none;">
             <!-- The 3D Model Card -->
             <div class="card-body">
-              <h3 class="card-title"> <?php echo $data[2]["x3dModelTitle"]; ?></h3>
+              <h3 class="card-title text-center"> <?php echo $data[2]["x3dModelTitle"]; ?></h3>
             </div>
             <br>
 
