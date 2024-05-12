@@ -1,6 +1,22 @@
 //adapted from example code 'benskitchen.com'
 // Each model has its own namespacename, so we must call the function for each model namespace.
 
+
+function cupScene(){
+    nSwitch = 0;
+    document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
+}
+
+function bottleScene(){
+    nSwitch = 1;
+    document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
+}
+
+function canScene(){
+    nSwitch = 2;
+    document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
+}
+
 var spinning = false;
 
 function spinX()
