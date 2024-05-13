@@ -279,6 +279,7 @@
                 </Switch>
               </scene>
             </x3d>
+            
           </div>
         </div>
       </div>
@@ -375,24 +376,14 @@
   </div>
   <!-- END OF REFERENCES -->
 
-  <!-- START OF FOOTER -->
-  <nav class="navbar navbar-expand-sm footer sticky">
+    <!-- START OF FOOTER -->
+    <nav class="navbar navbar-expand-sm footer sticky">
     <div class="container-fluid">
-      <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
-        <li class="nav-item">
-          <!-- TODO Put the below styling into CSS rather than here -->
-          <a id="navOriginality" href="#" style="color:#ffffff;">Statement of Originality | </a>
-        </li>
-        <li class="nav-item">
-          <a id="navReferences" href="#" style="color:#ffffff;">| References |</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/Bread02/Web3DFinalProject" style="color:#ffffff;">| Github Link </a>
-        </li>
-        </li>
-      </ul>
+    <div class="navbar-text float-left copyright">
+          <p><a span class="align-baseline" href="#" id="navOriginality" style="color:#ffffff;">Statement of Originality </a> | <a id="navReferences" href ="#" style="color:#ffffff;">| References | </a> | <a href="https://github.com/Bread02/Web3DFinalProject" style="color:#ffffff;">Github</a></span></p>
     </div>
-  </nav>
+    </div>
+    </nav>
   <!-- END OF FOOTER -->
 
 <!-- My 3D App modals -->
