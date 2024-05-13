@@ -1,0 +1,20 @@
+[
+    {
+        "imagePath": "assets/images/front_page_images/FrontImage2.png",
+        "drinkTitle": "Costa Coffee In Store.",
+        "drinkSubtitle": "Delicious food and drinks",
+        "drinkDescription": "Discover a wide range of coffees instore with Costa. Costa offers everything from Smoothies, Hot Milkshakes, to Espressos and Gingerbread Caramel Lattes. Costa does not offer just drinks, but also a wide range of food such as cakes, toasties, and sandwiches!",
+    },
+    {
+        "imagePath": "assets/images/front_page_images/FrontImage3.png",
+        "modelTitle": "Costa Coffee in a Bottle",
+        "modelSubtitle": "A range of flavours including Brownie and Caramel",
+        "modelDescription": "Discover Costa's bottled drink range available in supermarkets. You can find large bottles and small bottles. Just shake it up and enjoy!"
+    },
+    {
+        "imagePath": "assets/images/front_page_images/FrontImage4.png",
+        "modelTitle": "Costa in a Can",
+        "modelSubtitle": "A range of canned refreshing drinks",
+        "modelDescription": "Discover Costa's range of canned drinks including vanilla latte, espresso, double espresso and many other flavours. Simply shake and enjoy!"
+    }
+]
