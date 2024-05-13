@@ -26,6 +26,7 @@ body {
     background-color: rgba(182, 231, 243, 1.0);
 }
 
+
 .main_contents {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -418,6 +419,11 @@ X3D, x3d {
     background-color: #b6e7f3;
     margin-top: 20px;
     /* Experiment to move the dropdown menu down */
+}
+
+.modal
+{
+	z-index:99999;
 }
 
 .dropdown-menu .dropdown-item {

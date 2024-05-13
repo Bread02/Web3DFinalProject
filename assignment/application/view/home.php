@@ -62,8 +62,7 @@
           </li>
           <!-- Button trigger modal -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">Contact</button></a>
+            <a class="nav-link" href='#' data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
           </li>
         </ul>
       </div>
@@ -396,8 +395,32 @@
   </nav>
   <!-- END OF FOOTER -->
 
-  <!-- TODO MODALS -->
-  <!-- END OF MODALS -->
+<!-- My 3D App modals -->
+      <!-- Contact modal -->
+      <!-- The Modal -->
+      <div class="modal fade" id="contactModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">3D App Details</h4>
+                  <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <p>Candidate Number: 197670</p>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+          </div>
+      </div>
 
   <!-- JavaScript -->
   <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
