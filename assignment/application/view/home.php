@@ -170,8 +170,7 @@
                 <div class="card-body">
                   <div id="cupDescription">
                     <h4 class="card-title text-center"><?php echo $data[0]["modelTitle"]; ?></h4>
-                    <p class="card-text "><?php echo $data[0]["modelDescription"]; ?></p>
-                    <a href='https://www.costa.co.uk/' type="button" class="btn btn-primary">Visit the costa store</a>
+                    <p class="card-text"><?php echo $data[0]["modelDescription"]; ?></p>
                   </div>
                 </div>
               </div>
@@ -207,7 +206,6 @@
                   <div id="bottleDescription">
                     <h4 class="card-title text-center"><?php echo $data[1]["modelTitle"]; ?></h4>
                     <p class="card-text text-center"><?php echo $data[1]["modelDescription"]; ?></p>
-                    <a href='https://www.costa.co.uk/' type="button" class="btn btn-primary">Visit the costa store</a>
                   </div>
                 </div>
               </div>
@@ -242,7 +240,6 @@
                   <div id="canDescription">
                     <h4 class="card-title text-center"><?php echo $data[2]["modelTitle"]; ?></h4>
                     <p class="card-text text-center"><?php echo $data[2]["modelDescription"]; ?></p>
-                    <a href='https://www.costa.co.uk/' type="button" class="btn btn-primary">Visit the costa store</a>
                   </div>
                 </div>
               </div>
@@ -312,9 +309,9 @@
           <h4 class="card-title text-center">
             <div id="interactionPanelAnimationTitle"></div>
           </h4>
-          <button type="button" class="btn btn-primary mt-2" onclick="spinX();">RotX</button>
-          <button type="button" class="btn btn-primary mt-2" onclick="spinY();">RotY</button>
-          <button type="button" class="btn btn-primary mt-2" onclick="spinZ();">RotZ</button>
+          <a id="spinXButton" button type="button" class="btn btn-danger mt-2" onclick="spinX();">RotX</a>
+          <a id="spinYButton" button type="button" class="btn btn-danger mt-2" onclick="spinY();">RotY</a>
+          <a id="spinZButton" button type="button" class="btn btn-danger mt-2" onclick="spinZ();">RotZ</a>
           <button type="button" class="btn btn-primary mt-2 " onclick="stopRotation();">Stop Rotation</button>
           <br>
           <div id="interactionPanelAnimate"></div>
@@ -325,7 +322,7 @@
           <h4 class="card-title text-center">
             <div id="interactionPanelRenderTitle"></div>
           </h4>
-          <button type="button" class="btn btn-primary mt-2" onclick="wireframe();">Wireframe</button>
+          <a id="wireFrameButton" button type="button" class="btn btn-danger mt-2" onclick="wireframe();">Wireframe</a>
           <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success mt-2" onclick="headlight();">Toggle
             Headlight</a>
           <a id="toggleLightsBtn" button type="button" class="btn btn-success mt-2" onclick="toggleLights();">Toggle

@@ -27,11 +27,26 @@ var spinning = false;
 
 function spinX()
 {
+	stopRotation();
 	spinning = !spinning;
 	document.getElementById('model__RotationTimerXModelOne').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerXModelTwo').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerXModelThree').setAttribute('enabled', spinning.toString());
 
+		// now we make button green
+		var element = document.querySelector("#spinXButton");
+	
+		// if success headlight then change to danger.
+		if(element.classList.contains("btn-success"))
+		{
+			element.classList.remove("btn-success");
+			element.classList.add("btn-danger");
+		}
+		else
+		{
+			element.classList.remove("btn-danger");
+			element.classList.add("btn-success");
+		}
 }
 
 function stopRotation()
@@ -48,23 +63,87 @@ function stopRotation()
 	document.getElementById('model__RotationTimerXModelThree').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerYModelThree').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerZModelThree').setAttribute('enabled', spinning.toString());
+
+			// now we make buttons red
+			var element = document.querySelector("#spinXButton");
+	
+			// if success headlight then change to danger.
+			if(element.classList.contains("btn-success"))
+			{
+				element.classList.remove("btn-success");
+				element.classList.add("btn-danger");
+			}
+
+						// now we make buttons red
+						var element = document.querySelector("#spinYButton");
+	
+						// if success headlight then change to danger.
+						if(element.classList.contains("btn-success"))
+						{
+							element.classList.remove("btn-success");
+							element.classList.add("btn-danger");
+						}
+
+									// now we make buttons red
+			var element = document.querySelector("#spinZButton");
+	
+			// if success headlight then change to danger.
+			if(element.classList.contains("btn-success"))
+			{
+				element.classList.remove("btn-success");
+				element.classList.add("btn-danger");
+			}
+
+
 }
 
 function spinY()
 {
+	stopRotation();
 	spinning = !spinning;
 	document.getElementById('model__RotationTimerYModelOne').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerYModelTwo').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerYModelThree').setAttribute('enabled', spinning.toString());
 
+		// now we make button green
+		var element = document.querySelector("#spinYButton");
+	
+		// if success headlight then change to danger.
+		if(element.classList.contains("btn-success"))
+		{
+			element.classList.remove("btn-success");
+			element.classList.add("btn-danger");
+		}
+		else
+		{
+			element.classList.remove("btn-danger");
+			element.classList.add("btn-success");
+		}
+
 }
 
 function spinZ()
 {
+	stopRotation();
 	spinning = !spinning;
 	document.getElementById('model__RotationTimerZModelOne').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerZModelTwo').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerZModelThree').setAttribute('enabled', spinning.toString());
+
+			// now we make button green
+			var element = document.querySelector("#spinZButton");
+	
+			// if success headlight then change to danger.
+			if(element.classList.contains("btn-success"))
+			{
+				element.classList.remove("btn-success");
+				element.classList.add("btn-danger");
+			}
+			else
+			{
+				element.classList.remove("btn-danger");
+				element.classList.add("btn-success");
+			}
 
 }
 
@@ -91,6 +170,32 @@ function wireframe()
 	var e = document.getElementById('wire');
 	e.runtime.togglePoints(true);
 	e.runtime.togglePoints(true);
+
+			// now we make button green
+			var element = document.querySelector("#wireFrameButton");
+	
+			// if success headlight then change to danger.
+			if(element.classList.contains("btn-danger"))
+			{
+				element.classList.remove("btn-danger");
+				element.classList.add("btn-warning");
+				return;
+			}
+
+			
+			if(element.classList.contains("btn-warning"))
+			{
+				element.classList.remove("btn-warning");
+				element.classList.add("btn-success");
+				return;
+			}
+
+			if(element.classList.contains("btn-success"))
+			{
+				element.classList.remove("btn-sucess");
+				element.classList.add("btn-danger");
+				return;
+			}
 }
 
 function toggleLights()
