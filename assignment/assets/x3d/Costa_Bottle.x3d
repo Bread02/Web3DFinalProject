@@ -8,7 +8,6 @@
 	<meta name="source" content="Costa_Bottle.wrl" />
 </head>
 <Scene>
-	 <!-- <Switch id="switcher"> TODO FIX THIS -->
  <!-- CONTROLS NAVIGATION MODE AND HEAD LIGHT-->
     <NavigationInfo  DEF="headlight" headlight="true" type='"EXAMINE"'/>
     
@@ -111,7 +110,7 @@
 					ambientIntensity="0"
 					specularColor="0.200000002980232 0.200000002980232 0.200000002980232"
 					shininess="0.491200000047684" />
-				<ImageTexture DEF='ImgTexture'
+				<ImageTexture DEF='ImgTextureModelTwo'
 					url="maps/Costa_Bottle_CaramelMap.png" />
 			</Appearance>
 			<IndexedFaceSet DEF="Bottle-FACES"
@@ -125,6 +124,5 @@
 		</Shape>
 	</Transform>
 	</Transform>
-	<!--	</Switch> -->
 </Scene>
 </X3D>

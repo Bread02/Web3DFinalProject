@@ -292,7 +292,7 @@ function cameraBottom()
 
 function changeTextureCaramel()
 {
-	document.getElementById('model__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.png');
+	document.getElementById('model__ImgTextureModelTwo').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.png');
 	
 	// button element
     changeBottleNavClassesToNotActive()
@@ -305,7 +305,7 @@ function changeTextureCaramel()
 
 function changeTextureBrownie()
 {
-	document.getElementById('model__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_BrownieMap.png');
+	document.getElementById('model__ImgTextureModelTwo').setAttribute("url", 'maps/Costa_Bottle_BrownieMap.png');
 	
 	// button element
     changeBottleNavClassesToNotActive()
@@ -318,7 +318,7 @@ function changeTextureBrownie()
 
 function changeTextureVanillaLatte()
 {
-	document.getElementById('model__ImgTexture').setAttribute("url", 'maps/CostaCan_VanillaLatteMap.png');
+	document.getElementById('model__ImgTextureModelThree').setAttribute("url", 'maps/CostaCan_VanillaLatteMap.png');
 	
 	// button element
     changeCanNavClassesToNotActive()
@@ -331,7 +331,7 @@ function changeTextureVanillaLatte()
 
 function changeTextureLatte()
 {
-	document.getElementById('model__ImgTexture').setAttribute("url", 'maps/CostaCan_LatteMap.png');
+	document.getElementById('model__ImgTextureModelThree').setAttribute("url", 'maps/CostaCan_LatteMap.png');
 	
 	// button element
     changeCanNavClassesToNotActive()
