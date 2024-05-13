@@ -186,7 +186,7 @@
             <div class="card-title text-center">
               <!-- CHOOSE SKINS -->
               <h4 class="card-title text-center">Flavours</h4>
-              <a id="navCoke" button type="button" class="btn btn-success">Costa Cup</button> </a>
+              <a id="cupButton" button type="button" class="btn btn-success">Costa Cup</button> </a>
               <!-- END OF CHOOSE SKINS -->
             </div>
           </div>
@@ -265,19 +265,19 @@
 
           <!-- X3D MODEL SCENES -->
           <div class="model3D">
-            <x3d id="models">
+            <x3d id="wire">
               <scene>
                 <Switch whichChoice="0" id='SceneSwitch'>
                   <transform>
-                    <inline nameSpaceName="modelOne" mapDEFToID="true" onclick="animateModel();"
+                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();"
                       url="assets/x3d/Costa_Cup.x3d"> </inline>
                   </transform>
                   <transform>
-                    <inline nameSpaceName="modelTwo" mapDEFToID="true" onclick="animateModel();"
+                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();"
                       url="assets/x3d/Costa_Bottle.x3d"> </inline>
                   </transform>
                   <transform>
-                    <inline nameSpaceName="modelThree" mapDEFToID="true" onclick="animateModel();"
+                    <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();"
                       url="assets/x3d/Costa_Can.x3d"> </inline>
                   </transform>
                 </Switch>

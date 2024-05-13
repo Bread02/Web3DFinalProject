@@ -3,16 +3,22 @@
 
 
 function cupScene(){
+	stopRotation();
     nSwitch = 0;
     document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
 }
 
 function bottleScene(){
+	stopRotation();
+
     nSwitch = 1;
     document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
+
 }
 
 function canScene(){
+	stopRotation();
+
     nSwitch = 2;
     document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
 }
@@ -22,111 +28,85 @@ var spinning = false;
 function spinX()
 {
 	spinning = !spinning;
-	document.getElementById('modelOne__RotationTimerX').setAttribute('enabled', spinning.toString());
-	
-	document.getElementById('modelTwo__RotationTimerX').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerXModelOne').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerXModelTwo').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerXModelThree').setAttribute('enabled', spinning.toString());
 
-	document.getElementById('modelThree__RotationTimerX').setAttribute('enabled', spinning.toString());
 }
 
 function stopRotation()
 {
 	spinning = false;
-	document.getElementById('modelOne__RotationTimerX').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelOne__RotationTimerY').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelOne__RotationTimerZ').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerXModelOne').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerYModelOne').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerZModelOne').setAttribute('enabled', spinning.toString());
 
-	document.getElementById('modelTwo__RotationTimerX').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelTwo__RotationTimerY').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelTwo__RotationTimerZ').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerXModelTwo').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerYModelTwo').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerZModelTwo').setAttribute('enabled', spinning.toString());
 
-	document.getElementById('modelThree__RotationTimerX').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelThree__RotationTimerY').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelThree__RotationTimerZ').setAttribute('enabled', spinning.toString());
-
+	document.getElementById('model__RotationTimerXModelThree').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerYModelThree').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerZModelThree').setAttribute('enabled', spinning.toString());
 }
 
 function spinY()
 {
 	spinning = !spinning;
-	document.getElementById('modelOne__RotationTimerY').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelTwo__RotationTimerY').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelThree__RotationTimerY').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerYModelOne').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerYModelTwo').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerYModelThree').setAttribute('enabled', spinning.toString());
+
 }
 
 function spinZ()
 {
 	spinning = !spinning;
-	document.getElementById('modelOne__RotationTimerZ').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelTwo__RotationTimerZ').setAttribute('enabled', spinning.toString());
-	document.getElementById('modelThree__RotationTimerZ').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerZModelOne').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerZModelTwo').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__RotationTimerZModelThree').setAttribute('enabled', spinning.toString());
+
 }
 
 function animateModel()
 {
-    if(document.getElementById('modelOne__RotationTimerX').getAttribute('enabled')!= 'true')
-        document.getElementById('modelOne__RotationTimerX').setAttribute('enabled', 'true');
+    if(document.getElementById('model__RotationTimerXModelOne').getAttribute('enabled')!= 'true')
+        document.getElementById('model__RotationTimerXModelOne').setAttribute('enabled', 'true');
     else
-        document.getElementById('modelOne__RotationTimerX').setAttribute('enabled', 'false');
-	
-	
-	    if(document.getElementById('modelTwo__RotationTimer').getAttribute('enabled')!= 'true')
-        document.getElementById('modelTwo__RotationTimer').setAttribute('enabled', 'true');
-    else
-        document.getElementById('modelTwo__RotationTimer').setAttribute('enabled', 'false');
-	
-	
-		    if(document.getElementById('modelThree__RotationTimer').getAttribute('enabled')!= 'true')
-        document.getElementById('modelThree__RotationTimer').setAttribute('enabled', 'true');
-    else
-        document.getElementById('modelThree__RotationTimer').setAttribute('enabled', 'false');
+        document.getElementById('model__RotationTimerXModelOne').setAttribute('enabled', 'false');
+
+		if(document.getElementById('model__RotationTimerXModelTwo').getAttribute('enabled')!= 'true')
+			document.getElementById('model__RotationTimerXModelTwo').setAttribute('enabled', 'true');
+		else
+			document.getElementById('model__RotationTimerXModelTwo').setAttribute('enabled', 'false');
+
+			if(document.getElementById('model__RotationTimerXModelThree').getAttribute('enabled')!= 'true')
+				document.getElementById('model__RotationTimerXModelThree').setAttribute('enabled', 'true');
+			else
+				document.getElementById('model__RotationTimerXModelThree').setAttribute('enabled', 'false');
 }
 
 function wireframe()
 {
-	var e = document.getElementById('modelOne');
-	e.runtime.togglePoints(true);
-	e.runtime.togglePoints(true);
-	
-	var e = document.getElementById('modelTwo');
-	e.runtime.togglePoints(true);
-	e.runtime.togglePoints(true);
-	
-	var e = document.getElementById('modelThree');
+	var e = document.getElementById('wire');
 	e.runtime.togglePoints(true);
 	e.runtime.togglePoints(true);
 }
 
 function toggleLights()
 {
-	var intense = (document.getElementById('modelOne__Light').getAttribute('intensity'));
+	var intense = (document.getElementById('model__Light').getAttribute('intensity'));
 	
 	// if lights off do this
 	if (intense < 1)
 	{
-	document.getElementById('modelOne__Light').setAttribute('intensity', '1');
-	document.getElementById('modelOne__Light_001').setAttribute('intensity', '1');
-	document.getElementById('modelOne__Light_002').setAttribute('intensity', '1');
-	document.getElementById('modelOne__Light_003').setAttribute('intensity', '1');
-	document.getElementById('modelOne__Light_004').setAttribute('intensity', '1');
-	document.getElementById('modelOne__Light_005').setAttribute('intensity', '1');
-	document.getElementById('modelOne__Light_006').setAttribute('intensity', '1');
-	
-	document.getElementById('modelTwo__Light').setAttribute('intensity', '1');
-	document.getElementById('modelTwo__Light_001').setAttribute('intensity', '1');
-	document.getElementById('modelTwo__Light_002').setAttribute('intensity', '1');
-	document.getElementById('modelTwo__Light_003').setAttribute('intensity', '1');
-	document.getElementById('modelTwo__Light_004').setAttribute('intensity', '1');
-	document.getElementById('modelTwo__Light_005').setAttribute('intensity', '1');
-	document.getElementById('modelTwo__Light_006').setAttribute('intensity', '1');
-	
-	document.getElementById('modelThree__Light').setAttribute('intensity', '1');
-	document.getElementById('modelThree__Light_001').setAttribute('intensity', '1');
-	document.getElementById('modelThree__Light_002').setAttribute('intensity', '1');
-	document.getElementById('modelThree__Light_003').setAttribute('intensity', '1');
-	document.getElementById('modelThree__Light_004').setAttribute('intensity', '1');
-	document.getElementById('modelThree__Light_005').setAttribute('intensity', '1');
-	document.getElementById('modelThree__Light_006').setAttribute('intensity', '1');
+	document.getElementById('model__Light').setAttribute('intensity', '1');
+	document.getElementById('model__Light_001').setAttribute('intensity', '1');
+	document.getElementById('model__Light_002').setAttribute('intensity', '1');
+	document.getElementById('model__Light_003').setAttribute('intensity', '1');
+	document.getElementById('model__Light_004').setAttribute('intensity', '1');
+	document.getElementById('model__Light_005').setAttribute('intensity', '1');
+	document.getElementById('model__Light_006').setAttribute('intensity', '1');
 	
 		// now we make button green
 	  var element = document.querySelector("#toggleLightsBtn");
@@ -135,29 +115,13 @@ function toggleLights()
 	}
 	else // if lights on do this
 	{
-	document.getElementById('modelOne__Light').setAttribute('intensity', '0');
-	document.getElementById('modelOne__Light_001').setAttribute('intensity', '0');
-	document.getElementById('modelOne__Light_002').setAttribute('intensity', '0');
-	document.getElementById('modelOne__Light_003').setAttribute('intensity', '0');
-	document.getElementById('modelOne__Light_004').setAttribute('intensity', '0');
-	document.getElementById('modelOne__Light_005').setAttribute('intensity', '0');
-	document.getElementById('modelOne__Light_006').setAttribute('intensity', '0');
-	
-	document.getElementById('modelTwo__Light').setAttribute('intensity', '0');
-	document.getElementById('modelTwo__Light_001').setAttribute('intensity', '0');
-	document.getElementById('modelTwo__Light_002').setAttribute('intensity', '0');
-	document.getElementById('modelTwo__Light_003').setAttribute('intensity', '0');
-	document.getElementById('modelTwo__Light_004').setAttribute('intensity', '0');
-	document.getElementById('modelTwo__Light_005').setAttribute('intensity', '0');
-	document.getElementById('modelTwo__Light_006').setAttribute('intensity', '0');
-	
-	document.getElementById('modelThree__Light').setAttribute('intensity', '0');
-	document.getElementById('modelThree__Light_001').setAttribute('intensity', '0');
-	document.getElementById('modelThree__Light_002').setAttribute('intensity', '0');
-	document.getElementById('modelThree__Light_003').setAttribute('intensity', '0');
-	document.getElementById('modelThree__Light_004').setAttribute('intensity', '0');
-	document.getElementById('modelThree__Light_005').setAttribute('intensity', '0');
-	document.getElementById('modelThree__Light_006').setAttribute('intensity', '0');
+	document.getElementById('model__Light').setAttribute('intensity', '0');
+	document.getElementById('model__Light_001').setAttribute('intensity', '0');
+	document.getElementById('model__Light_002').setAttribute('intensity', '0');
+	document.getElementById('model__Light_003').setAttribute('intensity', '0');
+	document.getElementById('model__Light_004').setAttribute('intensity', '0');
+	document.getElementById('model__Light_005').setAttribute('intensity', '0');
+	document.getElementById('model__Light_006').setAttribute('intensity', '0');
 	
 	// now we make button red
 	  var element = document.querySelector("#toggleLightsBtn");
@@ -171,11 +135,7 @@ var lightOn = true;
 function headlight()
 {
 	lightOn = !lightOn;
-	document.getElementById('modelOne__headlight').setAttribute('headlight', lightOn.toString());
-	
-	document.getElementById('modelTwo__headlight').setAttribute('headlight', lightOn.toString());
-	
-	document.getElementById('modelThree__headlight').setAttribute('headlight', lightOn.toString());
+	document.getElementById('model__headlight').setAttribute('headlight', lightOn.toString());
 	
 	// now we make button green
 	var element = document.querySelector("#toggleHeadlightsBtn");
@@ -195,63 +155,39 @@ function headlight()
 
 function cameraFront()
 {
-	document.getElementById('modelOne__CameraFront').setAttribute('bind', 'true');
-
-	document.getElementById('modelTwo__CameraFront').setAttribute('bind', 'true');
-	
-	document.getElementById('modelThree__CameraFront').setAttribute('bind', 'true');
+	document.getElementById('model__CameraFront').setAttribute('bind', 'true');
 }
 
 function cameraBack()
 {
-	document.getElementById('modelOne__CameraBack').setAttribute('bind', 'true');
-	
-	document.getElementById('modelTwo__CameraBack').setAttribute('bind', 'true');
-	
-	document.getElementById('modelThree__CameraBack').setAttribute('bind', 'true');
+	document.getElementById('model__CameraBack').setAttribute('bind', 'true');
 }
 
 function cameraLeft()
 {
-	document.getElementById('modelOne__CameraLeft').setAttribute('bind', 'true');
-	
-	document.getElementById('modelTwo__CameraLeft').setAttribute('bind', 'true');
-	
-	document.getElementById('modelThree__CameraLeft').setAttribute('bind', 'true');
+	document.getElementById('model__CameraLeft').setAttribute('bind', 'true');
 }
 
 function cameraRight()
 {
-	document.getElementById('modelOne__CameraRight').setAttribute('bind', 'true');
-	
-	document.getElementById('modelTwo__CameraRight').setAttribute('bind', 'true');
-	
-	document.getElementById('modelThree__CameraRight').setAttribute('bind', 'true');
+	document.getElementById('model__CameraRight').setAttribute('bind', 'true');
 }
 
 function cameraTop()
 {
-	document.getElementById('modelOne__CameraTop').setAttribute('bind', 'true');
-	
-	document.getElementById('modelTwo__CameraTop').setAttribute('bind', 'true');
-	
-	document.getElementById('modelThree__CameraTop').setAttribute('bind', 'true');
+	document.getElementById('model__CameraTop').setAttribute('bind', 'true');
 }
 
 function cameraBottom()
 {
-	document.getElementById('modelOne__CameraBottom').setAttribute('bind', 'true');
-	
-	document.getElementById('modelTwo__CameraBottom').setAttribute('bind', 'true');
-	
-	document.getElementById('modelThree__CameraBottom').setAttribute('bind', 'true');
+	document.getElementById('model__CameraBottom').setAttribute('bind', 'true');
 }
 
 // CHANGING TEXTURE REGION
 
 function changeTextureCaramel()
 {
-	document.getElementById('modelTwo__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.png');
+	document.getElementById('model__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.png');
 	
 	// button element
     changeBottleNavClassesToNotActive()
@@ -264,7 +200,7 @@ function changeTextureCaramel()
 
 function changeTextureBrownie()
 {
-	document.getElementById('modelTwo__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_BrownieMap.png');
+	document.getElementById('model__ImgTexture').setAttribute("url", 'maps/Costa_Bottle_BrownieMap.png');
 	
 	// button element
     changeBottleNavClassesToNotActive()
@@ -277,9 +213,9 @@ function changeTextureBrownie()
 
 function changeTextureVanillaLatte()
 {
-	document.getElementById('modelThree__ImgTexture').setAttribute("url", 'maps/CostaCan_VanillaLatteMap.png');
+	document.getElementById('model__ImgTexture').setAttribute("url", 'maps/CostaCan_VanillaLatteMap.png');
 	
-		// button element
+	// button element
     changeCanNavClassesToNotActive()
 	var element = document.querySelector("#vanillaLatteButton");
 	
@@ -290,9 +226,9 @@ function changeTextureVanillaLatte()
 
 function changeTextureLatte()
 {
-	document.getElementById('modelThree__ImgTexture').setAttribute("url", 'maps/CostaCan_LatteMap.png');
+	document.getElementById('model__ImgTexture').setAttribute("url", 'maps/CostaCan_LatteMap.png');
 	
-			// button element
+	// button element
     changeCanNavClassesToNotActive()
 	var element = document.querySelector("#latteButton");
 	
@@ -340,28 +276,5 @@ function changeBottleNavClassesToNotActive()
 	var element = document.querySelector("#vanillaLatteButton");
 	element.classList.remove("btn-success");
 	element.classList.add("btn-primary");
-}
-
-// this function allows us to change the what models are being rendered to enhance performance.
-function hideAllNodes() {
-	// 0 will display the node, -1 will hide the node.
-	document.getElementById("modelOne__switcher").setAttribute("render", false);
-	document.getElementById("modelTwo__switcher").setAttribute("render", false);
-	document.getElementById("modelThree__switcher").setAttribute("render", false);
-}
-
-function showModelNode(modelToDisplay) {
-	hideAllNodes();
-	switch (modelToDisplay) {
-		case 1:
-			document.getElementById("modelOne__switcher").setAttribute("render", true);
-			break;
-		case 2:
-			document.getElementById("modelTwo__switcher").setAttribute("render", true);
-			break;
-		case 3:
-			document.getElementById("modelThree__switcher").setAttribute("render", true);
-			break;
-	}
 }
 

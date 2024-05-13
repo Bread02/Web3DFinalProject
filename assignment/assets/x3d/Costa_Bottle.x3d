@@ -62,22 +62,22 @@
     <Viewpoint DEF='CameraTop' description='CameraTop' orientation='0.1 0 0 -1.571' position='0 20 0.0001097' fieldOfView='0.5274'/>
 
     <Transform DEF='CokeCan-Wrapper'>
-	    <timeSensor DEF='RotationTimerX' cycleInterval='4' loop='true' enabled='false'></timeSensor>
-        <orientationInterpolator DEF='RotatorX' key='0 0.25 0.5 0.75 1' keyValue='1 0 0 0 1 0 0 1.57079 1 0 0 3.14159  1 0 0 4.71239  1 0 0 6.28317'></orientationInterpolator>
-        <ROUTE fromNode='RotationTimerX' fromField='fraction_changed' toNode='RotatorX' toField='set_fraction'></ROUTE>
-        <ROUTE fromNode='RotatorX' fromField='value_changed' toNode='CokeCan-Wrapper' toField='set_rotation'></ROUTE>
+	    <timeSensor DEF='RotationTimerXModelTwo' cycleInterval='4' loop='true' enabled='false'></timeSensor>
+        <orientationInterpolator DEF='RotatorXModelTwo' key='0 0.25 0.5 0.75 1' keyValue='1 0 0 0 1 0 0 1.57079 1 0 0 3.14159  1 0 0 4.71239  1 0 0 6.28317'></orientationInterpolator>
+        <ROUTE fromNode='RotationTimerXModelTwo' fromField='fraction_changed' toNode='RotatorXModelTwo' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='RotatorXModelTwo' fromField='value_changed' toNode='CokeCan-Wrapper' toField='set_rotation'></ROUTE>
 
 		<!-- Spin Y Axis -->
-		<timeSensor DEF='RotationTimerY' cycleInterval='4' loop='true' enabled='false'></timeSensor>
-        <orientationInterpolator DEF='RotatorY' key='0 0.25 0.5 0.75 1' keyValue='0 1 0 0 0 1 0 1.57079 0 1 0 3.14159  0 1 0 4.71239  0 1 0 6.28317'></orientationInterpolator>
-        <ROUTE fromNode='RotationTimerY' fromField='fraction_changed' toNode='RotatorY' toField='set_fraction'></ROUTE>
-        <ROUTE fromNode='RotatorY' fromField='value_changed' toNode='CokeCan-Wrapper' toField='set_rotation'></ROUTE>
+		<timeSensor DEF='RotationTimerYModelTwo' cycleInterval='4' loop='true' enabled='false'></timeSensor>
+        <orientationInterpolator DEF='RotatorYModelTwo' key='0 0.25 0.5 0.75 1' keyValue='0 1 0 0 0 1 0 1.57079 0 1 0 3.14159  0 1 0 4.71239  0 1 0 6.28317'></orientationInterpolator>
+        <ROUTE fromNode='RotationTimerYModelTwo' fromField='fraction_changed' toNode='RotatorYModelTwo' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='RotatorYModelTwo' fromField='value_changed' toNode='CokeCan-Wrapper' toField='set_rotation'></ROUTE>
 
 		<!-- Spin Z Axis -->
-		<timeSensor DEF='RotationTimerZ' cycleInterval='4' loop='true' enabled='false'></timeSensor>
-        <orientationInterpolator DEF='RotatorZ' key='0 0.25 0.5 0.75 1' keyValue='0 0 1 0 0 0 1 1.57079 0 0 1 3.14159  0 0 1 4.71239  0 0 1 6.28317'></orientationInterpolator>
-        <ROUTE fromNode='RotationTimerZ' fromField='fraction_changed' toNode='RotatorZ' toField='set_fraction'></ROUTE>
-        <ROUTE fromNode='RotatorZ' fromField='value_changed' toNode='CokeCan-Wrapper' toField='set_rotation'></ROUTE>
+		<timeSensor DEF='RotationTimerZModelTwo' cycleInterval='4' loop='true' enabled='false'></timeSensor>
+        <orientationInterpolator DEF='RotatorZModelTwo' key='0 0.25 0.5 0.75 1' keyValue='0 0 1 0 0 0 1 1.57079 0 0 1 3.14159  0 0 1 4.71239  0 0 1 6.28317'></orientationInterpolator>
+        <ROUTE fromNode='RotationTimerZModelTwo' fromField='fraction_changed' toNode='RotatorZModelTwo' toField='set_fraction'></ROUTE>
+        <ROUTE fromNode='RotatorZModelTwo' fromField='value_changed' toNode='CokeCan-Wrapper' toField='set_rotation'></ROUTE>
 
 	<Viewpoint DEF="Camera_001"
 		position="27.2438793182373 9.71611499786377 15.336784362793"
