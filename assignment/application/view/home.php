@@ -90,9 +90,11 @@
       <div class="col-sm-4">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/FrontImage2.png" data-fancybox="gallery" data-caption="Costa Cup Render">
-            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage2.png" alt="Costa Cup">
+            <img class="card-img-top img-fluid" src="assets/images/front_page_images/FrontImage2.png" alt="Costa Cup">
           </a>
+          <div class="card-body-home-white">
           <div id="title_left" class="text-center"></div>
+          </div>
           <div id="subTitle_left" class="text-center"></div>
           <div id="description_left"></div>
         </div>
@@ -100,7 +102,7 @@
       <div class="col-sm-4">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/FrontImage3.png" data-fancybox data-caption="Costa Caramel Frappe Render">
-            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage3.png" alt="Costa Caramel Frappe">
+            <img class="card-img-top img-fluid" src="assets/images/front_page_images/FrontImage3.png" alt="Costa Caramel Frappe">
           </a>
           <div class="card-body-home-white">
           <div id="title_center" class="text-center"></div>
@@ -112,14 +114,19 @@
       <div class="col-sm-4">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/FrontImage4.png" data-fancybox data-caption="Costa Canned Coffee Vanilla Latte Render">
-            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage4.png" alt="Costa Canned Coffee Vanilla Latte">
+            <img class="card-img-top img-fluid" src="assets/images/front_page_images/FrontImage4.png" alt="Costa Canned Coffee Vanilla Latte">
           </a>
+          <div class="card-body-home-white">
           <div id="title_right" class="text-center"></div>
+          </div>
           <div id="subTitle_right" class="text-center"></div>
           <div id="description_right"></div>
         </div>
       </div>
-      <div class="card text-center">
+      </div>
+
+
+  <div class="card text-center">
   <div class="card-header">
     NEWS
   </div>
@@ -129,20 +136,63 @@
     <a href="https://www.costa.co.uk/menu" class="btn btn-primary">Visit our full menu range!</a>
   </div>
 </div>
-    </div>
-  </div>
 
-    <!-- START OF FIRST ROW -->
+    <!-- START OF FIRST ROW
     <div class="col-sm-12">
       <div id="main_3d_image">
-        <div id="main_text" class="col-xs-12">
-          <div id="title_home"></div>
-          <div id="subTitle_home"></div>
-          <div id="description_home"></div>
+        <div id="main_text" class="col-xs-12 text-center">
+     <!--     <div id="title_home"></div> 
+         <!-- <div id="subTitle_home"></div> 
+         <!-- <div id="description_home"></div>
+         The below is only a taster of our range.
         </div>
       </div>
     </div>
     </div>
+-->
+
+    <div class="col-sm-12">
+    <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/front_page_images/FrontImage2.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>A taster of our range</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/front_page_images/FrontImage3.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/front_page_images/FrontImage4.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+</div>
 
     <!-- END OF FIRST ROW -->
 
