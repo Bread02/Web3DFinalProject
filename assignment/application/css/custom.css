@@ -307,15 +307,31 @@ X3D, x3d {
     background-color: #ffffffb9;
     margin-left: -8px;
     margin-right: -8px;
+    font-size: 20px;
 	color: rgb(118, 0, 4); /* Font color */ 
+}
+
+.card-body-home-news-main {
+    background-color: #760004de;
+	color: white; /* Font color */ 
+    padding: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    border-radius: 0%;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .card-body-home-news {
     background-color: #760004b9;
 	color: white; /* Font color */ 
     padding: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
     border-radius: 0%;
+    font-size: 20px;
 }
+
 
 .btn-spaced {
 	padding: 5px;
@@ -352,6 +368,7 @@ X3D, x3d {
 }
 
 .logo p {
+    font-family: OpenSans;
     font-size: 20px;
     margin-top: 22px;
     margin-bottom: -35px; /* Use this to resize the navbar */
@@ -429,7 +446,6 @@ X3D, x3d {
     outline: none;
 }
 
-/* CSS rule to style the footer */
 .footer {
     color: #730723; /* red */
     background-color: #730723; /* red */

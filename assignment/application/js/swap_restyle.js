@@ -147,6 +147,12 @@ $(document).ready(function() {
 		});
 	}
 
+	selectGallery()
+	{
+
+		
+	}
+
 });
 
 function changeLook() {

@@ -24,7 +24,6 @@
 <body>
 
 
-
   <!-- START OF NAVBAR -->
   <nav class="navbar sticky-top navbar-expand-sm navbar_costa">
     <div class="container-fluid">
@@ -39,11 +38,11 @@
 
     <!-- END OF LOGO -->
 
-    <!-- START OF NAVIGATION ELEMENT OF BAR -->
+    <!-- START OF NAVIGATION ELEM
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- Link Menu item button to the links class navbar-collapse selector -->
+    Link Menu item button to the links class navbar-collapse selector -->
     <div class="collapse navbar-collapse">
       <div class="container-fluid">
 
@@ -84,7 +83,6 @@
       <div class="col-sm-12">
       </div>
     </div>
-    <div id="main_3d_image">
     <div class="row">
       
       <div class="col-sm-4">
@@ -95,7 +93,9 @@
           <div class="card-body-home-white">
           <div id="title_left" class="text-center"></div>
           </div>
+          <div class="card-body-home-news">
           <div id="subTitle_left" class="text-center"></div>
+          </div>
           <div id="description_left"></div>
         </div>
       </div>
@@ -107,7 +107,9 @@
           <div class="card-body-home-white">
           <div id="title_center" class="text-center"></div>
           </div>
+          <div class="card-body-home-news">
           <div id="subTitle_center" class="text-center"></div>
+          </div>
           <div id="description_center"></div>
         </div>
       </div>
@@ -119,16 +121,18 @@
           <div class="card-body-home-white">
           <div id="title_right" class="text-center"></div>
           </div>
+          <div class="card-body-home-news">
           <div id="subTitle_right" class="text-center"></div>
+          </div>
           <div id="description_right"></div>
         </div>
       </div>
-      </div>
-
 
   <div class="card text-center">
+  <div class="card-body-home-news-main">
   <div class="card-header">
     NEWS
+    </div>
   </div>
   <div class="card-body-home-news">
     <h5 class="card-title">Our new food range has released!</h5>
@@ -141,9 +145,9 @@
     <div class="col-sm-12">
       <div id="main_3d_image">
         <div id="main_text" class="col-xs-12 text-center">
-     <!--     <div id="title_home"></div> 
-         <!-- <div id="subTitle_home"></div> 
-         <!-- <div id="description_home"></div>
+          <div id="title_home"></div> 
+          <div id="subTitle_home"></div> 
+          <div id="description_home"></div>
          The below is only a taster of our range.
         </div>
       </div>
@@ -151,7 +155,9 @@
     </div>
 -->
 
-    <div class="col-sm-12">
+<!-- carousel -->
+<div class="row">
+    <div class="col-sm-6">
     <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -162,35 +168,99 @@
     <div class="carousel-item active">
       <img src="assets/images/front_page_images/FrontImage2.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
+      <div class="card-body-home-news">
         <h5>A taster of our range</h5>
         <p>Some representative placeholder content for the first slide.</p>
+      </div>
       </div>
     </div>
     <div class="carousel-item">
       <img src="assets/images/front_page_images/FrontImage3.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
+      <div class="card-body-home-news">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
+      </div>
       </div>
     </div>
     <div class="carousel-item">
       <img src="assets/images/front_page_images/FrontImage4.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
+      <div class="card-body-home-news">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
       </div>
+      </div>
     </div>
   </div>
+  <div class="card-body-home-news">
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
+  </div>
+  <div class="card-body-home-news">
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+  </div>
+  </div>
+</div>
+<div class="col-sm-6">
+    <div id="carouselExampleCaptions2" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/front_page_images/FrontImage2.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <div class="card-body-home-news">
+        <h5>A taster of our range</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/front_page_images/FrontImage3.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <div class="card-body-home-news">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/front_page_images/FrontImage4.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      <div class="card-body-home-news">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body-home-news">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  </div>
+  <div class="card-body-home-news">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
 </div>
 </div>
+</div>
+
+<!-- carousel end -->
+
 </div>
 </div>
 
@@ -403,13 +473,19 @@
         <!-- END OF RENDERER CONTROLS -->
         <!-- END OF ROW -->
 
-        <!-- Where the gallery is held -->
+        <!-- Where the gallery is held TODO: Add in the 3 gallery pages -->
         <div class="card-body">
           <div class="card text-left">
             <div class="card-header gallery-header">
               <ul class="nav nav-tabs card-header-tabs">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Gallery</a>
+                  <a id="navGalleryCup" class="nav-link active" href="#">Costa Cup</a>
+                </li>
+                <li class="nav-item">
+                  <a id="navGalleryBottle" class="nav-link" href="#">Costa Bottle</a>
+                </li>
+                <li class="nav-item">
+                  <a id="navGalleryCan" class="nav-link" href="#">Costa Can</a>
                 </li>
               </ul>
             </div>
@@ -445,6 +521,8 @@
   </div>
   <!-- END OF REFERENCES -->
 
+
+  
     <!-- START OF FOOTER -->
     <nav class="navbar navbar-expand-sm footer sticky">
     <div class="container-fluid">
