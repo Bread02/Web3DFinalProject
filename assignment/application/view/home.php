@@ -13,7 +13,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="application/css/custom.css" crossorigin="anonymous">
   <!-- Fancybox -->
-  <link rel="stylesheet" type="text/css" href="application/css/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css" href="application/css/jquery.fancybox.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -23,13 +23,15 @@
 
 <body>
 
+
+
   <!-- START OF NAVBAR -->
   <nav class="navbar sticky-top navbar-expand-sm navbar_costa">
     <div class="container-fluid">
       <!-- START OF LOGO -->
       <div class="logo">
         <a class="navbar-brand" href="index.php">
-          <h1>Costa Coffee World</h1>
+          <h1>COSTA COFFEE World</h1>
           <p>Love For The Bean</p>
         </a>
       </div>
@@ -75,6 +77,61 @@
   <!-- Start of the SPA -->
   <!-- START OF HOME -->
   <div id="home">
+
+
+    <!-- START OF SECOND ROW -->
+    <div class="row">
+      <div class="col-sm-12">
+      </div>
+    </div>
+    <div id="main_3d_image">
+    <div class="row">
+      
+      <div class="col-sm-4">
+        <div class="card-body-home">
+          <a href="assets/images/front_page_images/FrontImage2.png" data-fancybox="gallery" data-caption="Costa Cup Render">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage2.png" alt="Costa Cup">
+          </a>
+          <div id="title_left" class="text-center"></div>
+          <div id="subTitle_left" class="text-center"></div>
+          <div id="description_left"></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card-body-home">
+          <a href="assets/images/front_page_images/FrontImage3.png" data-fancybox data-caption="Costa Caramel Frappe Render">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage3.png" alt="Costa Caramel Frappe">
+          </a>
+          <div class="card-body-home-white">
+          <div id="title_center" class="text-center"></div>
+          </div>
+          <div id="subTitle_center" class="text-center"></div>
+          <div id="description_center"></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card-body-home">
+          <a href="assets/images/front_page_images/FrontImage4.png" data-fancybox data-caption="Costa Canned Coffee Vanilla Latte Render">
+            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage4.png" alt="Costa Canned Coffee Vanilla Latte">
+          </a>
+          <div id="title_right" class="text-center"></div>
+          <div id="subTitle_right" class="text-center"></div>
+          <div id="description_right"></div>
+        </div>
+      </div>
+      <div class="card text-center">
+  <div class="card-header">
+    NEWS
+  </div>
+  <div class="card-body-home-news">
+    <h5 class="card-title">Our new food range has released!</h5>
+    <p class="card-text">Find out more through the link below!</p>
+    <a href="https://www.costa.co.uk/menu" class="btn btn-primary">Visit our full menu range!</a>
+  </div>
+</div>
+    </div>
+  </div>
+
     <!-- START OF FIRST ROW -->
     <div class="col-sm-12">
       <div id="main_3d_image">
@@ -85,47 +142,9 @@
         </div>
       </div>
     </div>
-    <!-- END OF FIRST ROW -->
+    </div>
 
-    <!-- START OF SECOND ROW -->
-    <div class="row">
-      <div class="col-sm-12">
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card-body">
-          <a href="assets/images/front_page_images/FrontImage2.png" data-fancybox data-caption="Costa Cup Render">
-            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage2.png" alt="Costa Cup">
-          </a>
-          <div id="title_left"></div>
-          <div id="subTitle_left"></div>
-          <div id="description_left"></div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card-body">
-          <a href="assets/images/front_page_images/FrontImage3.png" data-fancybox data-caption="Costa Caramel Frappe Render">
-            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage3.png" alt="Costa Caramel Frappe">
-          </a>
-          <div id="title_center"></div>
-          <div id="subTitle_center"></div>
-          <div id="description_center"></div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card-body">
-          <a href="assets/images/front_page_images/FrontImage4.png" data-fancybox data-caption="Costa Canned Coffee Vanilla Latte Render">
-            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/front_page_images/FrontImage4.png" alt="Costa Canned Coffee Vanilla Latte">
-          </a>
-          <div id="title_right"></div>
-          <div id="subTitle_right"></div>
-          <div id="description_right"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- END OF FIRST ROW -->
 
   <!-- END OF HOME -->
 

@@ -18,6 +18,11 @@
     src: url(../../assets/fonts/Roboto/Roboto-Regular.tff);
 }
 
+@font-face {
+    font-family: LemonMilk;
+    src: url(../../assets/fonts/Lemon_Milk/LEMONMILK-Bold.tff);
+}
+
 /* Extra small devices (portrait phones, less than 576px)
    No media query since this is the default in Bootstrap
 */
@@ -287,14 +292,33 @@ X3D, x3d {
 }
 
 .card-body {
-    background-color: #760003;
+    background-color: rgb(118, 0, 4);
 	color: white; /* Font color */ 
+}
+
+.card-body-home {
+    background-color: #760004b9;
+	color: white; /* Font color */ 
+    padding: 8px;
+    border-radius: 2%;
+}
+
+
+.card-body-home-white {
+    background-color: #ffffffb9;
+	color: rgb(118, 0, 4); /* Font color */ 
+}
+
+
+.card-body-home-news {
+    background-color: #760004b9;
+	color: white; /* Font color */ 
+    padding: 8px;
 }
 
 .btn-spaced {
 	padding: 5px;
-	margin: 5px;
-	
+	margin: 5px; 
 }
 
 .card-body h3 {
@@ -307,73 +331,38 @@ X3D, x3d {
 
 /* CSS rule to style the mobile logo */
 .logo {
-    margin-top: 20px;
+    font-family: LemonMilk;
 	color: white;
-	font-size: 35px;
 }
 
 .logo h1 {
-    font-family: OpenSans;
-    /* You don't need to repeat this for each media query as it is propagated */
+    font-family: LemonMilk;
     font-size: 31px;
     margin: 0;
     margin-top: -10px;
     margin-bottom: -15px;
     float: left;
-    padding-top: 0px;
+    padding-top: 10px;
     padding-left: 0px;
     padding-right: 2px;
 }
 
-.logo h2 {
-    font-family: OpenSans;
-    font-size: 31px;
-    margin-top: -6px;
-    margin-bottom: -15px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 3px;
-    float: left;
-}
-
-.logo h3 {
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: -5px;
-    padding-top: 0px;
-    padding-left: 0px;
-    float: left;
-}
-
 .logo p {
-    font-size: 7px;
-    /* You may have to tweak this to get a good fit */
+    font-size: 20px;
     margin-top: 22px;
-    /* You may have to tweak this to get a good fit */
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-left: 3px;
+    margin-bottom: -35px; /* Use this to resize the navbar */
+    padding-top: 10px;
+    text-align: center;
 }
 
-/* New CSS rules to better position the navbar and increase its height, Bootstrap defaults tend to make your site look like a Bootstrap clone! 
-*/
-
-/* CSS rule to overwrite the navbar background and border color — again, helps to stop your site looking like a Bootstrap clone! 
-*/
 .navbar_costa {
-    background-color: #760003;
-    border-width: 0px;
-    min-height: 70px;
+    background-color: #760004ee;
 }
 
-/* CSS rule to overwrite the navbar-brand font color
-*/
 .navbar_costa .navbar-brand {
     color: rgb(245, 235, 235);
 }
 
-/* CSS rule to overwrite the navbar-brand font hover color
-*/
 .navbar_costa .navbar-brand:hover {
     color: gray;
 }
@@ -382,8 +371,6 @@ X3D, x3d {
     color: white;
 }
 
-/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
-*/
 .navbar_costa .navbar-nav>li>a:hover,
 .navbar_costa .navbar-nav>li>a:focus {
     color: gray;
@@ -418,7 +405,6 @@ X3D, x3d {
     text-align: -webkit-left;
     background-color: #b6e7f3;
     margin-top: 20px;
-    /* Experiment to move the dropdown menu down */
 }
 
 .modal
@@ -467,7 +453,6 @@ X3D, x3d {
 
 .social {
     padding-top: 0px;
-
 }
 
 body {

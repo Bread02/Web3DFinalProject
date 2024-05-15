@@ -42,7 +42,7 @@ body.fancybox-iosfix {
   -webkit-overflow-scrolling: touch; }
 
 .fancybox-bg {
-  background: #1e1e1e;
+  background: #afafaf83;
   opacity: 0;
   transition-duration: inherit;
   transition-property: opacity;
