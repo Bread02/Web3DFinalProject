@@ -23,7 +23,16 @@ $(document).ready(function() {
 
 		$('#spriteDescription').hide(); 
 		$('#pepperDescription').hide(); 
+		$('#colaNews').hide();
+		$('#costaNews').show();
 
+		$('#costaCanViewPanel').hide();
+		$('#costaBottleViewPanel').hide();
+		$('#costaCupViewPanel').show();
+
+		$('#x3dScene').show();
+		$('#x3dImage').hide();
+		$('#x3dVideo').hide();
 
 		$('#navHome').click(function(){
 			$('#home').show();
@@ -102,6 +111,54 @@ $(document).ready(function() {
 			$('#acknowledgements').hide();
 			$('#references').show();
 		});
+
+		$('#navColaNews').click(function(){
+			$('#home').hide();
+			$('#about').show();
+			$('#models').hide();
+			$('#interaction').hide(); 
+			$('#cokeDescription').hide();
+			$('#spriteDescription').hide(); 
+			$('#pepperDescription').hide(); 
+			$('#originality').hide();
+			$('#acknowledgements').hide();
+			$('#references').hide();
+
+			$('#colaNews').show();
+			$('#costaNews').hide();
+
+			var element = document.querySelector("#navCostaNews");
+			element.classList.remove("btn-success");
+			element.classList.add("btn-primary");		
+
+			var element = document.querySelector("#navColaNews");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");		
+		});
+
+		$('#navCostaNews').click(function(){
+			$('#home').hide();
+			$('#about').show();
+			$('#models').hide();
+			$('#interaction').hide(); 
+			$('#cokeDescription').hide();
+			$('#spriteDescription').hide(); 
+			$('#pepperDescription').hide(); 
+			$('#originality').hide();
+			$('#acknowledgements').hide();
+			$('#references').hide();
+
+			$('#colaNews').hide();
+			$('#costaNews').show();
+
+			var element = document.querySelector("#navColaNews");
+			element.classList.remove("btn-success");
+			element.classList.add("btn-primary");	
+			
+			var element = document.querySelector("#navCostaNews");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");		
+		});
 		
 	}
 
@@ -111,9 +168,24 @@ $(document).ready(function() {
 			$('#interaction').show(); 
 			
 			$('#cup').show();
+
+			$('#costaCanViewPanel').hide();
+			$('#costaBottleViewPanel').hide();
+			$('#costaCupViewPanel').show();
+
 			$('#bottle').hide();
 			$('#can').hide();
-						
+
+			changeAllViewButtonsToInactive();
+			$('#x3dScene').show();
+			$('#x3dImageCup').hide();
+			$('#x3dVideoCup').hide();
+
+			changeModelsClassesToNotActive();
+			var element = document.querySelector("#cupModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
 			changeModelsClassesToNotActive();
 			var element = document.querySelector("#navCup");
 			element.classList.remove("btn-primary");
@@ -125,7 +197,22 @@ $(document).ready(function() {
 			
 			$('#cup').hide();
 			$('#bottle').show();
+
+			$('#costaCanViewPanel').hide();
+			$('#costaBottleViewPanel').show();
+			$('#costaCupViewPanel').hide();
+
 			$('#can').hide();
+
+			changeAllViewButtonsToInactive();
+			$('#x3dScene').show();
+			$('#x3dImageBottle').hide();
+			$('#x3dVideoBottle').hide();
+
+			changeModelsClassesToNotActive();
+			var element = document.querySelector("#bottleModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
 
 			changeModelsClassesToNotActive();
 			var element = document.querySelector("#navBottle");
@@ -140,20 +227,289 @@ $(document).ready(function() {
 			$('#bottle').hide();
 			$('#can').show();
 
+			$('#costaCanViewPanel').show();
+			$('#costaBottleViewPanel').hide();
+			$('#costaCupViewPanel').hide();
+
+			changeAllViewButtonsToInactive();
+			$('#x3dScene').show();
+			$('#x3dImageCan').hide();
+			$('#x3dVideoCan').hide();
+
+			changeModelsClassesToNotActive();
+			var element = document.querySelector("#canModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");		
+
 			changeModelsClassesToNotActive();
 			var element = document.querySelector("#navCan");
 			element.classList.remove("btn-primary");
 			element.classList.add("btn-success");				
 		});
-	}
 
-	selectGallery()
-	{
+		// CUP CHANGES
+		$('#cupModel').click(function(){
+
+			$('#x3dScene').show();
+
+			hideAllVideosAndImages()
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#cupModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+			var element = document.querySelector("#canModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
+			var element = document.querySelector("#bottleModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+		});
+
+		$('#cupImage').click(function(){
+
+			$('#x3dScene').hide();
+
+			hideAllVideosAndImages()
+
+			$('#x3dImageCup').show();
+
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#cupImage");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+			var element = document.querySelector("#canImage");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
+			var element = document.querySelector("#bottleImage");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");		
+		});
 
 		
+		$('#cupVideo').click(function(){
+
+			$('#x3dScene').hide();
+			
+			hideAllVideosAndImages()
+
+			$('#x3dVideoCup').show();
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#cupVideo");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+			var element = document.querySelector("#canVideo");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
+			var element = document.querySelector("#bottleVideo");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+		});
+
+		// END OF CUP CHANGES
+
+		// BOTTLE CHANGES
+		$('#bottleModel').click(function(){
+
+			$('#x3dScene').show();
+
+			hideAllVideosAndImages();
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#cupModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+			var element = document.querySelector("#canModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
+			var element = document.querySelector("#bottleModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+		});
+
+		$('#bottleImage').click(function(){
+
+			$('#x3dScene').hide();
+
+			hideAllVideosAndImages()
+
+			$('#x3dImageBottle').show();
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#cupImage");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+			var element = document.querySelector("#canImage");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
+			var element = document.querySelector("#bottleImage");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+		});
+
+		
+		$('#bottleVideo').click(function(){
+
+			$('#x3dScene').hide();
+			
+			hideAllVideosAndImages()
+			$('#x3dVideoBottle').show();
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#cupVideo");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+			var element = document.querySelector("#canVideo");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
+			var element = document.querySelector("#bottleVideo");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+		});
+
+		$('#canModel').click(function(){
+
+			$('#x3dScene').show();
+
+			hideAllVideosAndImages();
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#cupModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+			var element = document.querySelector("#canModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
+			var element = document.querySelector("#bottleModel");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+		});
+
+		$('#canImage').click(function(){
+
+			$('#x3dScene').hide();
+
+			hideAllVideosAndImages()
+			$('#x3dImageCan').show();
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#cupImage");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+			var element = document.querySelector("#canImage");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
+			var element = document.querySelector("#bottleImage");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");		
+		});
+
+		
+		$('#canVideo').click(function(){
+
+			$('#x3dScene').hide();
+
+			hideAllVideosAndImages()
+			$('#x3dVideoCan').show();
+
+			changeAllViewButtonsToInactive();
+			var element = document.querySelector("#cupVideo");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+			
+			var element = document.querySelector("#canVideo");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+
+			var element = document.querySelector("#bottleVideo");
+			element.classList.remove("btn-primary");
+			element.classList.add("btn-success");	
+		});
 	}
 
 });
+
+function hideAllVideosAndImages()
+{
+	$('#x3dImageCan').hide();
+	$('#x3dVideoCan').hide();
+
+	$('#x3dImageBottle').hide();
+	$('#x3dVideoBottle').hide();
+
+	$('#x3dImageCup').hide();
+	$('#x3dVideoCup').hide();
+
+}
+
+function changeAllViewButtonsToInactive()
+{
+	var element = document.querySelector("#canModel");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");	
+	
+	var element = document.querySelector("#canImage");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");	
+
+	var element = document.querySelector("#canVideo");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");	
+
+	var element = document.querySelector("#bottleModel");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");	
+	
+	var element = document.querySelector("#bottleImage");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");	
+
+	var element = document.querySelector("#bottleVideo");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");	
+
+	var element = document.querySelector("#cupModel");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");	
+	
+	var element = document.querySelector("#cupImage");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");	
+
+	var element = document.querySelector("#cupVideo");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");	
+
+}
 
 function changeLook() {
 	counter += 1;
