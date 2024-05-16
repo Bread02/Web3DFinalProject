@@ -176,6 +176,7 @@ $(document).ready(function() {
 			$('#bottle').hide();
 			$('#can').hide();
 
+			hideAllVideosAndImages();
 			changeAllViewButtonsToInactive();
 			$('#x3dScene').show();
 			$('#x3dImageCup').hide();
@@ -204,6 +205,7 @@ $(document).ready(function() {
 
 			$('#can').hide();
 
+			hideAllVideosAndImages();
 			changeAllViewButtonsToInactive();
 			$('#x3dScene').show();
 			$('#x3dImageBottle').hide();
@@ -227,6 +229,7 @@ $(document).ready(function() {
 			$('#bottle').hide();
 			$('#can').show();
 
+			hideAllVideosAndImages();
 			$('#costaCanViewPanel').show();
 			$('#costaBottleViewPanel').hide();
 			$('#costaCupViewPanel').hide();

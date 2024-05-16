@@ -72,12 +72,19 @@ body {
 }
 
 X3D, x3d {
-    border-radius: 5px;
-    border: 1px solid rgba(255, 0, 0, 1.0);
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
+.imageAndVideo  {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 1.0);
+    padding: 2px;
+    height: 800px;
+    width: 100%;
+    height: 100%;
+}
 
 /* X-Small devices (portrait phones, less than 576px)
    No media query for `xs` since this is the default in Bootstrap */
@@ -462,6 +469,29 @@ X3D, x3d {
 .footer>.active>ul>li>a:focus {
 	color: white;
 }
+
+/* https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t */
+/* Variables have been tweaked for the best fit */
+.auto-resizable-iframe {
+    max-width: 1420px;
+    margin: 0px auto;
+  }
+  
+  .auto-resizable-iframe > div {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0px;
+  }
+  
+  .auto-resizable-iframe iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+/* End of iframe stackoverflow */
 
 .navbar-text>a {
     font-size: 10px;
