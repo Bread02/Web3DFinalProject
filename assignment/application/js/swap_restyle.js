@@ -6,6 +6,7 @@ $(document).ready(function() {
 	
 	selectPage();
 	selectModel();
+	selectGallery();
 
 	function selectPage() {
 
@@ -33,6 +34,10 @@ $(document).ready(function() {
 		$('#x3dScene').show();
 		$('#x3dImage').hide();
 		$('#x3dVideo').hide();
+
+		hideAllGalleries();
+		$('#cup_Gallery').show();
+
 
 		$('#navHome').click(function(){
 			$('#home').show();
@@ -459,7 +464,69 @@ $(document).ready(function() {
 		});
 	}
 
+	function selectGallery() {
+		$('#navGalleryCup').click(function(){
+
+			hideAllGalleries();
+			$('#cup_gallery').show();
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#navGalleryCup");
+			element.classList.add("active");
+			
+			var element = document.querySelector("#navGalleryBottle");
+			element.classList.remove("active");
+
+			var element = document.querySelector("#navGalleryCan");
+			element.classList.remove("active");
+		});
+
+		$('#navGalleryBottle').click(function(){
+
+			hideAllGalleries();
+			$('#bottle_gallery').show();
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#navGalleryCup");
+			element.classList.remove("active");
+			
+			var element = document.querySelector("#navGalleryBottle");
+			element.classList.add("active");
+
+			var element = document.querySelector("#navGalleryCan");
+			element.classList.remove("active");	
+		});
+
+		$('#navGalleryCan').click(function(){
+
+			hideAllGalleries();
+			$('#can_gallery').show();
+
+			changeAllViewButtonsToInactive();
+
+			var element = document.querySelector("#navGalleryCup");
+			element.classList.remove("active");
+			
+			var element = document.querySelector("#navGalleryBottle");
+			element.classList.remove("active");
+
+			var element = document.querySelector("#navGalleryCan");
+			element.classList.add("active");	
+		});
+
+	}
+
 });
+
+function hideAllGalleries()
+{
+	$('#cup_gallery').hide();
+	$('#bottle_gallery').hide();
+	$('#can_gallery').hide();
+}
+
 
 function hideAllVideosAndImages()
 {

@@ -386,7 +386,6 @@
                 <h3 class="card-title text-center">
                   <?php echo $data[0]["x3dModelTitle"]; ?>
                 </h3>
-
                 <br>
               </div>
 
@@ -417,8 +416,6 @@
                 </div>
               </div>
             </div>
-
-
 
             <!-- MODEL 2 -->
             <div id="bottle" style="display:none;">
@@ -682,13 +679,25 @@
                 </ul>
               </div>
               <div class="card-body text-center">
+              <div id="cup_gallery">
                 <div id="title_gallery"></div>
                 <div class="gallery" id="gallery"></div>
-                <div id="description_gallery"></div>
+                <div id="description_gallery"> This is the cup gallery</div> <!-- desc gallery overriding text -->
+                </div>
+                <div id="bottle_gallery">
+                <div id="title_gallery"></div>
+                <div class="gallery" id="gallery"></div>
+                <div id="description_gallery"> This is the bottle gallery</div>
+                </div>
+                <div id="can_gallery">
+                <div id="title_gallery"></div>
+                <div class="gallery" id="gallery"></div>
+                <div id="description_gallery"> This is the can gallery.</div>
               </div>
             </div>
           </div>
         </div>
+        <!-- END OF GALLERY -->
         <br>
 
         <!-- END OF MODELS -->

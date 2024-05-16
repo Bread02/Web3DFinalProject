@@ -49,7 +49,7 @@ body {
 }
 
 .gallery-header:hover {
-    color: red;
+    color: rgb(161, 161, 161);
     border: 1px solid transparent;
 }
 
@@ -107,9 +107,9 @@ X3D, x3d {
     border-color: #dee2e6 #dee2e6 #fff;
 }
 
-/* Added this to emulate the nav-bar link styling */
+/* This is for the gallery */
 .nav-tabs .nav-link:hover {
-    color: #760003;
+    color: #bdbdbd;
     border: 1px solid transparent;
 }
    
