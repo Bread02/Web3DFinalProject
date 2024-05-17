@@ -11,47 +11,6 @@
  <!-- CONTROLS NAVIGATION MODE AND HEAD LIGHT-->
     <NavigationInfo  DEF="headlight" headlight="true" type='"EXAMINE"'/>
     
-    <!-- CONTROLS LIGHTS-->
-	<PointLight DEF="Light"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="23.6900005340576 26.0900001525879 -17.9599990844727"
-		radius="91.9599990844727" />
-	<PointLight DEF="Light_001"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="23.6900005340576 26.0900001525879 14.7200002670288"
-		radius="91.9599990844727" />
-	<PointLight DEF="Light_002"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="-21.2700004577637 26.0900001525879 14.7200002670288"
-		radius="91.9599990844727" />
-	<PointLight DEF="Light_003"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="-21.2700004577637 26.0900001525879 -17.9599990844727"
-		radius="91.9599990844727" />
-	<PointLight DEF="Light_004"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="0.0560600012540817 -24.6900005340576 -0.192699998617172"
-		radius="91.9599990844727" />
-			<PointLight DEF="Light_005"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="13.1800003051758 2.71399998664856 -1.67999994754791"
-		radius="71.2600021362305" 
-		intensity="1"
-		/>
-	<PointLight DEF="Light_006"
-		global="true"
-		color="0.800000011920929 0.800000011920929 0.800000011920929"
-		location="13.1800003051758 11.2799997329712 10.7200002670288"
-		radius="71.2600021362305" 
-		intensity="1"
-		/>
-    
     <!-- CONTROLS CAMERAS -->
     <Viewpoint DEF='CameraFront' description='CameraFront' orientation='0 0 -0.1 -0.007317' position='0 0 20' fieldOfView='0.5274'/>
     <Viewpoint DEF='CameraRight' description='CameraRight' orientation='-3.304e-005 -0.1 -3.304e-005 -1.571' position='20 0 0' fieldOfView='0.5274'/>

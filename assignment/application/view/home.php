@@ -165,72 +165,76 @@
         <div class="col-sm-6">
           <div id="carouselExampleCaptionsOne" class="carousel slide" data-bs-interval="4000" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              <button type="button" data-bs-target="#carouselExampleCaptionsOne" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              <button type="button" data-bs-target="#carouselExampleCaptionsOne" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              <button type="button" data-bs-target="#carouselExampleCaptionsOne" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
             </div>
+            <!-- CAROUSEL ITEMS -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/images/front_page_images/FrontImage2.png"
-                  href="assets/images/front_page_images/FrontImage4.png" data-fancybox="gallery"
+                <img src="assets/images/front_page_images/egg_muffin.jpg"
+                  href="assets/images/front_page_images/egg_muffin.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>A taster of our food range</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>A taster of our breakfast range</h5>
+                    <p>Discover our breakfast selection including the egg muffin bap!</p>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="assets/images/front_page_images/FrontImage3.png"
-                  href="assets/images/front_page_images/FrontImage4.png" data-fancybox="gallery"
+                <img src="assets/images/front_page_images/Cheese_Bean.jpg"
+                  href="assets/images/front_page_images/Cheese_Bean.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Lunch</h5>
+                    <p>Discover a range of lunch options such as the cheese and bean toastie!</p>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="assets/images/front_page_images/FrontImage4.png"
-                  href="assets/images/front_page_images/FrontImage4.png" data-fancybox="gallery"
+                <img src="assets/images/front_page_images/Carrot_Cake.jpg"
+                  href="assets/images/front_page_images/Carrot_Cake.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>Discover our desert and sweets selection</h5>
+                    <p>Indulge in a range of deserts such as the carrot and walnut cake!</p>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- END OF CAROUSEL ITEMS -->
+            <!-- CAROUSEL NAVIGATION -->
             <div class="card-body-home-news">
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsOne"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
             </div>
             <div class="card-body-home-news">
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsOne"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
+            <!-- END OF CAROUSEL NAVIGATION -->
           </div>
         </div>
         <div class="col-sm-6">
           <div id="carouselExampleCaptionsTwo" class="carousel slide" data-bs-interval="4000" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
+              <button type="button" data-bs-target="#carouselExampleCaptionsTwo" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+              <button type="button" data-bs-target="#carouselExampleCaptionsTwo" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+              <button type="button" data-bs-target="#carouselExampleCaptionsTwo" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
@@ -269,14 +273,14 @@
               </div>
             </div>
             <div class="card-body-home-news">
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsTwo"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
             </div>
             <div class="card-body-home-news">
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsTwo"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -529,7 +533,7 @@
               </div>
 
               <div id="x3dScene">
-                <x3d id="wire">
+                <x3d id="wire" height="400px"> <!-- Have to fix height to this until fixed on js switching -->
                   <scene>
                     <Switch whichChoice="0" id='SceneSwitch'>
                       <transform>
@@ -704,6 +708,7 @@
         <!-- END OF MODELS -->
       </div>
     </div>
+    </div>
 
     <!-- START OF STATEMENT OF ORIGINALITY -->
     <div id="originality">
@@ -715,7 +720,75 @@
 
     <!-- START OF REFERENCES -->
     <div id="references">
-      <div id="referencesStatement"></div>
+      <h2>Texture Image Sources</h2>
+      <h5>Cup</h5>
+      <li class="nav-item">
+            <a id="example">Costa Text for Cup - https://en.wikipedia.org/wiki/Costa_Coffee#/media/File:Costa_Coffee_logo.svg</a>
+      </li>
+      <br>
+      <h5>Cans</h5>
+      <li class="nav-item">
+            <a id="example">Vanilla Latte - https://m.media-amazon.com/images/I/61SsiG71W-S._AC_UF1000,1000_QL80_.jpg </a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Latte - https://www.amazon.co.uk/Costa-Coffee-250-Latte-12-Count/dp/B07WC2J2DS/</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Top of Can - https://www.xmbaofeng.com/aluminum-stay-on-tab-sot-can-end-for-beverage-can-light-gold</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Bottom of Can - Provided by Labs - Coca Cola Map</a>
+      </li>
+      <br>
+      <h5>Bottles</h5>
+      <li class="nav-item">
+            <a id="example">Caramel Bottle Front - https://www.tesco.com/groceries/en-GB/products/311423600</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Caramel Bottle Top - Image by self</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Caramel Bottle Bottom - Image by self</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Brownie Bottle Front - https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Brownie Bottle Top - Image by self</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Brownie Bottle Bottom - Image by self</a>
+      </li>
+      <br>
+      <h2>Photo Image Sources</h2>
+      <li class="nav-item">
+            <a id="example">Costa Egg Muffin - https://www.costa.co.uk/menu</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Cheese Bean Toastie - https://www.costa.co.uk/menu</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Carrot and Walnut Cake Slice - https://www.costa.co.uk/menu</a>
+      </li>
+      <br>
+      <h2>Video Sources</h2>
+      <li class="nav-item">
+            <a id="example">Costa Coffee Christmas Cup - https://www.youtube.com/watch?v=55DmnepMuTE</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Coca Cola Zero Sugar - https://www.youtube.com/watch?v=chFGAkBRHVE</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Costa Coffee Cappuccino - https://www.youtube.com/watch?v=Q5_3O50SnfY</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Costa Coffee Hot Belgian Chocolate - https://www.youtube.com/watch?v=D-tjyNq7drk</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Costa Coffee Latte - https://www.youtube.com/watch?v=dccvwUQxhL4</a>
+      </li>
+
+      <br>
       Please also be sure to produce appropriate citations within your web pages to all sources of content, including
       X3D/VRML functions, extensions, HTML, JavaScrip, ... code, etc. that you have not developed yourself. For each
       piece of content that is not developed by yourself you should 'cite and refer' via a hyperlink to the source (via
