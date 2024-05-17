@@ -187,7 +187,7 @@ function wireframe() {
 
 /* LIGHTS */
 /* Only one models needs the lights due to the switch node. The cup holds the lights */
-lightToggled = false;
+lightToggled = true;
 function lightsOn()
 {
 	document.getElementById('model__Light').setAttribute('intensity', '1');
