@@ -1,4 +1,8 @@
 // JavaScript Gallery Generator
+
+// Further modified to split the three different models into different categories.
+// Each gallery page will display the Cup, or Bottle, or Can.
+
 $(document).ready(function() {
 	// Create the XMLHttpRequest Object for communicating with the web server
 	var xmlHttp = new XMLHttpRequest ();
