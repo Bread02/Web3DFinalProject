@@ -161,8 +161,9 @@
 -->
 
       <!-- carousel -->
+      <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6" >
           <div id="carouselExampleCaptionsOne" class="carousel slide" data-bs-interval="4000" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptionsOne" data-bs-slide-to="0" class="active"
@@ -289,7 +290,7 @@
           </div>
         </div>
       </div>
-
+      </div>
       <!-- carousel end -->
 
     </div>
