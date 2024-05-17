@@ -292,7 +292,7 @@ function cameraBottom() {
 // CHANGING TEXTURE REGION
 
 function changeTextureCaramel() {
-	document.getElementById('model__ImgTextureModelTwo').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.png');
+	document.getElementById('model__ImgTextureModelTwo').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.jpg');
 
 	// button element
 	changeBottleNavClassesToNotActive()
@@ -304,7 +304,7 @@ function changeTextureCaramel() {
 }
 
 function changeTextureBrownie() {
-	document.getElementById('model__ImgTextureModelTwo').setAttribute("url", 'maps/Costa_Bottle_BrownieMap.png');
+	document.getElementById('model__ImgTextureModelTwo').setAttribute("url", 'maps/Costa_Bottle_BrownieMap.jpg');
 
 	// button element
 	changeBottleNavClassesToNotActive()
@@ -316,7 +316,7 @@ function changeTextureBrownie() {
 }
 
 function changeTextureVanillaLatte() {
-	document.getElementById('model__ImgTextureModelThree').setAttribute("url", 'maps/CostaCan_VanillaLatteMap.png');
+	document.getElementById('model__ImgTextureModelThree').setAttribute("url", 'maps/CostaCan_Vanilla_LatteMap.jpg');
 
 	// button element
 	changeCanNavClassesToNotActive()
@@ -328,7 +328,7 @@ function changeTextureVanillaLatte() {
 }
 
 function changeTextureLatte() {
-	document.getElementById('model__ImgTextureModelThree').setAttribute("url", 'maps/CostaCan_LatteMap.png');
+	document.getElementById('model__ImgTextureModelThree').setAttribute("url", 'maps/CostaCan_LatteMap.jpg');
 
 	// button element
 	changeCanNavClassesToNotActive()

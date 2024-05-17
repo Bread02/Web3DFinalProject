@@ -732,13 +732,13 @@
             <a id="example">Vanilla Latte - https://m.media-amazon.com/images/I/61SsiG71W-S._AC_UF1000,1000_QL80_.jpg </a>
       </li>
       <li class="nav-item">
-            <a id="example">Latte - https://www.amazon.co.uk/Costa-Coffee-250-Latte-12-Count/dp/B07WC2J2DS/</a>
+            <a id="example">Latte - https://www.sainsburys.co.uk/gol-ui/product/costa-coffee-latte-250ml</a>
       </li>
       <li class="nav-item">
             <a id="example">Top of Can - https://www.xmbaofeng.com/aluminum-stay-on-tab-sot-can-end-for-beverage-can-light-gold</a>
       </li>
       <li class="nav-item">
-            <a id="example">Bottom of Can - Provided by Labs - Coca Cola Map</a>
+            <a id="example">Bottom of Can - Provided by Labs - Can_Texture - From Coca Cola Map</a>
       </li>
       <br>
       <h5>Bottles</h5>
@@ -789,6 +789,17 @@
             <a id="example">Costa Coffee Latte - https://www.youtube.com/watch?v=dccvwUQxhL4</a>
       </li>
 
+      <br>
+      <h2>Blender Reference Image Sources</h2>
+      <li class="nav-item">
+            <a id="example">Costa Coffee Cup - https://www.amazon.co.uk/Costa-Primo-275-Coffee-Cups/dp/B07YB91TW5</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Brownie Bottle Front - https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011</a>
+      </li>
+      <li class="nav-item">
+            <a id="example">Latte - https://www.sainsburys.co.uk/gol-ui/product/costa-coffee-latte-250ml</a>
+      </li>
       <br>
       Please also be sure to produce appropriate citations within your web pages to all sources of content, including
       X3D/VRML functions, extensions, HTML, JavaScrip, ... code, etc. that you have not developed yourself. For each
