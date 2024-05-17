@@ -681,17 +681,17 @@
               <div class="card-body text-center">
               <div id="cup_gallery">
                 <div id="title_gallery"></div>
-                <div class="gallery" id="gallery"></div>
+                <div class="gallery_cup" id="gallery_cup"></div>
                 <div id="description_gallery"> This is the cup gallery</div> <!-- desc gallery overriding text -->
                 </div>
                 <div id="bottle_gallery">
                 <div id="title_gallery"></div>
-                <div class="gallery" id="gallery"></div>
+                <div class="gallery_bottle" id="gallery_bottle"></div>
                 <div id="description_gallery"> This is the bottle gallery</div>
                 </div>
                 <div id="can_gallery">
                 <div id="title_gallery"></div>
-                <div class="gallery" id="gallery"></div>
+                <div class="gallery_can" id="gallery_can"></div>
                 <div id="description_gallery"> This is the can gallery.</div>
               </div>
             </div>

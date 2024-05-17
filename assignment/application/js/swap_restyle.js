@@ -35,9 +35,9 @@ $(document).ready(function() {
 		$('#x3dImage').hide();
 		$('#x3dVideo').hide();
 
-		hideAllGalleries();
-		$('#cup_Gallery').show();
-
+		$('#cup_gallery').show();
+		$('#can_gallery').hide();
+		$('#bottle_gallery').hide();
 
 		$('#navHome').click(function(){
 			$('#home').show();
