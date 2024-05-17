@@ -163,7 +163,7 @@
       <!-- carousel -->
       <div class="row">
         <div class="col-sm-6">
-          <div id="carouselExampleCaptions" class="carousel slide">
+          <div id="carouselExampleCaptionsOne" class="carousel slide" data-bs-interval="4000" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -224,7 +224,7 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <div id="carouselExampleCaptions2" class="carousel slide">
+          <div id="carouselExampleCaptionsTwo" class="carousel slide" data-bs-interval="4000" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
