@@ -45,7 +45,7 @@
     Link Menu item button to the links class navbar-collapse selector -->
     <div class="collapse navbar-collapse">
       <div class="container-fluid">
-
+      <div class="card text-left"></div> <!-- Gives this a nice line -->
         <!-- Links for navbar -->
         <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
           <li class="nav-item">
@@ -74,16 +74,15 @@
 
   <!-- Start of the SPA -->
   <!-- START OF HOME -->
-  <div id="home">
+  <div id="home" class="container-fluid main_contents">
+  <div class="card text-left"></div> <!-- Gives this a nice line at the top of the page -->
 
-
-    <!-- START OF SECOND ROW -->
+    <!-- START OF FIRST ROW -->
     <div class="row">
       <div class="col-sm-12">
       </div>
     </div>
     <div class="row">
-
       <div class="col-sm-4">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/FrontImage2.png" data-fancybox="gallery"
@@ -298,7 +297,7 @@
     <div class="row"> <!-- We hold the 3D model and the gallery in a row, the gallery on the right side -->
       <!-- The 3D model holder -->
       <div class="col-sm-12">
-        <div class="card text-left">
+        <div class="card text-left"> <!-- Gives this a nice line at the top of the page -->
         </div>
         <!-- TODO Nav Menu to choose models -->
         <div class="card text-left">
@@ -613,7 +612,7 @@
         <!-- END OF X3D MODEL SCENES -->
 
         <div id="interaction" class="col-sm-3"> <!-- This will hold the model interactions -->
-          <br>
+        <div class="card text-left"></div> <!-- Gives this a nice line at the top of the page -->
           <!-- CAMERA VIEWS -->
           <div class="card-body text-center">
             <h4 class="card-title text-center">
