@@ -37,12 +37,14 @@
     </div>
 
     <!-- END OF LOGO -->
-
-    <!-- START OF NAVIGATION ELEM
+    <!-- HAMBURGER FOR MOBILE -->
+<div class="hamburger">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
       <span class="navbar-toggler-icon"></span>
     </button>
-    Link Menu item button to the links class navbar-collapse selector -->
+    </div>
+    <!-- END OF HAMBURGER -->
+
     <div class="collapse navbar-collapse">
       <div class="container-fluid">
       <div class="card text-left"></div> <!-- Gives this a nice line -->
