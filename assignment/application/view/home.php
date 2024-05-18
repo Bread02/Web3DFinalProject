@@ -87,9 +87,9 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="card-body-home">
-          <a href="assets/images/front_page_images/FrontImage2.png" data-fancybox="gallery"
+          <a href="assets/images/front_page_images/CupRender1.jpg" data-fancybox="gallery"
             data-caption="Costa Cup Render">
-            <img class="card-img-top img-fluid" src="assets/images/front_page_images/FrontImage2.png" alt="Costa Cup">
+            <img class="card-img-top img-fluid" src="assets/images/front_page_images/CupRender1.jpg" alt="Costa Cup">
           </a>
           <div class="card-body-home-white">
             <div id="title_left" class="text-center"></div>
@@ -102,9 +102,9 @@
       </div>
       <div class="col-sm-4">
         <div class="card-body-home">
-          <a href="assets/images/front_page_images/FrontImage3.png" data-fancybox
+          <a href="assets/images/front_page_images/TwoBottleRender.jpg" data-fancybox
             data-caption="Costa Caramel Frappe Render">
-            <img class="card-img-top img-fluid" src="assets/images/front_page_images/FrontImage2.png"
+            <img class="card-img-top img-fluid" src="assets/images/front_page_images/TwoBottleRender.jpg"
               alt="Costa Caramel Frappe">
           </a>
           <div class="card-body-home-white">
@@ -118,9 +118,9 @@
       </div>
       <div class="col-sm-4">
         <div class="card-body-home">
-          <a href="assets/images/front_page_images/FrontImage4.png" data-fancybox
+          <a href="assets/images/front_page_images/LatteVanillaLatteRender5.jpg" data-fancybox
             data-caption="Costa Canned Coffee Vanilla Latte Render">
-            <img class="card-img-top img-fluid" src="assets/images/front_page_images/FrontImage2.png"
+            <img class="card-img-top img-fluid" src="assets/images/front_page_images/LatteVanillaLatteRender5.jpg"
               alt="Costa Canned Coffee Vanilla Latte">
           </a>
           <div class="card-body-home-white">
@@ -240,8 +240,8 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/images/front_page_images/FrontImage2.png"
-                  href="assets/images/front_page_images/FrontImage4.png" data-fancybox="gallery"
+                <img src="assets/images/front_page_images/CupRender3.jpg"
+                  href="assets/images/front_page_images/CupRender3.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
@@ -251,8 +251,8 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="assets/images/front_page_images/FrontImage3.png"
-                  href="assets/images/front_page_images/FrontImage4.png" data-fancybox="gallery"
+                <img src="assets/images/front_page_images/TwoBottleRender2.jpg"
+                  href="assets/images/front_page_images/TwoBottleRender2.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
@@ -262,8 +262,8 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="assets/images/front_page_images/FrontImage4.png"
-                  href="assets/images/front_page_images/FrontImage4.png" data-fancybox="gallery"
+                <img src="assets/images/front_page_images/LatteVanillaLatteRender2.jpg"
+                  href="assets/images/front_page_images/LatteVanillaLatteRender2.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
@@ -554,10 +554,10 @@
 
               <div class="auto-resizable-iframe">
                 <div id="x3dImageCup" style="display:none;">
-                  <a href="assets/images/front_page_images/FrontImage4.png" data-fancybox
-                    data-caption="Costa Canned Coffee Vanilla Latte Render">
-                    <img class="card-img-top img-fluid" src="assets/images/front_page_images/FrontImage2.png"
-                      alt="Costa Canned Coffee Vanilla Latte">
+                  <a href="assets/images/model_image_images/CupRender1.jpg" data-fancybox
+                    data-caption="Costa Cup of Coffee">
+                    <img class="card-img-top img-fluid" src="assets/images/model_image_images/CupRender1.jpg"
+                      alt="Costa Coffee Cup">
                   </a>
                 </div>
               </div>
@@ -573,10 +573,10 @@
 
               <div class="auto-resizable-iframe">
                 <div id="x3dImageBottle" style="display:none;">
-                  <a href="assets/images/front_page_images/FrontImage4.png" data-fancybox
-                    data-caption="Costa Canned Coffee Vanilla Latte Render">
-                    <img class="card-img-top img-fluid" src="assets/images/front_page_images/FrontImage2.png"
-                      alt="Costa Canned Coffee Vanilla Latte">
+                  <a href="assets/images/model_image_images/TwoBottleRender.jpg" data-fancybox
+                    data-caption="Costa Bottles Render">
+                    <img class="card-img-top img-fluid" src="assets/images/model_image_images/TwoBottleRender.jpg"
+                      alt="Costa Coffee Brownie and Caramel Bottles">
                   </a>
                 </div>
               </div>
@@ -592,10 +592,10 @@
 
               <div class="auto-resizable-iframe">
                 <div id="x3dImageCan" style="display:none;">
-                  <a href="assets/images/front_page_images/FrontImage4.png" data-fancybox
-                    data-caption="Costa Canned Coffee Vanilla Latte Render">
-                    <img class="card-img-top img-fluid" src="assets/images/front_page_images/FrontImage2.png"
-                      alt="Costa Canned Coffee Vanilla Latte">
+                  <a href="assets/images/model_image_images/LatteVanillaLatteRender5.jpg" data-fancybox
+                    data-caption="Costa Canned Coffee Vanilla Latte and Latte Render">
+                    <img class="card-img-top img-fluid" src="assets/images/model_image_images/LatteVanillaLatteRender5.jpg"
+                      alt="Costa Canned Coffee Vanilla Latte and Latte">
                   </a>
                 </div>
               </div>
