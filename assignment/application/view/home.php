@@ -167,8 +167,8 @@
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>A taster of our breakfast range</h5>
-                    <p>Discover our breakfast selection including the egg muffin bap!</p>
+                  <div id="carousel_food_title_one"></div>
+                    <div id="carousel_food_description_one"></div>
                   </div>
                 </div>
               </div>
@@ -178,8 +178,8 @@
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>Lunch</h5>
-                    <p>Discover a range of lunch options such as the cheese and bean toastie!</p>
+                  <div id="carousel_food_title_two"></div>
+                    <div id="carousel_food_description_two"></div>
                   </div>
                 </div>
               </div>
@@ -189,8 +189,8 @@
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>Discover our desert and sweets selection</h5>
-                    <p>Indulge in a range of deserts such as the carrot and walnut cake!</p>
+                    <div id="carousel_food_title_three"></div>
+                    <div id="carousel_food_description_three"></div>
                   </div>
                 </div>
               </div>
@@ -231,8 +231,8 @@
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>Did you know</h5>
-                    <p>We offer far more than just hot coffee? Why not try a Frappe, hot milkshake, tea or Coffee over ice?</p>
+                  <div id="carousel_drink_title_one"></div>
+                    <div id="carousel_drink_description_one"></div>
                   </div>
                 </div>
               </div>
@@ -242,8 +242,8 @@
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>Did you know</h5>
-                    <p>Costa is the largest coffeehouse chain in the UK.</p>
+                  <div id="carousel_drink_title_two"></div>
+                    <div id="carousel_drink_description_two"></div>
                   </div>
                 </div>
               </div>
@@ -253,8 +253,8 @@
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>Did you know</h5>
-                    <p>Costa was founded in 1971 in London.</p>
+                  <div id="carousel_drink_title_three"></div>
+                    <div id="carousel_drink_description_three"></div>
                   </div>
                 </div>
               </div>

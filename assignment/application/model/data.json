@@ -15,6 +15,30 @@
 			"subTitle": "A range of canned refreshing drinks",		
 			"description": "Discover Costa's range of canned drinks including vanilla latte, espresso, double espresso and many other flavours. You can find this range in your local Costa Coffee cafe or in your local supermarkets. All you need to do is shake, open and then consume!"
 		},
+		{
+			"titleCarouselFood": "A taster of our breakfast range",
+			"descriptionCarouselFood": "Discover our breakfast selection including the egg muffin bap!"
+		},
+		{
+			"titleCarouselFood": "A flavour of our lunch",
+			"descriptionCarouselFood": "Discover a range of lunch options such as the cheese and bean toastie!"
+		},
+		{
+			"titleCarouselFood": "Discover our desert and sweets collection",
+			"descriptionCarouselFood": "Indulge in a range of deserts such as the carrot and walnut cake!"
+		},
+		{
+			"titleCarouselDrink": "Did you know",
+			"descriptionCarouselDrink": "We offer far more than just hot coffee? Why not try a Frappe, hot milkshake, tea or Coffee over ice."
+		},	
+		{
+			"titleCarouselDrink": "Did you know",
+			"descriptionCarouselDrink": "Costa is the largest coffeehouse chain in the UK."
+		},	
+		{
+			"titleCarouselDrink": "Did you know",
+			"descriptionCarouselDrink": "Costa was founded in 1971 in London."
+		},			
 		{			
 			"interactionPanelCameraTitle": "Camera Views",
 			"interactionPanelCamera": "Use the buttons to manipulate the camera",
