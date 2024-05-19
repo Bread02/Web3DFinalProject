@@ -749,13 +749,13 @@
       <br>
       <h2>Photo Image Sources</h2>
       <li class="nav-item">
-            <a id="example">Costa Egg Muffin - https://www.costa.co.uk/menu</a>
+            <a id="example">Costa Egg Muffin (Image edited in photoshop to create grey background)- https://www.costa.co.uk/menu</a>
       </li>
       <li class="nav-item">
-            <a id="example">Cheese Bean Toastie - https://www.costa.co.uk/menu</a>
+            <a id="example">Cheese Bean Toastie (Image edited in photoshop to create grey background) - https://www.costa.co.uk/menu</a>
       </li>
       <li class="nav-item">
-            <a id="example">Carrot and Walnut Cake Slice - https://www.costa.co.uk/menu</a>
+            <a id="example">Carrot and Walnut Cake Slice (Image edited in photoshop to create grey background) - https://www.costa.co.uk/menu</a>
       </li>
       <br>
       <h2>Video Sources</h2>
