@@ -9,7 +9,7 @@ class Model {
 	    public function __construct()
     {
 		
-        $dsn = 'sqlite:./db/test1.db';
+        $dsn = 'sqlite:./db/application_data.db';
 
         try {
                 $this->dbhandle = new PDO($dsn, 'user', 'password', array(
@@ -31,8 +31,8 @@ class Model {
         echo "Create table function";
         try {
 						
-            $this->dbhandle->exec("CREATE TABLE Model_3D (id INTEGER PRIMARY KEY, x3dModelTitle TEXT, x3dCreationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)");
-            return "Model_3D table is successfully created inside test1.db file";
+            $this->dbhandle->exec("CREATE TABLE Model_3D (id INTEGER PRIMARY KEY, x3dModelTitle TEXT, x3dCreationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT, modelURL TEXT, modelImageURL TEXT, modelImageDataCaption TEXT, modelYouTubeURL TEXT)");
+            return "Model_3D table is successfully created inside application_data.db file";
         } catch (PD0EXception $e) {
             print new Exception($e->getMessage());
         }
@@ -51,25 +51,31 @@ class Model {
             $data = json_decode($json_data, true, 512, JSON_THROW_ON_ERROR);
 
             // create a query then prepare it to insert into the database.
-            $query = "INSERT INTO Model_3D (id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) VALUES (?, ?, ?, ?, ?, ?)";
+            $query = "INSERT INTO Model_3D (id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription, modelURL, modelImageURL, modelImageDataCaption, modelYouTubeURL) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = $this->dbhandle->prepare($query);
 
-			$rows = 0;
+			$rowNumber = 0;
+
+            // for each row we will insert the data that is in the models_data.json, we execute the fill in then move onto the next row.
 			foreach ($data as $dataItem) 
 			 {
-                 $id = $dataItem["id"];
+                 $id = $rowNumber; // depending on the row we are on, we assign an id starting from zero.
 				 $x3dModelTitle = $dataItem["x3dModelTitle"];
 				 $x3dCreationMethod = $dataItem["x3dCreationMethod"];
 				 $modelTitle = $dataItem["modelTitle"];
 				 $modelSubtitle = $dataItem["modelSubtitle"];
 				 $modelDescription = $dataItem["modelDescription"];
+				 $modelURL = $dataItem["modelURL"];
+				 $modelImageURL = $dataItem["modelImageURL"];
+				 $modelImageDataCaption = $dataItem["modelImageDataCaption"];
+				 $modelYouTubeURL = $dataItem["modelYouTubeURL"];
 
                  // insert into the database.
-				 $stmt->execute([$id, $x3dModelTitle, $x3dCreationMethod, $modelTitle, $modelSubtitle, $modelDescription]);
-				 $rows ++;
+				 $stmt->execute([$id, $x3dModelTitle, $x3dCreationMethod, $modelTitle, $modelSubtitle, $modelDescription, $modelURL, $modelImageURL, $modelImageDataCaption, $modelYouTubeURL]);
+				 $rowNumber ++;
 			 }
 			 
-			 if(count($data) == $rows)
+			 if(count($data) == $rowNumber)
 			 {
 				 echo "success";
 			 }
@@ -104,8 +110,12 @@ class Model {
                 $result[$i]['modelTitle'] = $data['modelTitle'];
                 $result[$i]['modelSubtitle'] = $data['modelSubtitle'];
                 $result[$i]['modelDescription'] = $data['modelDescription'];
+                $result[$i]["modelURL"] = $data['modelURL'];
+                $result[$i]["modelImageURL"] = $data['modelImageURL'];
+                $result[$i]["modelImageDataCaption"] = $data['modelImageDataCaption'];
+                $result[$i]["modelYouTubeURL"] = $data['modelYouTubeURL'];
 
-                // increment row index
+                // increment the row.
                 $i++;
             }
         } catch (PD0EXception $e) {

@@ -146,20 +146,6 @@
         </div>
       </div>
 
-      <!-- START OF FIRST ROW
-    <div class="col-sm-12">
-      <div id="main_3d_image">
-        <div id="main_text" class="col-xs-12 text-center">
-          <div id="title_home"></div> 
-          <div id="subTitle_home"></div> 
-          <div id="description_home"></div>
-         The below is only a taster of our range.
-        </div>
-      </div>
-    </div>
-    </div>
--->
-
       <!-- carousel -->
       <div class="container-fluid">
       <div class="row">
@@ -240,35 +226,35 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/images/front_page_images/CupRender3.jpg"
-                  href="assets/images/front_page_images/CupRender3.jpg" data-fancybox="gallery"
+                <img src="assets/images/front_page_images/AllModelsRender2.jpg"
+                  href="assets/images/front_page_images/AllModelsRender2.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>A taster of our drinks range</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Did you know</h5>
+                    <p>We offer far more than just hot coffee? Why not try a Frappe, hot milkshake, tea or Coffee over ice?</p>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="assets/images/front_page_images/TwoBottleRender2.jpg"
-                  href="assets/images/front_page_images/TwoBottleRender2.jpg" data-fancybox="gallery"
+                <img src="assets/images/front_page_images/AllModelsRender3.jpg"
+                  href="assets/images/front_page_images/AllModelsRender3.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Did you know</h5>
+                    <p>Costa is the largest coffeehouse chain in the UK.</p>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="assets/images/front_page_images/LatteVanillaLatteRender2.jpg"
-                  href="assets/images/front_page_images/LatteVanillaLatteRender2.jpg" data-fancybox="gallery"
+                <img src="assets/images/front_page_images/AllModelsRender4.jpg"
+                  href="assets/images/front_page_images/AllModelsRender4.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <div class="card-body-home-news">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>Did you know</h5>
+                    <p>Costa was founded in 1971 in London.</p>
                   </div>
                 </div>
               </div>
@@ -401,7 +387,7 @@
                   <div class="card-body">
                     <div id="cupDescription">
                       <h4 class="card-title text-center"><?php echo $data[0]["modelTitle"]; ?></h4>
-                      <p class="card-text"><?php echo $data[0]["modelDescription"]; ?></p>
+                      <p class="card-text text-center"><?php echo $data[0]["modelDescription"]; ?></p>
                     </div>
                   </div>
                 </div>
@@ -539,32 +525,32 @@
                     <Switch whichChoice="0" id='SceneSwitch'>
                       <transform>
                         <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();"
-                          url="assets/x3d/Costa_Cup.x3d"> </inline>
+                          url="<?php echo $data[0]["modelURL"]; ?>"> </inline>
                       </transform>
                       <transform>
                         <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();"
-                          url="assets/x3d/Costa_Bottle.x3d"> </inline>
+                          url="<?php echo $data[1]["modelURL"]; ?>"> </inline>
                       </transform>
                       <transform>
                         <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();"
-                          url="assets/x3d/Costa_Can.x3d"> </inline>
+                          url="<?php echo $data[2]["modelURL"]; ?>"> </inline>
                       </transform>
                     </Switch>
               </div>
 
               <div class="auto-resizable-iframe">
                 <div id="x3dImageCup" style="display:none;">
-                  <a href="assets/images/model_image_images/CupRender1.jpg" data-fancybox
-                    data-caption="Costa Cup of Coffee">
-                    <img class="card-img-top img-fluid" src="assets/images/model_image_images/CupRender1.jpg"
-                      alt="Costa Coffee Cup">
+                  <a href="<?php echo $data[0]["modelImageURL"]; ?>" data-fancybox
+                    data-caption="<?php echo $data[0]["modelImageDataCaption"]; ?>">
+                    <img class="card-img-top img-fluid" src="<?php echo $data[0]["modelImageURL"]; ?>"
+                      alt="<?php echo $data[0]["modelImageDataCaption"]; ?>">
                   </a>
                 </div>
               </div>
 
               <div class="auto-resizable-iframe">
                 <div id="x3dVideoCup" style="display:none;">
-                  <iframe width="600" height="400" src="https://www.youtube.com/embed/Q5_3O50SnfY?si=lwDnPtgF2NtyH3p6"
+                  <iframe width="600" height="400" src="<?php echo $data[0]["modelYouTubeURL"]; ?>"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -573,17 +559,17 @@
 
               <div class="auto-resizable-iframe">
                 <div id="x3dImageBottle" style="display:none;">
-                  <a href="assets/images/model_image_images/TwoBottleRender.jpg" data-fancybox
-                    data-caption="Costa Bottles Render">
-                    <img class="card-img-top img-fluid" src="assets/images/model_image_images/TwoBottleRender.jpg"
-                      alt="Costa Coffee Brownie and Caramel Bottles">
+                  <a href="<?php echo $data[1]["modelImageURL"]; ?>" data-fancybox
+                    data-caption="<?php echo $data[1]["modelImageDataCaption"]; ?>">
+                    <img class="card-img-top img-fluid" src="<?php echo $data[1]["modelImageURL"]; ?>"
+                      alt="<?php echo $data[1]["modelImageDataCaption"]; ?>">
                   </a>
                 </div>
               </div>
 
               <div class="auto-resizable-iframe">
                 <div id="x3dVideoBottle" style="display:none;">
-                  <iframe width="600" height="400" src="https://www.youtube.com/embed/D-tjyNq7drk?si=FxBZD5ec_oMKat8x"
+                  <iframe width="600" height="400" src="<?php echo $data[1]["modelYouTubeURL"]; ?>"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -592,17 +578,17 @@
 
               <div class="auto-resizable-iframe">
                 <div id="x3dImageCan" style="display:none;">
-                  <a href="assets/images/model_image_images/LatteVanillaLatteRender5.jpg" data-fancybox
-                    data-caption="Costa Canned Coffee Vanilla Latte and Latte Render">
-                    <img class="card-img-top img-fluid" src="assets/images/model_image_images/LatteVanillaLatteRender5.jpg"
-                      alt="Costa Canned Coffee Vanilla Latte and Latte">
+                  <a href="<?php echo $data[2]["modelImageURL"]; ?>" data-fancybox
+                    data-caption="<?php echo $data[2]["modelImageDataCaption"]; ?>">
+                    <img class="card-img-top img-fluid" src="<?php echo $data[2]["modelImageURL"]; ?>"
+                      alt="<?php echo $data[2]["modelImageDataCaption"]; ?>">
                   </a>
                 </div>
               </div>
 
               <div class="auto-resizable-iframe">
                 <div id="x3dVideoCan" style="display:none;">
-                  <iframe width="600" height="400" src="https://www.youtube.com/embed/dccvwUQxhL4?si=n6QbdhsGMgl957PY"
+                  <iframe width="600" height="400" src="<?php echo $data[2]["modelYouTubeURL"]; ?>"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -686,19 +672,19 @@
               </div>
               <div class="card-body text-center">
               <div id="cup_gallery">
-                <div id="title_gallery"></div>
+                <div id="titleGallery"><h3>3D Renders Cup</h3></div>
                 <div class="gallery_cup" id="gallery_cup"></div>
-                <div id="description_gallery"> This is the cup gallery</div> <!-- desc gallery overriding text -->
+                <div id="description_gallery"> The cup was renderered using Blender either using the Cycles renderer or the Eevee renderer.</div> <!-- desc gallery overriding text -->
                 </div>
                 <div id="bottle_gallery">
-                <div id="title_gallery"></div>
+                <div id="titleGallery"><h3>3D Renders Bottles</h3></div>
                 <div class="gallery_bottle" id="gallery_bottle"></div>
-                <div id="description_gallery"> This is the bottle gallery</div>
+                <div id="description_gallery"> These bottles were renderered in Blender either using the Cycles renderer or the Eevee renderer.</div>
                 </div>
                 <div id="can_gallery">
-                <div id="title_gallery"></div>
+                <div id="titleGallery"><h3>3D Renders Cans</h3></div>
                 <div class="gallery_can" id="gallery_can"></div>
-                <div id="description_gallery"> This is the can gallery.</div>
+                <div id="description_gallery"> These cans were renderered in Blender either using the Cycles renderer or the Eevee renderer.</div>
               </div>
             </div>
           </div>
