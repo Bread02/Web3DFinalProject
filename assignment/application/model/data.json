@@ -1,11 +1,6 @@
 {
     "pageTextData": [
 		{
-			"title": "Costa Coffee",
-			"subTitle": "A British coffeehouse chain founded in 1971.",		
-			"description": "Since its founding, Costa now exists in over 3000 locations across the world."
-		},
-		{
 			"title": "Costa Coffee In Store",
 			"subTitle": "Delicious food and drinks",		
 			"description": "Discover a wide range of coffees instore with Costa. Costa offers everything from Smoothies, Hot Milkshakes, to Espressos and Gingerbread Caramel Lattes. Costa does not offer just drinks, but also a wide range of food such as cakes, toasties, and sandwiches!"
@@ -20,10 +15,6 @@
 			"subTitle": "A range of canned refreshing drinks",		
 			"description": "Discover Costa's range of canned drinks including vanilla latte, espresso, double espresso and many other flavours. You can find this range in your local Costa Coffee cafe or in your local supermarkets. All you need to do is shake, open and then consume!"
 		},
-		{
-			"galleryTitle": "3D Images",
-			"galleryDescription": "These 3D images were rendered using Blender 3.6."
-		},
 		{			
 			"interactionPanelCameraTitle": "Camera Views",
 			"interactionPanelCamera": "Use the buttons to manipulate the camera",
@@ -33,8 +24,7 @@
 			"interactionPanelRender": "Use the buttons to change the rendering options"
 		},
 		{			
-			"originalityStatement": "These web pages are submitted as part requirement for the degree of Computer Science (BSc) at the University of Sussex. They are the product of my own labour except where indicated in the web page content. These web pages or contents may be freely copied and distributed provided the source is acknowledged",
-			"referencesStatement": "Reference Sources: \\n Texture Images \\n Vanilla Latte - https://m.media-amazon.com/images/I/61SsiG71W-S._AC_UF1000,1000_QL80_.jpg \\n Latte - https://www.amazon.co.uk/Costa-Coffee-250-Latte-12-Count/dp/B07WC2J2DS/ \\n Top of Can - https://www.xmbaofeng.com/aluminum-stay-on-tab-sot-can-end-for-beverage-can-light-gold \\n Bottom of Can - Provided by Labs - Coca Cola Map \\n Costa Text for Cup https://en.wikipedia.org/wiki/Costa_Coffee#/media/File:Costa_Coffee_logo.svg \\n Brownie Bottle Front - https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011 \\n Caramel Bottle Front - https://www.tesco.com/groceries/en-GB/products/311423600"
+			"originalityStatement": "These web pages are submitted as part requirement for the degree of Computer Science (BSc) at the University of Sussex. They are the product of my own labour except where indicated in the web page content. These web pages or contents may be freely copied and distributed provided the source is acknowledged"
 		}			
 	]
 }
