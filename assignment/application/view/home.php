@@ -383,20 +383,25 @@
 
               <!-- START OF FINAL ROW -->
               <div class="row">
-                <div class="col-sm-6">
+
+                <div class="col-sm-6 rightBorder">
                   <div class="card-body">
                     <div id="cupDescription">
+                    <div class="hr"><hr></div>
                       <h4 class="card-title text-center"><?php echo $data[0]["modelTitle"]; ?></h4>
+                      <div class="hr"><hr></div>
                       <p class="card-text text-center"><?php echo $data[0]["modelDescription"]; ?></p>
+
                     </div>
                   </div>
                 </div>
                 <!-- END OF FINAL ROW -->
                 <div class="col-sm-6">
+                <div class="hr"><hr></div>
                   <h4 class="card-title text-center">Model Creation</h4>
+                  <div class="hr"><hr></div>
                   <div class="card-text"><?php echo $data[0]["x3dCreationMethod"]; ?></div>
                 </div>
-
               </div>
               <br>
               <div class="card-body-white-flavour">
@@ -418,17 +423,21 @@
               <br>
 
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 rightBorder">
                   <div class="card-body">
                     <div id="bottleDescription">
+                    <div class="hr"><hr></div>
                       <h4 class="card-title text-center"><?php echo $data[1]["modelTitle"]; ?></h4>
+                      <div class="hr"><hr></div>
                       <p class="card-text text-center"><?php echo $data[1]["modelDescription"]; ?></p>
                     </div>
                   </div>
                 </div>
                 <!-- END OF FINAL ROW -->
                 <div class="col-sm-6">
+                <div class="hr"><hr></div>
                   <h4 class="card-title text-center">Model Creation</h4>
+                  <div class="hr"><hr></div>
                   <div class="card-text drinksText"><?php echo $data[1]["x3dCreationMethod"]; ?></div>
                 </div>
               </div>
@@ -456,17 +465,21 @@
               <br>
 
               <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 rightBorder">
                   <div class="card-body">
                     <div id="canDescription">
+                    <div class="hr"><hr></div>
                       <h4 class="card-title text-center"><?php echo $data[2]["modelTitle"]; ?></h4>
+                      <div class="hr"><hr></div>
                       <p class="card-text text-center"><?php echo $data[2]["modelDescription"]; ?></p>
                     </div>
                   </div>
                 </div>
                 <!-- END OF FINAL ROW -->
                 <div class="col-sm-6">
+                <div class="hr"><hr></div>
                   <h4 class="card-title text-center">Model Creation</h4>
+                  <div class="hr"><hr></div>
                   <div class="card-text drinksText"><?php echo $data[2]["x3dCreationMethod"]; ?></div>
                 </div>
               </div>

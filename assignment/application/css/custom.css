@@ -186,6 +186,10 @@ X3D, x3d {
         line-height: 1.2;
         white-space: normal !important;
     }
+
+    .rightBorder {
+        border-right: 1px solid #cccccc;
+    }
      /* End of buttons for mobile */
 
 }
@@ -207,6 +211,7 @@ X3D, x3d {
         line-height: 1.2;
         white-space: normal !important;
     }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -450,6 +455,11 @@ X3D, x3d {
 .modal
 {
 	z-index:99999;
+}
+
+
+.columnGap {
+    margin: 10px 1;
 }
 
 .dropdown-menu .dropdown-item {
