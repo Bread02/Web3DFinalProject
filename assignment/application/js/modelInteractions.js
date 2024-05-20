@@ -64,6 +64,15 @@ function stopRotation() {
 	document.getElementById('model__RotationTimerYModelThree').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerZModelThree').setAttribute('enabled', spinning.toString());
 
+	if (document.getElementById('model__CustomAnimationModelOne').getAttribute('enabled') == 'true')
+		document.getElementById('model__CustomAnimationModelOne').setAttribute('enabled', 'false');
+
+	if (document.getElementById('model__CustomAnimationModelTwo').getAttribute('enabled') == 'true')
+		document.getElementById('model__CustomAnimationModelTwo').setAttribute('enabled', 'false');
+
+	if (document.getElementById('model__CustomAnimationModelThree').getAttribute('enabled') == 'true')
+		document.getElementById('model__CustomAnimationModelThree').setAttribute('enabled', 'false');
+
 	// now we make buttons red
 	var element = document.querySelector("#spinXButton");
 
@@ -138,21 +147,25 @@ function spinZ() {
 
 }
 
-function animateModel() {
-	if (document.getElementById('model__RotationTimerXModelOne').getAttribute('enabled') != 'true')
-		document.getElementById('model__RotationTimerXModelOne').setAttribute('enabled', 'true');
+// we activate our custom animation using this
+function animateModel()
+{
+	console.log("Working");
+	if (document.getElementById('model__CustomAnimationModelOne').getAttribute('enabled') != 'true')
+		document.getElementById('model__CustomAnimationModelOne').setAttribute('enabled', 'true');
 	else
-		document.getElementById('model__RotationTimerXModelOne').setAttribute('enabled', 'false');
+		document.getElementById('model__CustomAnimationModelOne').setAttribute('enabled', 'false');
 
-	if (document.getElementById('model__RotationTimerXModelTwo').getAttribute('enabled') != 'true')
-		document.getElementById('model__RotationTimerXModelTwo').setAttribute('enabled', 'true');
+	if (document.getElementById('model__CustomAnimationModelTwo').getAttribute('enabled') != 'true')
+		document.getElementById('model__CustomAnimationModelTwo').setAttribute('enabled', 'true');
 	else
-		document.getElementById('model__RotationTimerXModelTwo').setAttribute('enabled', 'false');
+		document.getElementById('model__CustomAnimationModelTwo').setAttribute('enabled', 'false');
 
-	if (document.getElementById('model__RotationTimerXModelThree').getAttribute('enabled') != 'true')
-		document.getElementById('model__RotationTimerXModelThree').setAttribute('enabled', 'true');
+	if (document.getElementById('model__CustomAnimationModelThree').getAttribute('enabled') != 'true')
+		document.getElementById('model__CustomAnimationModelThree').setAttribute('enabled', 'true');
 	else
-		document.getElementById('model__RotationTimerXModelThree').setAttribute('enabled', 'false');
+		document.getElementById('model__CustomAnimationModelThree').setAttribute('enabled', 'false');
+
 }
 
 function wireframe() {

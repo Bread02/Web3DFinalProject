@@ -630,7 +630,7 @@
             <a id="spinXButton" button type="button" class="btn btn-danger mt-2" onclick="spinX();">RotX</a>
             <a id="spinYButton" button type="button" class="btn btn-danger mt-2" onclick="spinY();">RotY</a>
             <a id="spinZButton" button type="button" class="btn btn-danger mt-2" onclick="spinZ();">RotZ</a>
-            <button type="button" class="btn btn-primary mt-2 " onclick="stopRotation();">Stop Rotation</button>
+            <button type="button" class="btn btn-primary mt-2 " onclick="stopRotation();">Stop All Animations</button>
             <br>
             <div id="interactionPanelAnimate"></div>
           </div>
