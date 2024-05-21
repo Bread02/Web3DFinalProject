@@ -20,27 +20,27 @@ $(document).ready(function() {
             $('#description_right').html('<p>' + jsonObj.pageTextData[2].description + '</p>')
 
             // Carousel food 1
-            $('#carousel_food_title_one').html('<h4>' + jsonObj.pageTextData[3].titleCarouselFood + '</h4>')
+            $('#carousel_food_title_one').html('<h5>' + jsonObj.pageTextData[3].titleCarouselFood + '</h5>')
             $('#carousel_food_description_one').html('<p>' + jsonObj.pageTextData[3].descriptionCarouselFood + '</p>')
 			
             // Carousel food 2
-            $('#carousel_food_title_two').html('<h4>' + jsonObj.pageTextData[4].titleCarouselFood + '</h4>')
+            $('#carousel_food_title_two').html('<h5>' + jsonObj.pageTextData[4].titleCarouselFood + '</h5>')
             $('#carousel_food_description_two').html('<p>' + jsonObj.pageTextData[4].descriptionCarouselFood + '</p>')
 			
 			  // Carousel food 3
-            $('#carousel_food_title_three').html('<h4>' + jsonObj.pageTextData[5].titleCarouselFood + '</h4>')
+            $('#carousel_food_title_three').html('<h5>' + jsonObj.pageTextData[5].titleCarouselFood + '</h5>')
             $('#carousel_food_description_three').html('<p>' + jsonObj.pageTextData[5].descriptionCarouselFood + '</p>')
 
 			// Carousel drink 1
-            $('#carousel_drink_title_one').html('<h4>' + jsonObj.pageTextData[6].titleCarouselDrink + '</h4>')
+            $('#carousel_drink_title_one').html('<h5>' + jsonObj.pageTextData[6].titleCarouselDrink + '</h5>')
             $('#carousel_drink_description_one').html('<p>' + jsonObj.pageTextData[6].descriptionCarouselDrink + '</p>')
 
 			// Carousel drink 2
-            $('#carousel_drink_title_two').html('<h4>' + jsonObj.pageTextData[7].titleCarouselDrink + '</h4>')
+            $('#carousel_drink_title_two').html('<h5>' + jsonObj.pageTextData[7].titleCarouselDrink + '</h5>')
             $('#carousel_drink_description_two').html('<p>' + jsonObj.pageTextData[7].descriptionCarouselDrink + '</p>')
 			
 			// Carousel drink 3
-            $('#carousel_drink_title_three').html('<h4>' + jsonObj.pageTextData[8].titleCarouselDrink + '</h4>')
+            $('#carousel_drink_title_three').html('<h5>' + jsonObj.pageTextData[8].titleCarouselDrink + '</h5>')
             $('#carousel_drink_description_three').html('<p>' + jsonObj.pageTextData[8].descriptionCarouselDrink + '</p>')
 			
             //get the interaction panel camera

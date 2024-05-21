@@ -166,10 +166,10 @@
                 <img src="assets/images/front_page_images/egg_muffin.jpg"
                   href="assets/images/front_page_images/egg_muffin.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <div class="card-body-home-news">
+                <div class="carousel-caption">
+                  <div class="card-body-home-carousel">
                   <div id="carousel_food_title_one"></div>
-                    <div id="carousel_food_description_one"></div>
+                  <div id="carousel_food_description_one"></div>
                   </div>
                 </div>
               </div>
@@ -177,8 +177,8 @@
                 <img src="assets/images/front_page_images/Cheese_Bean.jpg"
                   href="assets/images/front_page_images/Cheese_Bean.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <div class="card-body-home-news">
+                <div class="carousel-caption">
+                  <div class="card-body-home-carousel">
                   <div id="carousel_food_title_two"></div>
                     <div id="carousel_food_description_two"></div>
                   </div>
@@ -188,8 +188,8 @@
                 <img src="assets/images/front_page_images/Carrot_Cake.jpg"
                   href="assets/images/front_page_images/Carrot_Cake.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <div class="card-body-home-news">
+                <div class="carousel-caption">
+                  <div class="card-body-home-carousel">
                     <div id="carousel_food_title_three"></div>
                     <div id="carousel_food_description_three"></div>
                   </div>
@@ -225,13 +225,14 @@
               <button type="button" data-bs-target="#carouselExampleCaptionsTwo" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
             </div>
+            
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="assets/images/front_page_images/AllModelsRender2.jpg"
                   href="assets/images/front_page_images/AllModelsRender2.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <div class="card-body-home-news">
+                <div class="carousel-caption">
+                  <div class="card-body-home-carousel">
                   <div id="carousel_drink_title_one"></div>
                     <div id="carousel_drink_description_one"></div>
                   </div>
@@ -241,8 +242,8 @@
                 <img src="assets/images/front_page_images/AllModelsRender3.jpg"
                   href="assets/images/front_page_images/AllModelsRender3.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <div class="card-body-home-news">
+                <div class="carousel-caption">
+                  <div class="card-body-home-carousel">
                   <div id="carousel_drink_title_two"></div>
                     <div id="carousel_drink_description_two"></div>
                   </div>
@@ -252,8 +253,8 @@
                 <img src="assets/images/front_page_images/AllModelsRender4.jpg"
                   href="assets/images/front_page_images/AllModelsRender4.jpg" data-fancybox="gallery"
                   data-caption="Costa Cup Render" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <div class="card-body-home-news">
+                <div class="carousel-caption">
+                  <div class="card-body-home-carousel">
                   <div id="carousel_drink_title_three"></div>
                     <div id="carousel_drink_description_three"></div>
                   </div>

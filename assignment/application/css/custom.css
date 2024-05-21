@@ -109,6 +109,22 @@ X3D, x3d {
     max-width: 100%;
 }
 
+.fontResizing
+{
+    font-size: 10px;
+}
+
+.card-body-home-carousel
+{
+    background-color: #760004b9;
+	color: white; /* Font color */ 
+    padding: 2px;
+    margin-left: -30px;
+    margin-bottom: -60px;
+    margin-right: -30px;
+    font-size: 11px;
+}
+
 .nav-link
 {
     color:#760003;
@@ -134,9 +150,22 @@ X3D, x3d {
     margin-top:-35px;
 }
 
+
+
 /* Small devices (landscape phones, 576px and up)*/
 /* This is when we go into hamburger mode */
 @media (min-width: 576px) {
+
+.card-body-home-carousel
+{
+    background-color: #760004b9;
+	color: white; /* Font color */ 
+    padding: 8px;
+    margin-left: -35px;
+    margin-right: -35px;
+    border-radius: 0%;
+    font-size: 13px;
+}
 
     .navbar-text>a {
         font-size: 10px;
@@ -235,6 +264,17 @@ X3D, x3d {
         line-height: 1.2;
         white-space: normal !important;
     }
+
+.card-body-home-carousel
+{
+    background-color: #760004b9;
+	color: white; /* Font color */ 
+    padding: 8px;
+    margin-left: -40px;
+    margin-right: -40px;
+    border-radius: 0%;
+    font-size: 18px;
+}
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
