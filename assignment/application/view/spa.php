@@ -675,7 +675,6 @@
               </div>
           </div>
           <!-- END OF RENDERER CONTROLS -->
-          <!-- END OF ROW -->
 
           <!-- Where the gallery is held TODO: Add in the 3 gallery pages -->
           <div class="card-body">
