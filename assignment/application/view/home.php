@@ -364,7 +364,6 @@
               <a id="navBottle" button type="button" class="btn btn-primary" onclick="bottleScene();">Costa
                 Bottle</button> </a>
               <a id="navCan" button type="button" class="btn btn-primary" onclick="canScene();">Costa Can</button> </a>
-              <br>
             </div>
           </div>
 
