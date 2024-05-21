@@ -31,6 +31,7 @@
       <div class="logo">
         <a class="navbar-brand" href="index.php">
           <h1>COSTA COFFEE UNIVERSE</h1>
+          <br>
           <p>Love For The Bean</p>
         </a>
       </div>
@@ -64,7 +65,7 @@
           </li>
           <!-- Button trigger modal -->
           <li class="nav-item dropdown">
-            <a class="nav-link" href='#' data-bs-toggle="modal" data-bs-target="#contactModal">Candidate_Number</a>
+            <a class="nav-link" href='#' data-bs-toggle="modal" data-bs-target="#contactModal">Candidate</a>
           </li>
         </ul>
       </div>

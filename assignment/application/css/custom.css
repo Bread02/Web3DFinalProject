@@ -27,6 +27,33 @@
    No media query since this is the default in Bootstrap
 */
 
+.logo {
+    font-family: LemonMilk;
+	color: white;
+    text-align: center;
+    float: center;
+    margin:auto;
+}
+
+.logo h1 {
+    font-family: LemonMilk;
+    font-size: 21px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    float: center;
+    text-align: center;
+    padding-top: 5px;
+    margin:auto;
+}
+
+.logo p {
+    font-family: OpenSans;
+    font-size: 16px;
+    margin-top: -25px;
+    margin-bottom: -0px; /* Use this to resize the navbar */
+    text-align: center;
+}
+
 .main_contents {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -104,11 +131,12 @@ X3D, x3d {
 {
     margin:auto;
     padding-top: 10px;
+    margin-top:-35px;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
+/* This is when we go into hamburger mode */
 @media (min-width: 576px) {
-
 
     .navbar-text>a {
         font-size: 10px;
@@ -117,32 +145,6 @@ X3D, x3d {
     .navbar-text>p {
         color: rgb(228, 75, 15);
         font-size: 18px;
-    }
-
-    /* Buttons for mobile */
-    .camera-btns {
-        border-color: black; 
-        border-style: solid;
-        border-width: 0px;
-        margin-top: 0px;
-        padding: 0px;
-    }
-    
-    .camera-btns > p  {
-        font-size: 15px;
-        color: red;
-        padding-left: 0px;
-        font-weight: 900; 
-    }
-    
-    .camera-font {
-        font-weight: 400;   
-        color: white;
-    }
-    
-    .camera-font:hover {
-        font-weight: 700;   
-        color: rgb(3, 3, 3);
     }
     
     .btn-responsive {
@@ -155,6 +157,32 @@ X3D, x3d {
     .rightBorder {
         border-right: 1px solid #cccccc;
     }
+
+    .logo {
+        font-family: LemonMilk;
+        color: white;
+        text-align: center;
+        margin:left;
+        margin-left: -5px;
+    }
+    
+    .logo h1 {
+        font-family: LemonMilk;
+        font-size: 18px;
+        margin: 0;
+        float: center;
+        text-align: center;
+        padding-top: 10px;
+        margin:auto;
+    }
+    
+    .logo p {
+        font-family: OpenSans;
+        font-size: 15px;
+        margin-top: -25px;
+        margin-bottom: -25px; /* Use this to resize the navbar */
+        text-align: center;
+    }
      /* End of buttons for mobile */
 
 }
@@ -166,6 +194,35 @@ X3D, x3d {
         font-size: 130%;
         line-height: 1.2;
         white-space: normal !important;
+    }
+
+    .logo {
+        font-family: LemonMilk;
+        color: white;
+        margin:left;
+        margin-left: -5px;
+        
+    }
+    
+    .logo h1 {
+        font-family: LemonMilk;
+        font-size: 30px;
+        margin: 0;
+        margin-top: -10px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 10px;
+        text-align: left;
+        margin:left;
+    }
+    
+    .logo p {
+        font-family: OpenSans;
+        font-size: 20px;
+        margin-top: -5px;
+        padding-top: 10px;
+        margin-bottom: -25px; /* Use this to resize the navbar */
+        text-align: center;
     }
 
 }
@@ -273,7 +330,6 @@ X3D, x3d {
     padding-top: -15px;
 }
 
-
 .card-body-white-flavour {
     background-color: #ffffff;
     font-size: 20px;
@@ -356,33 +412,6 @@ X3D, x3d {
     background-color: #FFFFFF;
 }
 
-/* CSS rule to style the mobile logo */
-.logo {
-    font-family: LemonMilk;
-	color: white;
-}
-
-.logo h1 {
-    font-family: LemonMilk;
-    font-size: 31px;
-    margin: 0;
-    margin-top: -10px;
-    margin-bottom: -15px;
-    float: left;
-    padding-top: 10px;
-    padding-left: 0px;
-    padding-right: 2px;
-}
-
-.logo p {
-    font-family: OpenSans;
-    font-size: 20px;
-    margin-top: 22px;
-    margin-bottom: -35px; /* Use this to resize the navbar */
-    padding-top: 10px;
-    text-align: center;
-}
-
 .navbar_costa {
     background-color: #760004d8; /* Colour + transparency */
 }
@@ -437,7 +466,6 @@ X3D, x3d {
 {
 	z-index:99999;
 }
-
 
 .columnGap {
     margin: 10px 1;
