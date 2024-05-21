@@ -406,7 +406,7 @@
               <div class="card-body-white-flavour">
                 <div class="card-title text-center">
                   <!-- CHOOSE SKINS -->
-                  <h4 class="card-title text-center">Flavours</h4>
+                  <h3 class="card-title text-center">Flavours</h3>
                   <a id="cupButton" button type="button" class="btn btn-success">Costa Cup</button> </a>
                   <!-- END OF CHOOSE SKINS -->
                 </div>
@@ -444,7 +444,7 @@
               <!-- CHOOSE SKINS -->
               <div class="card-body-white-flavour">
                 <div class="card-title text-center">
-                  <h4 class="card-title">Flavours</h4>
+                  <h3 class="card-title">Flavours</h3>
                   <a id="caramelButton" class="btn btn-success" onclick="changeTextureCaramel()">Frappe
                     Caramel</button></a>
                   <a id="brownieButton" class="btn btn-primary" onclick="changeTextureBrownie()">Frappe
@@ -486,7 +486,7 @@
               <!-- CHOOSE SKINS -->
               <div class="card-body-white-flavour">
                 <div class="card-title text-center">
-                  <h4 class="card-title">Flavours</h4>
+                  <h3 class="card-title">Flavours</h3>
                   <a id="vanillaLatteButton" class="btn btn-success" onclick="changeTextureVanillaLatte()">Vanilla
                     Latte</a>
                   <a id="latteButton" class="btn btn-primary" onclick="changeTextureLatte()">Latte</a>
