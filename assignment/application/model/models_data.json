@@ -1,7 +1,7 @@
 [
     {
         "x3dModelTitle": "Costa Cup X3D Model",
-        "x3dCreationMethod": "This X3D model of the Costa cup was modelled, UV mapped, and textured using Blender. Then it was exported in FBX format to 3DSMax where it was then exported to VRML97. The VRML97 file was then converted using View3DScene to X3D format to be displayed here.",
+        "x3dCreationMethod": "This X3D model of the Costa cup was modelled, UV mapped, and textured using Blender. Then it was exported in FBX format to 3DSMax where it was then exported to VRML97. The VRML97 file was then converted using View3DScene to X3D format to be displayed here. Flavours change the texture of the same model.",
         "modelTitle": "Costa Coffee In Store",
         "modelSubtitle": "Delicious food and drinks",
         "modelDescription": "Discover a wide range of coffees instore with Costa. Costa offers everything from Smoothies, Hot Milkshakes, to Espressos and Gingerbread Caramel Lattes. Costa does not offer just drinks, but also a wide range of food such as cakes, toasties, and sandwiches!",

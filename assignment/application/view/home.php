@@ -407,7 +407,8 @@
                 <div class="card-title text-center">
                   <!-- CHOOSE SKINS -->
                   <h3 class="card-title text-center">Flavours</h3>
-                  <a id="cupButton" button type="button" class="btn btn-success">Costa Cup</button> </a>
+                  <a id="cupMilkyButton" class="btn btn-success" onclick="changeTextureMilky()">Flat White</button></a>
+                    <a id="cupBlackButton" class="btn btn-primary" onclick="changeTextureBlack()">Americano</button></a>
                   <!-- END OF CHOOSE SKINS -->
                 </div>
               </div>

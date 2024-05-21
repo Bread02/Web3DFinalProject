@@ -150,7 +150,6 @@ function spinZ() {
 // we activate our custom animation using this
 function animateModel()
 {
-	console.log("Working");
 	if (document.getElementById('model__CustomAnimationModelOne').getAttribute('enabled') != 'true')
 		document.getElementById('model__CustomAnimationModelOne').setAttribute('enabled', 'true');
 	else
@@ -352,6 +351,30 @@ function changeTextureLatte() {
 	element.classList.add("btn-success");
 }
 
+function changeTextureBlack() {
+	document.getElementById('model__ImgTextureModelOne').setAttribute("url", 'maps/CupImageMap_Black.jpg');
+
+	// button element
+	changeCupNavClassesToNotActive()
+	var element = document.querySelector("#cupBlackButton");
+
+	// replace primary with success
+	element.classList.remove("btn-primary");
+	element.classList.add("btn-success");
+}
+
+function changeTextureMilky() {
+	document.getElementById('model__ImgTextureModelOne').setAttribute("url", 'maps/CupImageMap.jpg');
+
+	// button element
+	changeCupNavClassesToNotActive()
+	var element = document.querySelector("#cupMilkyButton");
+
+	// replace primary with success
+	element.classList.remove("btn-primary");
+	element.classList.add("btn-success");
+}
+
 // END OF CHANGING TEXTURE REGION
 
 
@@ -369,6 +392,16 @@ function changeModelsClassesToNotActive() {
 	element.classList.add("btn-primary");
 }
 
+function changeCupNavClassesToNotActive()
+{
+	var element = document.querySelector("#cupMilkyButton");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");
+
+	var element = document.querySelector("#cupBlackButton");
+	element.classList.remove("btn-success");
+	element.classList.add("btn-primary");
+}
 
 function changeBottleNavClassesToNotActive() {
 	var element = document.querySelector("#caramelButton");
