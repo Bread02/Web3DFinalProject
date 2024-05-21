@@ -829,9 +829,7 @@
     </nav>
     <!-- END OF FOOTER -->
 
-    <!-- My 3D App modals -->
     <!-- Contact modal -->
-    <!-- The Modal -->
     <div class="modal fade" id="contactModal">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -857,13 +855,9 @@
     </div>
 
     <!-- JavaScript -->
-    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script> -->
     <script src="application/js/jquery-3.4.1.js"></script>
-    <script src="application/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <!-- popper is bundled in this -->
+    <script src="application/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> <!-- popper is bundled in this -->
 
-    <script type="text/javascript" src="application/js/all.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="application/js/custom.js" crossorigin="anonymous"></script>
     <script src="application/js/gallery_generator.js"></script>
     <script src="application/js/swap_restyle.js"></script>
@@ -871,8 +865,6 @@
     <script src="application/js/modelInteractions.js"></script>
     <script src="application/js/getJsonData.js"></script>
     <script src="application/js/jquery.fancybox.min.js"></script>
-
-    <!-- Try to put this in controller if we can? -->
 
 </body>
 
