@@ -358,7 +358,8 @@
           <!-- TODO Nav Menu to choose models -->
           <div class="card text-left">
             <div class="card-body text-center">
-              <h2 class="card-title text-center">Products</h2>
+              <h2 class="card-title text-center ">Products</h2>
+              <div class="hr"><hr></div>
               <a id="navCup" button type="button" class="btn btn-success" onclick="cupScene();">Costa Cup</button> </a>
               <a id="navBottle" button type="button" class="btn btn-primary" onclick="bottleScene();">Costa
                 Bottle</button> </a>
@@ -376,31 +377,29 @@
               <div class="card-body">
                 <!-- <h3 class="card-title"> Cup X3D Model</h3> --->
                 <h3 class="card-title text-center">
-                  <?php echo $data[0]["x3dModelTitle"]; ?>
+                  <?php echo $data[0]["x3dModelTitle"]; ?>       
                 </h3>
                 <br>
               </div>
 
               <!-- START OF FINAL ROW -->
               <div class="row">
-
                 <div class="col-sm-6 rightBorder">
                   <div class="card-body">
                     <div id="cupDescription">
-                    <div class="hr"><hr></div>
-                      <h4 class="card-title text-center"><?php echo $data[0]["modelTitle"]; ?></h4>
+                    <div class="hr marginPullUpTitles"><hr></div>
+                      <h4 class="card-title text-center marginPullUpTitles"><?php echo $data[0]["modelTitle"]; ?></h4>
                       <div class="hr"><hr></div>
-                      <p class="card-text text-center"><?php echo $data[0]["modelDescription"]; ?></p>
-
+                      <p class="card-text text-center modelDescription"><?php echo $data[0]["modelDescription"]; ?></p>
                     </div>
                   </div>
                 </div>
                 <!-- END OF FINAL ROW -->
                 <div class="col-sm-6">
-                <div class="hr"><hr></div>
-                  <h4 class="card-title text-center">Model Creation</h4>
+                <div class="hr marginPullUpTitles"><hr></div>
+                  <h4 class="card-title text-center marginPullUpTitles">Model Creation</h4>
                   <div class="hr"><hr></div>
-                  <div class="card-text"><?php echo $data[0]["x3dCreationMethod"]; ?></div>
+                  <div class="card-text drinksText modelDescription"><?php echo $data[0]["x3dCreationMethod"]; ?></div>
                 </div>
               </div>
               <br>
@@ -426,19 +425,19 @@
                 <div class="col-sm-6 rightBorder">
                   <div class="card-body">
                     <div id="bottleDescription">
-                    <div class="hr"><hr></div>
-                      <h4 class="card-title text-center"><?php echo $data[1]["modelTitle"]; ?></h4>
+                    <div class="hr marginPullUpTitles"><hr></div>
+                      <h4 class="card-title text-center marginPullUpTitles"><?php echo $data[1]["modelTitle"]; ?></h4>
                       <div class="hr"><hr></div>
-                      <p class="card-text text-center"><?php echo $data[1]["modelDescription"]; ?></p>
+                      <p class="card-text text-center modelDescription"><?php echo $data[1]["modelDescription"]; ?></p>
                     </div>
                   </div>
                 </div>
                 <!-- END OF FINAL ROW -->
                 <div class="col-sm-6">
-                <div class="hr"><hr></div>
-                  <h4 class="card-title text-center">Model Creation</h4>
+                <div class="hr marginPullUpTitles"><hr></div>
+                  <h4 class="card-title text-center marginPullUpTitles">Model Creation</h4>
                   <div class="hr"><hr></div>
-                  <div class="card-text drinksText"><?php echo $data[1]["x3dCreationMethod"]; ?></div>
+                  <div class="card-text drinksText modelDescription"><?php echo $data[1]["x3dCreationMethod"]; ?></div>
                 </div>
               </div>
               <br>
@@ -468,19 +467,19 @@
                 <div class="col-sm-6 rightBorder">
                   <div class="card-body">
                     <div id="canDescription">
-                    <div class="hr"><hr></div>
-                      <h4 class="card-title text-center"><?php echo $data[2]["modelTitle"]; ?></h4>
+                    <div class="hr marginPullUpTitles"><hr></div>
+                      <h4 class="card-title text-center marginPullUpTitles"><?php echo $data[2]["modelTitle"]; ?></h4>
                       <div class="hr"><hr></div>
-                      <p class="card-text text-center"><?php echo $data[2]["modelDescription"]; ?></p>
+                      <p class="card-text text-center modelDescription"><?php echo $data[2]["modelDescription"]; ?></p>
                     </div>
                   </div>
                 </div>
                 <!-- END OF FINAL ROW -->
                 <div class="col-sm-6">
-                <div class="hr"><hr></div>
-                  <h4 class="card-title text-center">Model Creation</h4>
+                <div class="hr marginPullUpTitles"><hr></div>
+                  <h4 class="card-title text-center marginPullUpTitles">Model Creation</h4>
                   <div class="hr"><hr></div>
-                  <div class="card-text drinksText"><?php echo $data[2]["x3dCreationMethod"]; ?></div>
+                  <div class="card-text drinksText modelDescription"><?php echo $data[2]["x3dCreationMethod"]; ?></div>
                 </div>
               </div>
               <br>
@@ -620,40 +619,53 @@
         <div id="interaction" class="col-sm-3"> <!-- This will hold the model interactions -->
         <div class="card text-left"></div> <!-- Gives this a nice line at the top of the page -->
           <!-- CAMERA VIEWS -->
-          <div class="card-body text-center">
-            <h4 class="card-title text-center">
+          <div class="card-body text-center borderedAllAround">
+            <h3 class="card-title text-center">
               <div id="interactionPanelCameraTitle"></div>
-            </h4>
+            </h3>
+            <div id="PaddedTextInteractionPanel">
+            <div id="interactionPanelCamera"></div>
+            </div>
+            <div class="hr"><hr></div>
             <!-- The X3D model file will contain the camera locations -->
+            <div id="PaddedButtonsInteractionPanel">
             <button type="button" class="btn btn-primary mt-2" onclick="cameraFront();">Front</button>
             <button type="button" class="btn btn-primary mt-2" onclick="cameraBack();">Back</button>
             <button type="button" class="btn btn-primary mt-2" onclick="cameraLeft();">Left</button>
             <button type="button" class="btn btn-primary mt-2" onclick="cameraRight();">Right</button>
             <button type="button" class="btn btn-primary mt-2" onclick="cameraTop();">Top</button>
             <button type="button" class="btn btn-primary mt-2" onclick="cameraBottom();">Bottom</button>
-            <br>
-            <div id="interactionPanelCamera"></div>
+            </div>
           </div>
           <!-- END OF CAMERA VIEWS -->
           <!-- ANIMATION CONTROLS -->
-          <div class="card-body text-center">
-            <h4 class="card-title text-center">
+          <div class="card-body text-center borderedAllAround">
+            <h3 class="card-title text-center">
               <div id="interactionPanelAnimationTitle"></div>
-            </h4>
+            </h3>
+            <div id="PaddedTextInteractionPanel">
+            <div id="interactionPanelAnimate"></div>
+                    </div>
+            <div class="hr"><hr></div>
+            <div id="PaddedButtonsInteractionPanel">
             <a id="spinXButton" button type="button" class="btn btn-danger mt-2" onclick="spinX();">RotX</a>
             <a id="spinYButton" button type="button" class="btn btn-danger mt-2" onclick="spinY();">RotY</a>
             <a id="spinZButton" button type="button" class="btn btn-danger mt-2" onclick="spinZ();">RotZ</a>
             <button type="button" class="btn btn-primary mt-2 " onclick="stopRotation();">Stop All Animations</button>
-            <br>
-            <div id="interactionPanelAnimate"></div>
+                    </div>
           </div>
 
           <!-- END OF ANIMATION CONTROLS -->
           <!-- RENDERER CONTROLS -->
-          <div class="card-body text-center">
-            <h4 class="card-title text-center">
+          <div class="card-body text-center borderedAllAround">
+            <h3 class="card-title text-center">
               <div id="interactionPanelRenderTitle"></div>
-            </h4>
+            </h3>
+            <div id="PaddedTextInteractionPanel">
+            <div id="interactionPanelRender"></div>
+            </div>
+            <div class="hr"><hr></div>
+            <div id="PaddedButtonsInteractionPanel">
             <a id="wireFrameButton" button type="button" class="btn btn-danger mt-2"
               onclick="wireframe();">Wireframe</a>
             <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success mt-2" onclick="headlight();">Toggle
@@ -661,17 +673,16 @@
             <a id="toggleLightsBtn" button type="button" class="btn btn-success mt-2" onclick="toggleLights();">Toggle
               Scene
               Lights</a>
-            <br>
-            <div id="interactionPanelRender"></div>
+              </div>
           </div>
           <!-- END OF RENDERER CONTROLS -->
           <!-- END OF ROW -->
 
           <!-- Where the gallery is held TODO: Add in the 3 gallery pages -->
           <div class="card-body">
-            <div class="card text-left">
+            <div class="card text-center">
               <div class="card-header gallery-header">
-                <ul class="nav nav-tabs card-header-tabs">
+                <ul class="nav nav-tabs">
                   <li class="nav-item">
                     <a id="navGalleryCup" class="nav-link active" href="#">Costa Cup</a>
                   </li>
