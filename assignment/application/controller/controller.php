@@ -14,14 +14,10 @@ class Controller {
     }
 
 
-    function home()
+    function spa()
 	{
-        // this works
-      //  $data = $this->model->model3D_info();
-     //   $this->load->view('home', $data);
-
         $data = $this->model->dbGetData();
-        $this->load->view('home', $data);
+        $this->load->view('spa', $data);
 	}
 
     function apiCreateTable()
@@ -36,13 +32,6 @@ class Controller {
     {
         $data = $this->model->dbInsertData();
         $this->load->view('viewMessage', $data);
-    }
-
-    // gets the data from the table
-    function apiGetData()
-    {
-        $data = $this->model->dbGetData();
-        $this->load->view('view3DAppData', $data);
     }
 }
 

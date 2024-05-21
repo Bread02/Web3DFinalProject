@@ -608,16 +608,13 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-
               </scene>
               </x3d>
-
             </div>
           </div>
         </div>
 
         <!-- END OF X3D MODEL SCENES -->
-
         <div id="interaction" class="col-sm-3"> <!-- This will hold the model interactions -->
         <div class="card text-left"></div> <!-- Gives this a nice line at the top of the page -->
           <!-- CAMERA VIEWS -->
@@ -729,8 +726,6 @@
     </div>
     <!-- END OF STATEMENT OF ORIGINALITY -->
 
-    <!-- Acknowledgements can be added here optionally -->
-
     <!-- START OF REFERENCES -->
     <div id="references">
       <h2>Texture Image Sources</h2>
@@ -813,10 +808,10 @@
             <a id="example">Latte - https://www.sainsburys.co.uk/gol-ui/product/costa-coffee-latte-250ml</a>
       </li>
       <br>
-      Please also be sure to produce appropriate citations within your web pages to all sources of content, including
-      X3D/VRML functions, extensions, HTML, JavaScrip, ... code, etc. that you have not developed yourself. For each
-      piece of content that is not developed by yourself you should 'cite and refer' via a hyperlink to the source (via
-      this page) that lists your references just as if you had written an essay or report.
+      <h2>Code Sources</h2>
+      <li class="nav-item">
+            <a id="example">CSS iframe - https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t </a>
+      </li>
     </div>
     <!-- END OF REFERENCES -->
 
