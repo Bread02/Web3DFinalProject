@@ -18,10 +18,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
-  <title>Costa Coffee Web 3D App</title>
+  <title>Costa Coffee Web 3D App</title> <!-- Page title -->
 </head>
 
-<body>
+<body id="body">
 
 
   <!-- START OF NAVBAR -->
@@ -36,8 +36,8 @@
         </a>
       </div>
     </div>
-
     <!-- END OF LOGO -->
+
     <!-- HAMBURGER FOR MOBILE -->
     <div class="hamburger">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
@@ -46,6 +46,7 @@
     </div>
     <!-- END OF HAMBURGER -->
 
+    <!-- NAVIGATION MENU -->
     <div class="collapse navbar-collapse">
       <div class="container-fluid">
         <div class="card text-left"></div> <!-- Gives this a nice line -->
@@ -69,6 +70,7 @@
         </ul>
       </div>
     </div>
+    <!-- END OF NAVIGATION MENU -->
     <!-- END OF NAVIGATION ELEMENT OF BAR -->
 
   </nav>
@@ -81,6 +83,7 @@
 
     <!-- START OF FIRST ROW -->
     <div class="row">
+      <!-- CUP -->
       <div class="col-sm-4">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/CupRender1.jpg" data-fancybox="gallery"
@@ -96,6 +99,8 @@
           <div id="description_left"></div>
         </div>
       </div>
+      <!-- END OF CUP -->
+      <!-- BOTTLE -->
       <div class="col-sm-4">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/TwoBottleRender.jpg" data-fancybox
@@ -112,6 +117,8 @@
           <div id="description_center"></div>
         </div>
       </div>
+      <!-- END OF BOTTLE -->
+      <!-- CAN -->
       <div class="col-sm-4">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/LatteVanillaLatteRender5.jpg" data-fancybox
@@ -128,7 +135,11 @@
           <div id="description_right"></div>
         </div>
       </div>
+      <!-- END OF CAN -->
+      </div>
+      <!-- END OF FIRST ROW -->
 
+      <!-- Home News -->
       <div class="card text-center">
         <div class="card-body-home-news-main">
           <div class="card-header">
@@ -141,6 +152,7 @@
           <a href="https://www.costa.co.uk/menu" class="btn btn-primary">Visit our full menu range!</a>
         </div>
       </div>
+      <!-- End of Home News -->
 
       <!-- carousel -->
       <div class="container-fluid">
@@ -220,7 +232,7 @@
                 <button type="button" data-bs-target="#carouselExampleCaptionsTwo" data-bs-slide-to="2"
                   aria-label="Slide 3"></button>
               </div>
-
+              <!-- CAROUSEL ITEMS -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="assets/images/front_page_images/AllModelsRender2.jpg"
@@ -256,6 +268,7 @@
                   </div>
                 </div>
               </div>
+              <!-- END OF CAROUSEL ITEMS -->
               <div class="card-body-home-news">
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsTwo"
                   data-bs-slide="prev">
@@ -869,23 +882,29 @@
       <a id="example">CSS iframe -
         https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t
       </a>
+      <li class="nav-item">
+      <a id="example">Starting Template for modelInteractions.js - https://benskitchen.com/
+      </a>
     </li>
   </div>
   </div>
   </div>
   <!-- END OF REFERENCES -->
 
-
-
   <!-- START OF FOOTER -->
-  <nav class="navbar navbar-expand-sm footer sticky">
+  <nav class="footer sticky">
     <div class="container-fluid">
-      <div class="navbar-text float-left copyright">
-        <p><a span class="align-baseline" href="#" id="navOriginality" style="color:#ffffff;">Statement of Originality
-          </a> | <a id="navReferences" href="#" style="color:#ffffff;">| References | </a> | <a
-            href="https://github.com/Bread02/Web3DFinalProject" style="color:#ffffff;">Github</a></span></p>
+      <div class="float-left">
+        <p>
+          <a span class="align-baseline" href="#" id="navOriginality" style="color:#ffffff;">Statement of Originality </a> 
+          <a id="navReferences" href="#" style="color:#ffffff;">|| References || </a>
+          <a href="https://github.com/Bread02/Web3DFinalProject" style="color:#ffffff;">Github | | </a>
+          <a id="lightThemeToggle" href="#" style="color:#ffffff;">Enable Light Theme</a>
+          <a id="darkThemeToggle" href="#" style="color:#ffffff;">Enable Dark Theme </a>
+          </p>
+          </span>
       </div>
-    </div>
+
   </nav>
   <!-- END OF FOOTER -->
 

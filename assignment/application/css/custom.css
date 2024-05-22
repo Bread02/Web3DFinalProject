@@ -82,6 +82,21 @@
     height: 480px;
 }
 
+.footer {
+    color: #730723; /* red */
+    background-color: #730723; /* red */
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    font-family: Kanit;
+    font-weight: 100;
+}
+
+.footer>.active>ul>li>a:hover,
+.footer>.active>ul>li>a:focus {
+	color: white;
+}
+
 X3D, x3d {
     width: 100%;
     height: 100%;
@@ -252,6 +267,16 @@ X3D, x3d {
         padding-top: 10px;
         margin-bottom: -25px; /* Use this to resize the navbar */
         text-align: center;
+    }
+
+    .footer {
+        color: #730723; /* red */
+        background-color: #730723; /* red */
+        height: 50px;
+        font-size: 20px;
+        text-align: left;
+        font-family: Kanit;
+        font-weight: 100;
     }
 
 }
@@ -538,17 +563,6 @@ X3D, x3d {
 
 .navbar_costa .navbar-toggler {
     outline: none;
-}
-
-.footer {
-    color: #730723; /* red */
-    background-color: #730723; /* red */
-    height: 50px;
-}
-
-.footer>.active>ul>li>a:hover,
-.footer>.active>ul>li>a:focus {
-	color: white;
 }
 
 /* https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t */

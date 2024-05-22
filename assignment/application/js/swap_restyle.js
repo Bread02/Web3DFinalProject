@@ -6,6 +6,7 @@ $(document).ready(function() {
 	selectPage();
 	selectModel();
 	selectGallery();
+	toggleDarkTheme();
 
 	function selectPage() {
 
@@ -37,6 +38,8 @@ $(document).ready(function() {
 		$('#cup_gallery').show();
 		$('#can_gallery').hide();
 		$('#bottle_gallery').hide();
+
+		$('#lightThemeToggle').hide();
 
 		$('#navHome').click(function(){
 			$('#home').show();
@@ -517,6 +520,23 @@ $(document).ready(function() {
 
 	}
 
+	function toggleDarkTheme() {
+
+	$('#darkThemeToggle').click(function(){
+		document.getElementById('body').style.backgroundColor = 'black';
+
+		$('#darkThemeToggle').hide();
+		$('#lightThemeToggle').show();
+	});
+
+	$('#lightThemeToggle').click(function(){
+		document.getElementById('body').style.backgroundColor = 'gray';
+
+		$('#darkThemeToggle').show();
+		$('#lightThemeToggle').hide();
+	});
+}
+
 });
 
 function hideAllGalleries()
@@ -616,21 +636,3 @@ function changeModelsClassToActive()
   var element = document.querySelector("#navModels");
   element.classList.add("active");
 }
-
-
-let isDarkTheme = false; // we start with the default theme
-
-function toggleDarkTheme() {
-
-	if(isDarkTheme)
-		{
-			// switch back to light theme
-			document.getElementById('bodyColor').style.backgroundColor = 'lightblue';
-			document.getElementById('headerColor').style.backgroundColor = '#FF0000';
-			document.getElementById('footerColor').style.backgroundColor = '#FF9900';
-		}
-		else
-		{
-			// switch back to dark theme
-		}
-	}

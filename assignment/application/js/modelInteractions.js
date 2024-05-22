@@ -1,6 +1,4 @@
-//adapted from example code 'benskitchen.com'
-// Each model has its own namespacename, so we must call the function for each model namespace.
-
+// initially adapted from example code 'benskitchen.com' then heavily modified further for this context.
 
 function cupScene() {
 	stopRotation();
