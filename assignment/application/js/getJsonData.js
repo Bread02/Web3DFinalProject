@@ -52,6 +52,6 @@ $(document).ready(function() {
             $('#interactionPanelRender').html('<p>' + jsonObj.pageTextData[9].interactionPanelRender + '</p>');
 
             // Originality 
-            $('#originalityStatement').html('<p>' + jsonObj.pageTextData[9].originalityStatement + '</p>');
+            $('#originalityStatement').html('<p>' + jsonObj.pageTextData[10].originalityStatement + '</p>');
         });
 });
