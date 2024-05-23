@@ -13,7 +13,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="application/css/custom.css" crossorigin="anonymous">
   <!-- Fancybox -->
-  <link rel="stylesheet" type="text/css" href="application/css/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="application/css/jquery.fancybox.min.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
