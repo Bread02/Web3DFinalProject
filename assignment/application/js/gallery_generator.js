@@ -1,6 +1,6 @@
 // JavaScript Gallery Generator
 
-// Further modified to split the three different models into different categories.
+// Further modified from lab code to split the three different models into different categories.
 // Each gallery page will display the Cup, or Bottle, or Can.
 
 $(document).ready(function () {

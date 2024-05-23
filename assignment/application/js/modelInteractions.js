@@ -1,7 +1,7 @@
-// initially adapted from example code 'benskitchen.com' then heavily modified further for this context.
+// initially adapted from example code 'benskitchen.com' then heavily modified further for the coursework.
 
 function cupScene() {
-	stopRotation();
+	stopAllAnimations();
 	lightsOn();
 
 	nSwitch = 0;
@@ -9,7 +9,7 @@ function cupScene() {
 }
 
 function bottleScene() {
-	stopRotation();
+	stopAllAnimations();
 	lightsOn();
 
 	nSwitch = 1;
@@ -18,7 +18,7 @@ function bottleScene() {
 }
 
 function canScene() {
-	stopRotation();
+	stopAllAnimations();
 	lightsOn();
 
 	nSwitch = 2;
@@ -28,7 +28,7 @@ function canScene() {
 var spinning = false;
 
 function spinX() {
-	stopRotation();
+	stopAllAnimations();
 	spinning = !spinning;
 	document.getElementById('model__RotationTimerXModelOne').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerXModelTwo').setAttribute('enabled', spinning.toString());
@@ -48,7 +48,8 @@ function spinX() {
 	}
 }
 
-function stopRotation() {
+// Stop all rotations and on click animations
+function stopAllAnimations() {
 	spinning = false;
 	document.getElementById('model__RotationTimerXModelOne').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerYModelOne').setAttribute('enabled', spinning.toString());
@@ -101,8 +102,9 @@ function stopRotation() {
 
 }
 
+// Spin the model on the Y axis.
 function spinY() {
-	stopRotation();
+	stopAllAnimations();
 	spinning = !spinning;
 	document.getElementById('model__RotationTimerYModelOne').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerYModelTwo').setAttribute('enabled', spinning.toString());
@@ -123,8 +125,9 @@ function spinY() {
 
 }
 
+// Spin the model on the x axis
 function spinZ() {
-	stopRotation();
+	stopAllAnimations();
 	spinning = !spinning;
 	document.getElementById('model__RotationTimerZModelOne').setAttribute('enabled', spinning.toString());
 	document.getElementById('model__RotationTimerZModelTwo').setAttribute('enabled', spinning.toString());
@@ -145,7 +148,7 @@ function spinZ() {
 
 }
 
-// we activate our custom animation using this
+// we activate our custom onclick animation using this
 function animateModel()
 {
 	if (document.getElementById('model__CustomAnimationModelOne').getAttribute('enabled') != 'true')
@@ -165,6 +168,7 @@ function animateModel()
 
 }
 
+// Wireframe modes we go through.
 function wireframe() {
 	var e = document.getElementById('wire');
 	e.runtime.togglePoints(true);
@@ -197,6 +201,8 @@ function wireframe() {
 
 /* LIGHTS */
 /* Only one models needs the lights due to the switch node. The cup holds the lights */
+
+/* When we swap to new models, we will turn the scene lights back on, INCLUDING the headlight */
 lightToggled = true;
 function lightsOn()
 {
@@ -212,8 +218,14 @@ function lightsOn()
 	var element = document.querySelector("#toggleLightsBtn");
 	element.classList.remove("btn-danger");
 	element.classList.add("btn-success");
+
+	if(!lightOn)
+		{
+			headlight();
+		}
 }
 
+// Toggles the lights
 function toggleLights() {
 	// if lights off do this
 	if (!lightToggled) {
@@ -254,6 +266,7 @@ function toggleLights() {
 
 var lightOn = true;
 
+// Controls headlight functionality.
 function headlight() {
 	lightOn = !lightOn;
 	document.getElementById('model__headlight').setAttribute('headlight', lightOn.toString());
@@ -274,7 +287,7 @@ function headlight() {
 
 /* END OF LIGHTS */
 
-
+/* Start of functionality of moving camera to positions */
 function cameraFront() {
 	document.getElementById('model__CameraFront').setAttribute('bind', 'true');
 }
@@ -298,9 +311,9 @@ function cameraTop() {
 function cameraBottom() {
 	document.getElementById('model__CameraBottom').setAttribute('bind', 'true');
 }
+/* end of functionality of moving camera to positions */
 
 // CHANGING TEXTURE REGION
-
 function changeTextureCaramel() {
 	document.getElementById('model__ImgTextureModelTwo').setAttribute("url", 'maps/Costa_Bottle_CaramelMap.jpg');
 
@@ -372,9 +385,7 @@ function changeTextureMilky() {
 	element.classList.remove("btn-primary");
 	element.classList.add("btn-success");
 }
-
 // END OF CHANGING TEXTURE REGION
-
 
 function changeModelsClassesToNotActive() {
 	var element = document.querySelector("#navCup");
