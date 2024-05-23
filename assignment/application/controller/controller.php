@@ -14,10 +14,10 @@ class Controller {
     }
 
 
-    function spa()
+    function myview()
 	{
         $data = $this->model->dbGetData();
-        $this->load->view('spa', $data);
+        $this->load->view('myview', $data);
 	}
 
     function apiCreateTable()
