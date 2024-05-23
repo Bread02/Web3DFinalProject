@@ -169,7 +169,7 @@
               </div>
               <!-- CAROUSEL ITEMS -->
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active card-body-home">
                   <img src="assets/images/front_page_images/egg_muffin.jpg"
                     href="assets/images/front_page_images/egg_muffin.jpg" data-fancybox="gallery"
                     data-caption="Costa Cup Render" class="d-block w-100" alt="...">
@@ -180,7 +180,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item card-body-home">
                   <img src="assets/images/front_page_images/Cheese_Bean.jpg"
                     href="assets/images/front_page_images/Cheese_Bean.jpg" data-fancybox="gallery"
                     data-caption="Costa Cup Render" class="d-block w-100" alt="...">
@@ -191,7 +191,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item card-body-home">
                   <img src="assets/images/front_page_images/Carrot_Cake.jpg"
                     href="assets/images/front_page_images/Carrot_Cake.jpg" data-fancybox="gallery"
                     data-caption="Costa Cup Render" class="d-block w-100" alt="...">
@@ -234,7 +234,7 @@
               </div>
               <!-- CAROUSEL ITEMS -->
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active card-body-home">
                   <img src="assets/images/front_page_images/AllModelsRender2.jpg"
                     href="assets/images/front_page_images/AllModelsRender2.jpg" data-fancybox="gallery"
                     data-caption="Costa Cup Render" class="d-block w-100" alt="...">
@@ -245,7 +245,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item card-body-home">
                   <img src="assets/images/front_page_images/AllModelsRender3.jpg"
                     href="assets/images/front_page_images/AllModelsRender3.jpg" data-fancybox="gallery"
                     data-caption="Costa Cup Render" class="d-block w-100" alt="...">
@@ -256,7 +256,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item card-body-home">
                   <img src="assets/images/front_page_images/AllModelsRender4.jpg"
                     href="assets/images/front_page_images/AllModelsRender4.jpg" data-fancybox="gallery"
                     data-caption="Costa Cup Render" class="d-block w-100" alt="...">
