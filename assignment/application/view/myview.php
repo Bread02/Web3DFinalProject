@@ -84,10 +84,10 @@
     <!-- START OF FIRST ROW -->
     <div class="row">
       <!-- CUP -->
-      <div class="col-sm-4">
+      <div class="col-sm-4 d-flex align-items-stretch mb-3">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/CupRender1.jpg" data-fancybox="gallery"
-            data-caption="Costa Cup Render">
+            data-caption="Costa Cup">
             <img class="card-img-top img-fluid" src="assets/images/front_page_images/CupRender1.jpg" alt="Costa Cup">
           </a>
           <div class="card-body-home-white">
@@ -101,10 +101,10 @@
       </div>
       <!-- END OF CUP -->
       <!-- BOTTLE -->
-      <div class="col-sm-4">
+      <div class="col-sm-4 d-flex align-items-stretch mb-3">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/TwoBottleRender.jpg" data-fancybox
-            data-caption="Costa Caramel Frappe Render">
+            data-caption="Costa Caramel Frappe">
             <img class="card-img-top img-fluid" src="assets/images/front_page_images/TwoBottleRender.jpg"
               alt="Costa Caramel Frappe">
           </a>
@@ -119,10 +119,10 @@
       </div>
       <!-- END OF BOTTLE -->
       <!-- CAN -->
-      <div class="col-sm-4">
+      <div class="col-sm-4 d-flex align-items-stretch mb-3">
         <div class="card-body-home">
           <a href="assets/images/front_page_images/LatteVanillaLatteRender5.jpg" data-fancybox
-            data-caption="Costa Canned Coffee Vanilla Latte Render">
+            data-caption="Costa Coffee canned vanilla Latte and Costa Coffee canned Latte">
             <img class="card-img-top img-fluid" src="assets/images/front_page_images/LatteVanillaLatteRender5.jpg"
               alt="Costa Canned Coffee Vanilla Latte">
           </a>
@@ -159,6 +159,7 @@
         <div class="row">
           <div class="col-sm-6">
             <div id="carouselExampleCaptionsOne" class="carousel slide" data-bs-interval="4000" data-bs-ride="carousel">
+              <!-- CAROUSEL SLIDE INDICATORS -->
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptionsOne" data-bs-slide-to="0" class="active"
                   aria-current="true" aria-label="Slide 1"></button>
@@ -166,13 +167,14 @@
                   aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptionsOne" data-bs-slide-to="2"
                   aria-label="Slide 3"></button>
+              <!-- END OF CAROUSEL SLIDE INDICATORS -->
               </div>
               <!-- CAROUSEL ITEMS -->
               <div class="carousel-inner">
                 <div class="carousel-item active card-body-home">
                   <img src="assets/images/front_page_images/egg_muffin.jpg"
                     href="assets/images/front_page_images/egg_muffin.jpg" data-fancybox="gallery"
-                    data-caption="Costa Cup Render" class="d-block w-100" alt="...">
+                    data-caption="Photo of Costa Coffee Egg Muffin" class="d-block w-100" alt="...">
                   <div class="carousel-caption">
                     <div class="card-body-home-carousel">
                       <div id="carousel_food_title_one"></div>
@@ -183,7 +185,7 @@
                 <div class="carousel-item card-body-home">
                   <img src="assets/images/front_page_images/Cheese_Bean.jpg"
                     href="assets/images/front_page_images/Cheese_Bean.jpg" data-fancybox="gallery"
-                    data-caption="Costa Cup Render" class="d-block w-100" alt="...">
+                    data-caption="Photo of Costa Coffee Cheese and Bean Toastie" class="d-block w-100" alt="...">
                   <div class="carousel-caption">
                     <div class="card-body-home-carousel">
                       <div id="carousel_food_title_two"></div>
@@ -194,7 +196,7 @@
                 <div class="carousel-item card-body-home">
                   <img src="assets/images/front_page_images/Carrot_Cake.jpg"
                     href="assets/images/front_page_images/Carrot_Cake.jpg" data-fancybox="gallery"
-                    data-caption="Costa Cup Render" class="d-block w-100" alt="...">
+                    data-caption="Photo of Costa Coffee Carrot Cake" class="d-block w-100" alt="...">
                   <div class="carousel-caption">
                     <div class="card-body-home-carousel">
                       <div id="carousel_food_title_three"></div>
@@ -204,15 +206,15 @@
                 </div>
               </div>
               <!-- END OF CAROUSEL ITEMS -->
-              <!-- CAROUSEL NAVIGATION -->
-              <div class="card-body-home-news">
+              <!-- CAROUSEL NAVIGATION - TODO -->
+              <div class="card-body-home-borderless">
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsOne"
                   data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
               </div>
-              <div class="card-body-home-news">
+              <div class="card-body-home-borderless">
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsOne"
                   data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -237,7 +239,7 @@
                 <div class="carousel-item active card-body-home">
                   <img src="assets/images/front_page_images/AllModelsRender2.jpg"
                     href="assets/images/front_page_images/AllModelsRender2.jpg" data-fancybox="gallery"
-                    data-caption="Costa Cup Render" class="d-block w-100" alt="...">
+                    data-caption="Photo of different Costa Coffee drinks" class="d-block w-100" alt="...">
                   <div class="carousel-caption">
                     <div class="card-body-home-carousel">
                       <div id="carousel_drink_title_one"></div>
@@ -248,7 +250,7 @@
                 <div class="carousel-item card-body-home">
                   <img src="assets/images/front_page_images/AllModelsRender3.jpg"
                     href="assets/images/front_page_images/AllModelsRender3.jpg" data-fancybox="gallery"
-                    data-caption="Costa Cup Render" class="d-block w-100" alt="...">
+                    data-caption="Photo of different Costa Coffee drinks 2" class="d-block w-100" alt="...">
                   <div class="carousel-caption">
                     <div class="card-body-home-carousel">
                       <div id="carousel_drink_title_two"></div>
@@ -259,7 +261,7 @@
                 <div class="carousel-item card-body-home">
                   <img src="assets/images/front_page_images/AllModelsRender4.jpg"
                     href="assets/images/front_page_images/AllModelsRender4.jpg" data-fancybox="gallery"
-                    data-caption="Costa Cup Render" class="d-block w-100" alt="...">
+                    data-caption="Photo of different Costa Coffee drinks 3" class="d-block w-100" alt="...">
                   <div class="carousel-caption">
                     <div class="card-body-home-carousel">
                       <div id="carousel_drink_title_three"></div>
@@ -269,14 +271,14 @@
                 </div>
               </div>
               <!-- END OF CAROUSEL ITEMS -->
-              <div class="card-body-home-news">
+              <div class="card-body-home-borderless">
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsTwo"
                   data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
               </div>
-              <div class="card-body-home-news">
+              <div class="card-body-home-borderless">
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsTwo"
                   data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -365,14 +367,13 @@
         <!-- TODO Nav Menu to choose models -->
         <div class="card text-left">
           <div class="card-body text-center">
-            <h2 class="card-title text-center ">Products</h2>
+            <h2 class="card-title text-center">Products</h2>
             <div class="hr">
               <hr>
             </div>
-            <a id="navCup" button type="button" class="btn btn-success" onclick="cupScene();">Costa Cup</button> </a>
-            <a id="navBottle" button type="button" class="btn btn-primary" onclick="bottleScene();">Costa
-              Bottle</button> </a>
-            <a id="navCan" button type="button" class="btn btn-primary" onclick="canScene();">Costa Can</button> </a>
+            <a id="navCup" button type="button" class="btn btn-success  mt-2" onclick="cupScene();">Costa Cup</button> </a>
+            <a id="navBottle" button type="button" class="btn btn-primary  mt-2" onclick="bottleScene();">Costa Bottle</button> </a>
+            <a id="navCan" button type="button" class="btn btn-primary  mt-2" onclick="canScene();">Costa Can</button> </a>
           </div>
         </div>
 
@@ -396,6 +397,7 @@
                 <div class="card-body">
                   <div id="cupDescription">
                     <div class="hr marginPullUpTitles">
+                    <br>
                       <hr>
                     </div>
                     <h4 class="card-title text-center marginPullUpTitles"><?php echo $data[0]["modelTitle"]; ?></h4>
@@ -408,13 +410,14 @@
               </div>
               <div class="col-sm-6">
                 <div class="hr marginPullUpTitles">
+                  <br>
                   <hr>
                 </div>
                 <h4 class="card-title text-center marginPullUpTitles">Model Creation</h4>
                 <div class="hr">
                   <hr>
                 </div>
-                <div class="card-text drinksText modelDescription"><?php echo $data[0]["x3dCreationMethod"]; ?></div>
+                <div class="card-text text-center drinksText modelDescription"><?php echo $data[0]["x3dCreationMethod"]; ?></div>
               </div>
             </div>
             <!-- END OF ROW -->
@@ -463,7 +466,7 @@
                 <div class="hr">
                   <hr>
                 </div>
-                <div class="card-text drinksText modelDescription"><?php echo $data[1]["x3dCreationMethod"]; ?></div>
+                <div class="card-text text-center drinksText modelDescription"><?php echo $data[1]["x3dCreationMethod"]; ?></div>
               </div>
             </div>
             <!-- END OF ROW -->
@@ -515,7 +518,7 @@
                 <div class="hr">
                   <hr>
                 </div>
-                <div class="card-text drinksText modelDescription"><?php echo $data[2]["x3dCreationMethod"]; ?></div>
+                <div class="card-text text-center drinksText modelDescription"><?php echo $data[2]["x3dCreationMethod"]; ?></div>
               </div>
             </div>
             <!-- END OF ROW -->
