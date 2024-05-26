@@ -25,6 +25,32 @@ function canScene() {
 	document.getElementById('SceneSwitch').setAttribute('whichChoice', nSwitch);
 }
 
+var audioPlaying = false; // starts false
+
+function toggleAudio()
+{
+	if(audioPlaying)
+	{
+		document.getElementById('model__AudioPlayer').setAttribute('enabled', 'false');
+		audioPlaying = false;
+		
+		var element = document.querySelector("#playMusicButton");
+		element.classList.remove("btn-success");
+		element.classList.add("btn-danger");
+		return;
+	}
+	else
+	{
+		audioPlaying = true;
+		document.getElementById('model__AudioPlayer').setAttribute('enabled', 'true');
+		
+		var element = document.querySelector("#playMusicButton");
+		element.classList.remove("btn-danger");
+		element.classList.add("btn-success");
+	}
+
+}
+
 var spinning = false;
 
 function spinX() {

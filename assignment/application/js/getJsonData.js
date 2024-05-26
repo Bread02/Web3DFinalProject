@@ -50,6 +50,8 @@ $(document).ready(function() {
 		    $('#interactionPanelAnimate').html('<p>' + jsonObj.pageTextData[9].interactionPanelAnimate + '</p>');
             $('#interactionPanelRenderTitle').html('<p>' + jsonObj.pageTextData[9].interactionPanelRenderTitle + '</p>');
             $('#interactionPanelRender').html('<p>' + jsonObj.pageTextData[9].interactionPanelRender + '</p>');
+			$('#interactionPanelExtrasTitle').html('<p>' + jsonObj.pageTextData[9].interactionPanelExtrasTitle + '</p>');
+            $('#interactionPanelExtras').html('<p>' + jsonObj.pageTextData[9].interactionPanelExtras + '</p>');
 
             // Originality 
             $('#originalityStatement').html('<p>' + jsonObj.pageTextData[10].originalityStatement + '</p>');

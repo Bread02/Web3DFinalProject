@@ -23,7 +23,6 @@
 
 <body id="body">
 
-
   <!-- START OF NAVBAR -->
   <nav class="navbar sticky-top navbar-expand-sm navbar_costa">
     <div class="container-fluid">
@@ -32,7 +31,7 @@
         <a class="navbar-brand" href="index.php">
           <h1>COSTA COFFEE UNIVERSE</h1>
           <br>
-          <p>Love For The Bean</p>
+          <p>For Coffee Lovers</p>
         </a>
       </div>
     </div>
@@ -723,6 +722,24 @@
         </div>
         <!-- END OF RENDERER CONTROLS -->
 
+                <!-- BONUS CONTROLS -->
+            <div class="card-body text-center borderedAllAround">
+          <h3 class="card-title text-center">
+            <div id="interactionPanelExtrasTitle"></div>
+          </h3>
+          <div id="PaddedTextInteractionPanel">
+            <div id="interactionPanelExtras"></div>
+          </div>
+          <div class="hr">
+            <hr>
+          </div>
+          <div id="PaddedButtonsInteractionPanel">
+            <a id="playMusicButton" button type="button" class="btn btn-danger mt-2" onclick="toggleAudio();">Toggle Music</a>
+            <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success mt-2" onclick="headlight();">Change the Scenery</a>
+          </div>
+        </div>
+        <!-- END OF RENDERER CONTROLS -->
+
         <!-- Where the gallery is held TODO: Add in the 3 gallery pages -->
         <div class="card-body">
           <div class="card text-center">
@@ -885,8 +902,15 @@
       <a id="example">CSS iframe -
         https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t
       </a>
+    </li>
       <li class="nav-item">
       <a id="example">Starting Template for modelInteractions.js - https://benskitchen.com/
+      </a>
+    </li>
+    <br>
+    <h2>Audio Sources</h2>
+    <li class="nav-item">
+      <a id="example"> "Sidewalk Shade" Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 4.0 License - https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t
       </a>
     </li>
   </div>
