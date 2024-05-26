@@ -727,7 +727,7 @@
         <div class="card-body">
           <div class="card text-center">
             <div class="gallery-header">
-              <ul class="nav nav-tabs">
+              <ul class="nav nav-tabs justify-content-center">
                 <li class="nav-item-gallery">
                   <a id="navGalleryCup" class="nav-link active" href="#">Costa Cup</a>
                 </li>

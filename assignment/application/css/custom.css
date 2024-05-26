@@ -428,6 +428,11 @@ body {
 
 }
 
+.gallery-nav-link
+{
+    width: 50px;
+}
+
 /* Small devices (landscape phones, 576px and up)*/
 /* This is when we go into hamburger mode */
 @media (min-width: 576px) {
