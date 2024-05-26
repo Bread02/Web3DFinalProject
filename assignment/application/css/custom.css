@@ -62,7 +62,7 @@
 
 .gallery-header {
     color: white;
-    margin-bottom: -10px;
+    margin-bottom: -3px;
 }
 
 .gallery .img-thumbnail {
@@ -137,11 +137,28 @@ x3d {
     font-size: 11px;
 }
 
+/* Affects nav-links at top and the gallery */
 .nav-link {
     color: #760003;
     font-weight: bold;
+    border-radius: 5%;
 }
 
+
+.nav-tabs .nav-item-gallery {
+    color: rgb(155, 149, 149);
+    background-color: #cacaca;
+    border-radius: 5%;
+
+}
+
+
+.topNavLink {
+    border-radius: 50%;
+
+}
+
+/* This is for the ACTIVE nav-tab in the gallery */
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
     color: white;
@@ -151,7 +168,7 @@ x3d {
     border-width: 0px;
 }
 
-/* This is for the gallery nav bar */
+/* This is for the gallery nav bar when we HOVER over it */
 .nav-tabs .nav-link:hover {
     color: #b8b8b8;
     background-color: #760003;
@@ -406,8 +423,7 @@ body {
     background-color: gray;
 }
 
-.carousel-indicators
-{
+.carousel-indicators {
     padding-left: 20px;
 
 }

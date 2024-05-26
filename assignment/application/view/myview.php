@@ -53,14 +53,14 @@
         <!-- Links for navbar -->
         <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
           <li class="nav-item">
-            <a id="navHome" class="nav-link active" href="#" onclick="changeHomeClassToActive()">Home</a>
+            <a id="navHome" class="nav-link topNavLink active" href="#" onclick="changeHomeClassToActive()">Home</a>
           </li>
           <li class="nav-item">
-            <a id="navAbout" class="nav-link" onclick="changeAboutClassToActive()" href="#" data-bs-toggle="popover"
+            <a id="navAbout" class="nav-link topNavLink" onclick="changeAboutClassToActive()" href="#" data-bs-toggle="popover"
               data-bs-trigger="hover" data-bs-placement="bottom" title="Checkout upcoming news!">News</a>
           </li>
           <li class="nav-item">
-            <a id="navModels" class="nav-link" onclick="changeModelsClassToActive()" href="#" data-bs-toggle="popover"
+            <a id="navModels" class="nav-link topNavLink" onclick="changeModelsClassToActive()" href="#" data-bs-toggle="popover"
               data-bs-trigger="hover" data-bs-placement="bottom" title="Checkout the 3D Costa models!">Models</a>
           </li>
           <!-- Button trigger modal -->
@@ -726,15 +726,15 @@
         <!-- Where the gallery is held TODO: Add in the 3 gallery pages -->
         <div class="card-body">
           <div class="card text-center">
-            <div class="card-header gallery-header">
+            <div class="gallery-header">
               <ul class="nav nav-tabs">
-                <li class="nav-item">
+                <li class="nav-item-gallery">
                   <a id="navGalleryCup" class="nav-link active" href="#">Costa Cup</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item-gallery">
                   <a id="navGalleryBottle" class="nav-link" href="#">Costa Bottle</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item-gallery">
                   <a id="navGalleryCan" class="nav-link" href="#">Costa Can</a>
                 </li>
               </ul>
