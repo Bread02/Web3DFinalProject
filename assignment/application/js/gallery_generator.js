@@ -28,7 +28,7 @@ $(document).ready(function () {
 				// Use this to provide a link to the image
 
 				// Cup Gallery
-				htmlCodeCup += '<a href="assets/images/gallery_images/cup_gallery' + response[i] + ' " ' + ' data-fancybox data-caption="My X3D model render" > ';
+				htmlCodeCup += '<a href="assets/images/gallery_images/cup_gallery' + response[i] + ' " ' + ' data-fancybox data-caption="Rendering of Costa Cup in Blender" > ';
 				htmlCodeCup += '<img class="card-img-top img-thumbnail" src="assets/images/gallery_images/cup_gallery' + response[i] + '"/>';
 				htmlCodeCup += '</a>';
 			}
@@ -63,7 +63,7 @@ $(document).ready(function () {
 				// Use this to provide a link to the image
 
 				// Cup Gallery
-				htmlCodeBottle += '<a href="assets/images/gallery_images/bottle_gallery' + response[i] + ' " ' + ' data-fancybox data-caption="My X3D model render" > ';
+				htmlCodeBottle += '<a href="assets/images/gallery_images/bottle_gallery' + response[i] + ' " ' + ' data-fancybox data-caption="Rendering of Costa Bottles in Blender" > ';
 				htmlCodeBottle += '<img class="card-img-top img-thumbnail" src="assets/images/gallery_images/bottle_gallery' + response[i] + '"/>';
 				htmlCodeBottle += '</a>';
 			}
@@ -100,7 +100,7 @@ $(document).ready(function () {
 				// Use this to provide a link to the image
 
 				// Cup Gallery
-				htmlCodeCan += '<a href="assets/images/gallery_images/can_gallery' + response[i] + ' " ' + ' data-fancybox data-caption="My X3D model render" > ';
+				htmlCodeCan += '<a href="assets/images/gallery_images/can_gallery' + response[i] + ' " ' + ' data-fancybox data-caption="Rendering of Costa Cans in Blender" > ';
 				htmlCodeCan += '<img class="card-img-top img-thumbnail" src="assets/images/gallery_images/can_gallery' + response[i] + '"/>';
 				htmlCodeCan += '</a>';
 			}
