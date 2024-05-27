@@ -835,7 +835,6 @@
         https://en.wikipedia.org/wiki/Costa_Coffee#/media/File:Costa_Coffee_logo.svg</a> (Accessed: 27 May 2024).
         <br>
         <br>
-
         <h5>Cans</h5>
         Vanilla Latte: Costa Vanilla Latte Coffee Drink 12 Cans of 250 ml (2024) Amazon.co.uk. Available at: <a
           href="https://www.amazon.co.uk/Costa-Vanilla-Latte-Coffee-Drink/dp/B095CLLTQZ">
@@ -853,11 +852,9 @@
           2024).
         <br>
         <br>
-
         Bottom of Can - Provided by Labs - Can_Texture - From Coca Cola Map</a>
         <br>
         <br>
-
         <h5>Bottles</h5>
         Caramel Bottle Front: Costa Coffee Frappe Caramel Swirl Iced Coffee 250ml (2024) Tesco Groceries. Available at:
         <a href="https://www.tesco.com/groceries/en-GB/products/311423600">https://www.tesco.com/groceries/en-GB/products/311423600
@@ -871,7 +868,7 @@
         <br>
         <br>
         Brownie Bottle Front: Costa Coffee Frappe Choc Fudge Brownie Iced Coffee (2024) Morrisons. Available at: <a
-          href="https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011 ">
+          href="https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011">
           https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011</a> 
           (Accessed: 27 May 2024).
         <br>
@@ -946,15 +943,14 @@
         <br>
         <br>
         Starting Template for modelInteractions.js: Jackson, B. (no date) Ben’s Kitchen. Available at: <a
-          href="https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t">https://benskitchen.com/</a>
+          href="https://benskitchen.com/">https://benskitchen.com/</a>
           (Accessed: 27 May 2024).
         <br>
         <br>
         <h2>Audio Sources</h2>
         Jazz music in models page: Macleod, K. (2012) Sidewalk Shade, Incompetech. Available at: <a
-          href="https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t">https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200103</a>
+          href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200103">https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200103</a>
           (Accessed: 27 May 2024).
-        </a>
       </div>
     </div>
   </div>
