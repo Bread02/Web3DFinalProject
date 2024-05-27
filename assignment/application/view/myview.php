@@ -926,8 +926,7 @@
         <h2>Audio Sources</h2>
         <li class="nav-item">
           <a id="example"> "Sidewalk Shade" Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By
-            Attribution 4.0 License -
-            https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t
+            Attribution 4.0 License - https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200103
           </a>
         </li>
       </div>
