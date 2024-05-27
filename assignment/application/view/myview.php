@@ -943,19 +943,19 @@
       <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
           <li class="nav-item padding-adjustment">
             <a id="navOriginality" class="nav-link" href="#"
-              onclick="changeStatementOfOriginalityClassToActive(); stopAudio();">Statement of Originality</a>
+              onclick="changeStatementOfOriginalityClassToActive(); stopAudio();">| Statement of Originality |</a>
           </li>
           <li class="nav-item padding-adjustment">
-            <a id="navReferences" class="nav-link" onclick="changeReferencesClassToActive(); stopAudio();" href="#">References</a>
+            <a id="navReferences" class="nav-link" onclick="changeReferencesClassToActive(); stopAudio();" href="#">| References |</a>
           </li>
           <li class="nav-item padding-adjustment">
-            <a class="nav-link" href="https://github.com/Bread02/Web3DFinalProject" target="_blank" >Github</a>
+            <a class="nav-link" href="https://github.com/Bread02/Web3DFinalProject" target="_blank" >| Github |</a>
           </li>
           <li class="nav-item">
-            <a id="lightThemeToggle" class="nav-link" href='#'>Enable Light Theme</a>
+            <a id="lightThemeToggle" class="nav-link" href='#'>| Enable Light Theme |</a>
           </li>
           <li class="nav-item">
-            <a id="darkThemeToggle" class="nav-link" href='#'>Enable Dark Theme</a>
+            <a id="darkThemeToggle" class="nav-link" href='#'>| Enable Dark Theme |</a>
           </li>
         </ul>
       </div>
