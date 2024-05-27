@@ -938,23 +938,33 @@
   </div>
   <!-- END OF REFERENCES -->
 
+  <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
   <!-- START OF FOOTER -->
-  <nav class="footer sticky">
+  <nav class="navbar-expand-sm navbar_costa footer">
     <div class="container-fluid">
       <div class="float-left">
-        <p>
-          <a span class="align-baseline" href="#" id="navOriginality" style="color:#ffffff;"
-            onclick="stopAudio()">Statement of Originality </a>
-          <a id="navReferences" href="#" style="color:#ffffff;" onclick="stopAudio()">|| References || </a>
-          <a href="https://github.com/Bread02/Web3DFinalProject" style="color:#ffffff;">Github | | </a>
-          <a id="lightThemeToggle" href="#" style="color:#ffffff;">Enable Light Theme</a>
-          <a id="darkThemeToggle" href="#" style="color:#ffffff;">Enable Dark Theme </a>
-        </p>
-        </span>
+      <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
+          <li class="nav-item padding-adjustment">
+            <a id="navOriginality" class="nav-link" href="#"
+              onclick="changeStatementOfOriginalityClassToActive(); stopAudio();">Statement of Originality</a>
+          </li>
+          <li class="nav-item padding-adjustment">
+            <a id="navReferences" class="nav-link" onclick="changeReferencesClassToActive(); stopAudio();" href="#">References</a>
+          </li>
+          <li class="nav-item padding-adjustment">
+            <a class="nav-link" href="https://github.com/Bread02/Web3DFinalProject" target="_blank" >Github</a>
+          </li>
+          <li class="nav-item">
+            <a id="lightThemeToggle" class="nav-link" href='#'>Enable Light Theme</a>
+          </li>
+          <li class="nav-item">
+            <a id="darkThemeToggle" class="nav-link" href='#'>Enable Dark Theme</a>
+          </li>
+        </ul>
       </div>
-
+      </div>
   </nav>
-  <!-- END OF FOOTER -->
+  </ul>
 
   <!-- Contact modal -->
   <div class="modal fade" id="contactModal">

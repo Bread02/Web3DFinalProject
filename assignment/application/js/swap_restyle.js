@@ -610,6 +610,12 @@ function changeNavClassesToNotActive()
   
     var element = document.querySelector("#navModels");
   element.classList.remove("active");
+
+  var element = document.querySelector("#navReferences");
+  element.classList.remove("active");
+
+  var element = document.querySelector("#navOriginality");
+  element.classList.remove("active");
 }
 
 function changeHomeClassToActive()
@@ -634,5 +640,21 @@ function changeModelsClassToActive()
   changeNavClassesToNotActive();
   
   var element = document.querySelector("#navModels");
+  element.classList.add("active");
+}
+
+function changeStatementOfOriginalityClassToActive()
+{
+  changeNavClassesToNotActive();
+  
+  var element = document.querySelector("#navOriginality");
+  element.classList.add("active");
+}
+
+function changeReferencesClassToActive()
+{
+  changeNavClassesToNotActive();
+  
+  var element = document.querySelector("#navReferences");
   element.classList.add("active");
 }
