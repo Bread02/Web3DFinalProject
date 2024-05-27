@@ -737,6 +737,13 @@
             <a id="playMusicButton" button type="button" class="btn btn-danger mt-2" onclick="toggleAudio();">Toggle Music</a>
             <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success mt-2" onclick="changeBackground();">Change Background</a>
           </div>
+          <div class="hr">
+            <hr>
+            <div id="BackgroundNumberCounter" class="card-body text-center">
+              Background: 1 / 5
+              
+            </div>
+
         </div>
         <!-- END OF RENDERER CONTROLS -->
 

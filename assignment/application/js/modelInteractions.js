@@ -187,35 +187,43 @@ function spinZ() {
 }
 
 
-var backgroundCycle = 0;
+var backgroundCycle = 1;
 function changeBackground() {
-// #760004b9
 
 switch(backgroundCycle)
 {
-	case 0:
+	case 1:
 		document.getElementById('model__Background').setAttribute('transparency', '0');
 		document.getElementById('model__Background').setAttribute('skyColor', '(66,55,99)');
 		document.getElementById('model__Background').setAttribute('groundColor', '(255,43,33)');
 		backgroundCycle++;
+		document.getElementById("BackgroundNumberCounter").innerHTML = "Background: " + backgroundCycle + " / 5";
 		return;
-	case 1:
+	case 2:
 		document.getElementById('model__Background').setAttribute('skyColor', '(66,125,99)');
 		document.getElementById('model__Background').setAttribute('groundColor', '(152,152,125)');
 		backgroundCycle++;
+		document.getElementById("BackgroundNumberCounter").innerHTML = "Background: " + backgroundCycle + " / 5";
 		return;
-	case 2:
+	case 3:
 		document.getElementById('model__Background').setAttribute('skyColor', '(33,77,11)');
 		document.getElementById('model__Background').setAttribute('groundColor', '(11,11,54)');
 		backgroundCycle++;
+		document.getElementById("BackgroundNumberCounter").innerHTML = "Background: " + backgroundCycle + " / 5";
 		return;
-	case 3:
+	case 4:
+		document.getElementById('model__Background').setAttribute('skyColor', '(11,11,11)');
+		document.getElementById('model__Background').setAttribute('groundColor', '(53,44,11)');
+		backgroundCycle++;
+		document.getElementById("BackgroundNumberCounter").innerHTML = "Background: " + backgroundCycle + " / 5";
+		return;
+	case 5:
 		document.getElementById('model__Background').setAttribute('transparency', '1');
-		backgroundCycle = 0;
+		backgroundCycle = 1;
+		document.getElementById("BackgroundNumberCounter").innerHTML = "Background: " + backgroundCycle + " / 5";
 		return;
 }
 
-// rgb(115, 7, 35)
 
 }
 
