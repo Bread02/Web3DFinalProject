@@ -52,10 +52,10 @@
         <!-- Links for navbar -->
         <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
           <li class="nav-item">
-            <a id="navHome" class="nav-link topNavLink active" href="#" onclick="changeHomeClassToActive()">Home</a>
+            <a id="navHome" class="nav-link topNavLink active" href="#" onclick="changeHomeClassToActive(); stopAudio();">Home</a>
           </li>
           <li class="nav-item">
-            <a id="navAbout" class="nav-link topNavLink" onclick="changeAboutClassToActive()" href="#" data-bs-toggle="popover"
+            <a id="navAbout" class="nav-link topNavLink" onclick="changeAboutClassToActive(); stopAudio();" href="#" data-bs-toggle="popover"
               data-bs-trigger="hover" data-bs-placement="bottom" title="Checkout upcoming news!">News</a>
           </li>
           <li class="nav-item">
@@ -572,7 +572,7 @@
 
             <!-- X3D MODEL SCENE -->
             <div id="x3dScene">
-              <x3d id="wire" height="400px"> <!-- Height needs to be fixed to this otherwise it falls out of page -->
+              <x3d id="wire" class="wire"> <!-- Height needs to be fixed to this otherwise it falls out of page -->
                 <scene>
                   <Switch whichChoice="0" id='SceneSwitch'>
                     <transform>
@@ -735,7 +735,7 @@
           </div>
           <div id="PaddedButtonsInteractionPanel">
             <a id="playMusicButton" button type="button" class="btn btn-danger mt-2" onclick="toggleAudio();">Toggle Music</a>
-            <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success mt-2" onclick="headlight();">Change the Scenery</a>
+            <a id="toggleHeadlightsBtn" button type="button" class="btn btn-success mt-2" onclick="changeBackground();">Change Background</a>
           </div>
         </div>
         <!-- END OF RENDERER CONTROLS -->
@@ -923,8 +923,8 @@
     <div class="container-fluid">
       <div class="float-left">
         <p>
-          <a span class="align-baseline" href="#" id="navOriginality" style="color:#ffffff;">Statement of Originality </a> 
-          <a id="navReferences" href="#" style="color:#ffffff;">|| References || </a>
+          <a span class="align-baseline" href="#" id="navOriginality" style="color:#ffffff;" onclick="stopAudio()">Statement of Originality </a> 
+          <a id="navReferences" href="#" style="color:#ffffff;" onclick="stopAudio()">|| References || </a>
           <a href="https://github.com/Bread02/Web3DFinalProject" style="color:#ffffff;">Github | | </a>
           <a id="lightThemeToggle" href="#" style="color:#ffffff;">Enable Light Theme</a>
           <a id="darkThemeToggle" href="#" style="color:#ffffff;">Enable Dark Theme </a>

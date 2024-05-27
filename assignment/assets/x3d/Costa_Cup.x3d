@@ -11,6 +11,11 @@
 	<!-- NAV INFO -->
 	<NavigationInfo DEF="headlight" avatarSize="0.25 1.60000002384186 0.75" headlight="true" type='"EXAMINE"' />
 
+<!-- BACKGROUND COLOR -->
+ <Background bind='false' DEF="Background" groundAngle='[]' groundColor='(115, 7, 35)' isActive='false' metadata='X3DMetadataObject' scaling='false' skyAngle='2' skyColor='(115, 7, 35)' transparency='1' ></Background> 
+
+ <!-- Sky and gruond angle at 1 or 2 angle gives a nice lined effect -->
+
 	<!-- LIGHTS -->
 	<PointLight DEF="Light"
 		global="true"
