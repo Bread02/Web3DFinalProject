@@ -804,11 +804,9 @@
         </div>
         <!-- END OF GALLERY -->
         <br>
-
       </div>
     </div>
   </div> <!-- END OF MODELS -->
-
 
   <!-- START OF STATEMENT OF ORIGINALITY -->
   <div id="originality">
@@ -819,7 +817,6 @@
       </div>
     </div>
   </div>
-
   <!-- END OF STATEMENT OF ORIGINALITY -->
 
   <!-- START OF REFERENCES -->
@@ -827,7 +824,7 @@
     <div class="card">
       <div class="card-body">
         <h1>References</h1>
-        <br>
+        <hr>
         <h2>Texture Image Sources</h2>
         <h5>Cup</h5>
         <li class="nav-item">
@@ -938,8 +935,8 @@
   </div>
   <!-- END OF REFERENCES -->
 
+    <!-- START OF FOOTER -->
   <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
-  <!-- START OF FOOTER -->
   <nav class="navbar-expand-sm navbar_costa footer">
     <div class="container-fluid">
       <div class="float-left">
@@ -965,28 +962,26 @@
       </div>
   </nav>
   </ul>
+  <!-- END OF FOOTER -->
 
   <!-- Contact modal -->
   <div class="modal fade" id="contactModal">
     <div class="modal-dialog">
       <div class="modal-content">
-
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Candidate Number Details</h4>
           <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
         </div>
-
         <!-- Modal body -->
         <div class="modal-body">
           <p>Candidate Number: 197670</p>
         </div>
-
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
         </div>
-
+        <!-- END OF MODAL FOOTER -->
       </div>
     </div>
   </div>
@@ -1005,5 +1000,4 @@
   <script src="application/js/jquery.fancybox.min.js"></script>
 
 </body>
-
 </html>

@@ -3,7 +3,6 @@ $(document).ready(function() {
 
     //AJAX service request to get the main text data from the json data store.
         $.getJSON('./application/model/data.json', function(jsonObj) {
-            console.log(jsonObj);
             // home page left column text data
             $('#title_left').html('<h2>' + jsonObj.pageTextData[0].title + '</h2>')
             $('#subTitle_left').html('<h3>' + jsonObj.pageTextData[0].subTitle + '</h3>')
