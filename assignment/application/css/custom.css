@@ -179,6 +179,13 @@ height: 430px;
 
 }
 
+a
+{
+    color: white;
+}
+
+a, a:hover, a:active, a:visited { color: white; }
+
 .hamburger {
     margin: auto;
     padding-top: 10px;

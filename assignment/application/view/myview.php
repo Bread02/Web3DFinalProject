@@ -422,7 +422,8 @@
                   <hr>
                 </div>
                 <div class="card-text text-center drinksText modelDescription">
-                  <?php echo $data[0]["x3dCreationMethod"]; ?></div>
+                  <?php echo $data[0]["x3dCreationMethod"]; ?>
+                </div>
               </div>
             </div>
             <!-- END OF ROW -->
@@ -472,7 +473,8 @@
                   <hr>
                 </div>
                 <div class="card-text text-center drinksText modelDescription">
-                  <?php echo $data[1]["x3dCreationMethod"]; ?></div>
+                  <?php echo $data[1]["x3dCreationMethod"]; ?>
+                </div>
               </div>
             </div>
             <!-- END OF ROW -->
@@ -525,7 +527,8 @@
                   <hr>
                 </div>
                 <div class="card-text text-center drinksText modelDescription">
-                  <?php echo $data[2]["x3dCreationMethod"]; ?></div>
+                  <?php echo $data[2]["x3dCreationMethod"]; ?>
+                </div>
               </div>
             </div>
             <!-- END OF ROW -->
@@ -827,139 +830,163 @@
         <hr>
         <h2>Texture Image Sources</h2>
         <h5>Cup</h5>
-        <li class="nav-item">
-          <a id="example">Costa Text for Cup -
-            https://en.wikipedia.org/wiki/Costa_Coffee#/media/File:Costa_Coffee_logo.svg</a>
-        </li>
+        Costa Text for Cup: Costa Coffee Logo (2024) Costa Coffee. Available at: <a
+          href="https://en.wikipedia.org/wiki/Costa_Coffee#/media/File:Costa_Coffee_logo.svg">
+        https://en.wikipedia.org/wiki/Costa_Coffee#/media/File:Costa_Coffee_logo.svg</a> (Accessed: 27 May 2024).
         <br>
+        <br>
+
         <h5>Cans</h5>
-        <li class="nav-item">
-          <a id="example">Vanilla Latte - https://m.media-amazon.com/images/I/61SsiG71W-S._AC_UF1000,1000_QL80_.jpg </a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Latte - https://www.sainsburys.co.uk/gol-ui/product/costa-coffee-latte-250ml</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Top of Can -
-            https://www.xmbaofeng.com/aluminum-stay-on-tab-sot-can-end-for-beverage-can-light-gold</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Bottom of Can - Provided by Labs - Can_Texture - From Coca Cola Map</a>
-        </li>
+        Vanilla Latte: Costa Vanilla Latte Coffee Drink 12 Cans of 250 ml (2024) Amazon.co.uk. Available at: <a
+          href="https://www.amazon.co.uk/Costa-Vanilla-Latte-Coffee-Drink/dp/B095CLLTQZ">
+          https://www.amazon.co.uk/Costa-Vanilla-Latte-Coffee-Drink/dp/B095CLLTQZ</a> (Accessed: 27 May 2024).
         <br>
+        <br>
+        Latte: Costa Coffee Latte 250ml (no date) Sainsbury’s. Available at: <a
+          href="https://www.sainsburys.co.uk/gol-ui/product/costa-coffee-latte-250ml">
+          https://www.sainsburys.co.uk/gol-ui/product/costa-coffee-latte-250ml</a> (Accessed: 27 May 2024).
+        <br>
+        <br>
+        Top of Can: Aluminum Stay on Tab SOT Can End for Beverage Can Light Gold (2024) Baofeng. Baofeng. Available at:
+        <a href="https://www.xmbaofeng.com/aluminum-stay-on-tab-sot-can-end-for-beverage-can-light-gold">
+          https://www.xmbaofeng.com/aluminum-stay-on-tab-sot-can-end-for-beverage-can-light-gold</a> (Accessed: 27 May
+          2024).
+        <br>
+        <br>
+
+        Bottom of Can - Provided by Labs - Can_Texture - From Coca Cola Map</a>
+        <br>
+        <br>
+
         <h5>Bottles</h5>
-        <li class="nav-item">
-          <a id="example">Caramel Bottle Front - https://www.tesco.com/groceries/en-GB/products/311423600</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Caramel Bottle Top - Image by self</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Caramel Bottle Bottom - Image by self</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Brownie Bottle Front -
-            https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Brownie Bottle Top - Image by self</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Brownie Bottle Bottom - Image by self</a>
-        </li>
+        Caramel Bottle Front: Costa Coffee Frappe Caramel Swirl Iced Coffee 250ml (2024) Tesco Groceries. Available at:
+        <a href="https://www.tesco.com/groceries/en-GB/products/311423600">https://www.tesco.com/groceries/en-GB/products/311423600
+        </a> (Accessed: 27 May 2024).
+        <br>
+        <br>
+        Caramel Bottle Top - Image by self</a>
+        <br>
+        <br>
+        Caramel Bottle Bottom - Image by self</a>
+        <br>
+        <br>
+        Brownie Bottle Front: Costa Coffee Frappe Choc Fudge Brownie Iced Coffee (2024) Morrisons. Available at: <a
+          href="https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011 ">
+          https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011</a> 
+          (Accessed: 27 May 2024).
+        <br>
+        <br>
+        Brownie Bottle Top - Image by self
+        <br>
+        <br>
+        Brownie Bottle Bottom - Image by self
+        <br>
         <br>
         <h2>Photo Image Sources</h2>
-        <li class="nav-item">
-          <a id="example">Costa Egg Muffin (Image edited in photoshop to create grey background)-
-            https://www.costa.co.uk/menu</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Cheese Bean Toastie (Image edited in photoshop to create grey background) -
-            https://www.costa.co.uk/menu</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Carrot and Walnut Cake Slice (Image edited in photoshop to create grey background) -
-            https://www.costa.co.uk/menu</a>
-        </li>
+        Costa Egg Muffin (Image edited in photoshop to create grey background): Our Menu (2024) Menu | Costa Coffee.
+        Available at: <a href="https://www.costa.co.uk/menu">https://www.costa.co.uk/menu</a> (Accessed: 27 May 2024).
+        <br>
+        <br>
+        Cheese Bean Toastie (Image edited in photoshop to create grey background): Our Menu (2024) Menu | Costa Coffee.
+        Available at: <a href="https://www.costa.co.uk/menu"> https://www.costa.co.uk/menu</a> (Accessed: 27 May 2024).
+        <br>
+        <br>
+        Carrot and Walnut Cake Slice (Image edited in photoshop to create grey background): Our Menu (2024) Menu | Costa
+        Coffee. Available at: <a href="https://www.costa.co.uk/menu"> https://www.costa.co.uk/menu</a> (Accessed: 27 May
+          2024).
+        <br>
         <br>
         <h2>Video Sources</h2>
-        <li class="nav-item">
-          <a id="example">Costa Coffee Christmas Cup - https://www.youtube.com/watch?v=55DmnepMuTE</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Coca Cola Zero Sugar - https://www.youtube.com/watch?v=chFGAkBRHVE</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Costa Coffee Cappuccino - https://www.youtube.com/watch?v=Q5_3O50SnfY</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Costa Coffee Hot Belgian Chocolate - https://www.youtube.com/watch?v=D-tjyNq7drk</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Costa Coffee Latte - https://www.youtube.com/watch?v=dccvwUQxhL4</a>
-        </li>
-
+        Costa Coffee Christmas Cup: Christmas Cup reveal (2020) YouTube. Available at: <a
+          href="https://www.youtube.com/watch?v=55DmnepMuTE">https://www.youtube.com/watch?v=55DmnepMuTE</a> (Accessed: 27
+          May 2024).
+        <br>
+        <br>
+        Coca Cola Zero Sugar: Coca-Cola Zero Sugar: Great taste, Zero sugar | Coca-Cola (2022) YouTube. Available at: <a
+          href="https://www.youtube.com/watch?v=chFGAkBRHVE">https://www.youtube.com/watch?v=chFGAkBRHVE</a> (Accessed: 27
+          May 2024).
+        <br>
+        <br>
+        Costa Coffee Cappuccino: Costa Coffee Cappuccino (2014) YouTube. Available at: <a
+          href="https://www.youtube.com/watch?v=Q5_3O50SnfY">https://www.youtube.com/watch?v=Q5_3O50SnfY</a> (Accessed: 27
+          May 2024).
+        <br>
+        <br>
+        Costa Coffee Hot Belgian Chocolate: Costa Coffee Hot Belgian Chocolate (2014) YouTube. Available at: <a
+          href="https://www.youtube.com/watch?v=D-tjyNq7drk">https://www.youtube.com/watch?v=D-tjyNq7drk</a> (Accessed: 27
+          May 2024).
+        <br>
+        <br>
+        Costa Coffee Latte: Costa Coffee Latte (2014) YouTube. Available at: <a
+          href="https://www.youtube.com/watch?v=dccvwUQxhL4">https://www.youtube.com/watch?v=dccvwUQxhL4</a> (Accessed: 27
+          May 2024).
+        <br>
         <br>
         <h2>Blender Reference Image Sources</h2>
-        <li class="nav-item">
-          <a id="example">Costa Coffee Cup - https://www.amazon.co.uk/Costa-Primo-275-Coffee-Cups/dp/B07YB91TW5</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Brownie Bottle Front -
-            https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011</a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Latte - https://www.sainsburys.co.uk/gol-ui/product/costa-coffee-latte-250ml</a>
-        </li>
+        Costa Coffee Cup: Costa Primo 275 ml Coffee Cups (2024) Amazon.co.uk. Available at: <a
+          href="https://www.amazon.co.uk/Costa-Primo-275-Coffee-Cups/dp/B07YB91TW5">https://www.amazon.co.uk/Costa-Primo-275-Coffee-Cups/dp/B07YB91TW5</a>
+          (Accessed: 27 May 2024).
+        <br>
+        <br>
+        Brownie Bottle Front: Costa Coffee Frappe Choc Fudge Brownie Iced Coffee (2024) Morrisons. Available at: <a
+          href="https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011">https://groceries.morrisons.com/products/costa-coffee-frappe-choc-fudge-brownie-iced-coffee-594772011</a>
+          (Accessed: 27 May 2024).
+        <br>
+        <br>
+        Latte: Costa Coffee Latte 250ml (no date) Sainsbury’s. Available at: <a
+          href="https://www.sainsburys.co.uk/gol-ui/product/costa-coffee-latte-250ml">https://www.sainsburys.co.uk/gol-ui/product/costa-coffee-latte-250ml</a>
+          (Accessed: 27 May 2024).
+        <br>
         <br>
         <h2>Code Sources</h2>
-        <li class="nav-item">
-          <a id="example">CSS iframe -
-            https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t
-          </a>
-        </li>
-        <li class="nav-item">
-          <a id="example">Starting Template for modelInteractions.js - https://benskitchen.com/
-          </a>
-        </li>
+        CSS iframe code template: How can I make the YouTube player scale to the width of the page but also keep the
+        aspect ratio? (2012) Stack Overflow. Available at: <a
+          href="https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t">https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t</a>
+          (Accessed: 27 May 2024).
+        <br>
+        <br>
+        Starting Template for modelInteractions.js: Jackson, B. (no date) Ben’s Kitchen. Available at: <a
+          href="https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t">https://benskitchen.com/</a>
+          (Accessed: 27 May 2024).
+        <br>
         <br>
         <h2>Audio Sources</h2>
-        <li class="nav-item">
-          <a id="example"> "Sidewalk Shade" Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By
-            Attribution 4.0 License - https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200103
-          </a>
-        </li>
+        Jazz music in models page: Macleod, K. (2012) Sidewalk Shade, Incompetech. Available at: <a
+          href="https://stackoverflow.com/questions/7737557/how-can-i-make-the-youtube-player-scale-to-the-width-of-the-page-but-also-keep-t">https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1200103</a>
+          (Accessed: 27 May 2024).
+        </a>
       </div>
     </div>
   </div>
   <!-- END OF REFERENCES -->
 
-    <!-- START OF FOOTER -->
+  <!-- START OF FOOTER -->
   <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
-  <nav class="navbar-expand-sm navbar_costa footer">
-    <div class="container-fluid">
-      <div class="float-left">
-      <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
-          <li class="nav-item padding-adjustment">
-            <a id="navOriginality" class="nav-link" href="#"
-              onclick="changeStatementOfOriginalityClassToActive(); stopAudio();">| Statement of Originality |</a>
-          </li>
-          <li class="nav-item padding-adjustment">
-            <a id="navReferences" class="nav-link" onclick="changeReferencesClassToActive(); stopAudio();" href="#">| References |</a>
-          </li>
-          <li class="nav-item padding-adjustment">
-            <a class="nav-link" href="https://github.com/Bread02/Web3DFinalProject" target="_blank" >| Github |</a>
-          </li>
-          <li class="nav-item">
-            <a id="lightThemeToggle" class="nav-link" href='#'>| Enable Light Theme |</a>
-          </li>
-          <li class="nav-item">
-            <a id="darkThemeToggle" class="nav-link" href='#'>| Enable Dark Theme |</a>
-          </li>
-        </ul>
+    <nav class="navbar-expand-sm navbar_costa footer">
+      <div class="container-fluid">
+        <div class="float-left">
+          <ul class="navbar-nav mr-auto"> <!-- mx-auto = centre align, default to left, mr-auto to right -->
+            <li class="nav-item padding-adjustment">
+              <a id="navOriginality" class="nav-link" href="#"
+                onclick="changeStatementOfOriginalityClassToActive(); stopAudio();">| Statement of Originality |</a>
+            </li>
+            <li class="nav-item padding-adjustment">
+              <a id="navReferences" class="nav-link" onclick="changeReferencesClassToActive(); stopAudio();" href="#">|
+                References |</a>
+            </li>
+            <li class="nav-item padding-adjustment">
+              <a class="nav-link" href="https://github.com/Bread02/Web3DFinalProject" target="_blank">| Github |</a>
+            </li>
+            <li class="nav-item">
+              <a id="lightThemeToggle" class="nav-link" href='#'>| Enable Light Theme |</a>
+            </li>
+            <li class="nav-item">
+              <a id="darkThemeToggle" class="nav-link" href='#'>| Enable Dark Theme |</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      </div>
-  </nav>
+    </nav>
   </ul>
   <!-- END OF FOOTER -->
 
@@ -999,4 +1026,5 @@
   <script src="application/js/jquery.fancybox.min.js"></script>
 
 </body>
+
 </html>
