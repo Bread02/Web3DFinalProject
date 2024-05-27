@@ -454,6 +454,7 @@
                 <div class="card-body">
                   <div id="bottleDescription">
                     <div class="hr marginPullUpTitles">
+                    <br>
                       <hr>
                     </div>
                     <h4 class="card-title text-center marginPullUpTitles"><?php echo $data[1]["modelTitle"]; ?></h4>
@@ -466,6 +467,7 @@
               </div>
               <div class="col-sm-6">
                 <div class="hr marginPullUpTitles">
+                <br>
                   <hr>
                 </div>
                 <h4 class="card-title text-center marginPullUpTitles">Model Creation</h4>
@@ -508,6 +510,7 @@
                 <div class="card-body">
                   <div id="canDescription">
                     <div class="hr marginPullUpTitles">
+                    <br>
                       <hr>
                     </div>
                     <h4 class="card-title text-center marginPullUpTitles"><?php echo $data[2]["modelTitle"]; ?></h4>
@@ -520,6 +523,7 @@
               </div>
               <div class="col-sm-6">
                 <div class="hr marginPullUpTitles">
+                <br>
                   <hr>
                 </div>
                 <h4 class="card-title text-center marginPullUpTitles">Model Creation</h4>
